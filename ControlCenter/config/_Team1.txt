@@ -1,0 +1,10 @@
+11;M;192.168.42.11;8888;Robot1_1;InOut
+12;P1;192.168.42.12;8888;Robot1_2;InOut
+13;M1;192.168.42.13;8888;Robot1_3;InOut
+21;T;172.16.0.84;8888;TrafficLights1_1;InOut
+22;T;192.168.42.22;8888;TrafficLights1_2;InOut
+23;T;192.168.42.23;8888;TrafficLights1_3;InOut
+24;B1;192.168.42.24;8888;LightBarrier1;InOut
+14;C;192.168.42.14;8888;Conveyor1;InOut
+15;SC;192.168.42.15;8888;SmartCamera1;InOut
+16;R2;192.168.42.16;8888;WorkshiftTerminal1;InOut
