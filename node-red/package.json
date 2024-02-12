@@ -1,0 +1,17 @@
+{
+    "name": "node-red-project",
+    "description": "A Node-RED Project",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "node-red-contrib-iot-controlcenter": "~2.1.0",
+        "node-red-contrib-java-function": "~0.1.1",
+        "node-red-contrib-python-function": "~0.0.5",
+        "node-red-contrib-ui-digital-display": "~1.0.3",
+        "node-red-contrib-ui-led": "~0.4.11",
+        "node-red-dashboard": "~3.6.2",
+        "node-red-node-mysql": "~2.0.0",
+        "node-red-node-ping": "~0.3.3",
+        "node-red-node-random": "~0.4.1"
+    }
+}

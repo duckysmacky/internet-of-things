@@ -1,0 +1,314 @@
+[
+    {
+        "id": "6f0e28b75d17d8a5",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "0db56204ee20180e",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "51a4a82de7533676",
+        "type": "ui_tab",
+        "name": "Monitor",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "179c78f9b0236523",
+        "type": "ui_group",
+        "name": "Motor",
+        "tab": "51a4a82de7533676",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5a1b909d62c4a217",
+        "type": "IOT Get",
+        "z": "6f0e28b75d17d8a5",
+        "name": "",
+        "x": 170,
+        "y": 320,
+        "wires": [
+            [
+                "a437fb96c64e2f66"
+            ]
+        ]
+    },
+    {
+        "id": "6979f40dbe0b2801",
+        "type": "ui_digital_display",
+        "z": "6f0e28b75d17d8a5",
+        "name": "M1",
+        "group": "179c78f9b0236523",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "digits": "4",
+        "decimals": "0",
+        "x": 530,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "a437fb96c64e2f66",
+        "type": "function",
+        "z": "6f0e28b75d17d8a5",
+        "name": "function 1",
+        "func": "if (msg.payload.name == \"Robot1_1\") {\n    var messages = []\n    for (let i = 1; i <= 6; i++) {\n        messages.push(msg.payload[i])\n    }\n    return messages\n}",
+        "outputs": 6,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 320,
+        "wires": [
+            [
+                "6979f40dbe0b2801"
+            ],
+            [
+                "93e24736a18a4878"
+            ],
+            [
+                "202df806d029c099"
+            ],
+            [
+                "c9e4919d12de5d66"
+            ],
+            [
+                "6d338dc4f1d50a8a"
+            ],
+            [
+                "6bfe3f5e95be9e1e"
+            ]
+        ]
+    },
+    {
+        "id": "93e24736a18a4878",
+        "type": "ui_digital_display",
+        "z": "6f0e28b75d17d8a5",
+        "name": "M2",
+        "group": "179c78f9b0236523",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "digits": "4",
+        "decimals": "0",
+        "x": 530,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "202df806d029c099",
+        "type": "ui_digital_display",
+        "z": "6f0e28b75d17d8a5",
+        "name": "M3",
+        "group": "179c78f9b0236523",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "digits": "4",
+        "decimals": "0",
+        "x": 530,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "c9e4919d12de5d66",
+        "type": "ui_digital_display",
+        "z": "6f0e28b75d17d8a5",
+        "name": "M4",
+        "group": "179c78f9b0236523",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "digits": "4",
+        "decimals": "0",
+        "x": 530,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "6d338dc4f1d50a8a",
+        "type": "ui_digital_display",
+        "z": "6f0e28b75d17d8a5",
+        "name": "M5",
+        "group": "179c78f9b0236523",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "digits": "4",
+        "decimals": "0",
+        "x": 530,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "6bfe3f5e95be9e1e",
+        "type": "ui_digital_display",
+        "z": "6f0e28b75d17d8a5",
+        "name": "M6",
+        "group": "179c78f9b0236523",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "digits": "4",
+        "decimals": "0",
+        "x": 530,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "f6caafc266b55e49",
+        "type": "IOT Get",
+        "z": "6f0e28b75d17d8a5",
+        "name": "",
+        "x": 150,
+        "y": 600,
+        "wires": [
+            [
+                "1b6f4711100f0e5e"
+            ]
+        ]
+    },
+    {
+        "id": "1b6f4711100f0e5e",
+        "type": "function",
+        "z": "6f0e28b75d17d8a5",
+        "name": "function 2",
+        "func": "if (msg.payload.name == \"Robot1_1\") {\n    var keys = []\n    for (let key of Object.keys(msg.payload)) {\n        keys.push(key)\n    }\n    return keys\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 600,
+        "wires": [
+            [
+                "5481f218bf492f39"
+            ]
+        ]
+    },
+    {
+        "id": "5481f218bf492f39",
+        "type": "debug",
+        "z": "6f0e28b75d17d8a5",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 500,
+        "y": 600,
+        "wires": []
+    }
+]
