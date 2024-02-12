@@ -442,7 +442,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "\\Users\\kripe\\.node-red\\node_modules\\node-red-dashboard\\nodes\\ui_base.js"
+                "file": "D:\\Projects\\Node-RED\\InternetOfThings\\node-red\\node_modules\\node-red-dashboard\\nodes\\ui_base.js"
             },
             "ui_button": {
                 "name": "ui_button",
@@ -453,7 +453,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "\\Users\\kripe\\.node-red\\node_modules\\node-red-dashboard\\nodes\\ui_button.js"
+                "file": "D:\\Projects\\Node-RED\\InternetOfThings\\node-red\\node_modules\\node-red-dashboard\\nodes\\ui_button.js"
             },
             "ui_dropdown": {
                 "name": "ui_dropdown",
@@ -464,7 +464,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "\\Users\\kripe\\.node-red\\node_modules\\node-red-dashboard\\nodes\\ui_dropdown.js"
+                "file": "D:\\Projects\\Node-RED\\InternetOfThings\\node-red\\node_modules\\node-red-dashboard\\nodes\\ui_dropdown.js"
             },
             "ui_switch": {
                 "name": "ui_switch",
@@ -475,7 +475,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "\\Users\\kripe\\.node-red\\node_modules\\node-red-dashboard\\nodes\\ui_switch.js"
+                "file": "D:\\Projects\\Node-RED\\InternetOfThings\\node-red\\node_modules\\node-red-dashboard\\nodes\\ui_switch.js"
             },
             "ui_slider": {
                 "name": "ui_slider",
@@ -486,7 +486,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "\\Users\\kripe\\.node-red\\node_modules\\node-red-dashboard\\nodes\\ui_slider.js"
+                "file": "D:\\Projects\\Node-RED\\InternetOfThings\\node-red\\node_modules\\node-red-dashboard\\nodes\\ui_slider.js"
             },
             "ui_numeric": {
                 "name": "ui_numeric",
@@ -497,7 +497,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "\\Users\\kripe\\.node-red\\node_modules\\node-red-dashboard\\nodes\\ui_numeric.js"
+                "file": "D:\\Projects\\Node-RED\\InternetOfThings\\node-red\\node_modules\\node-red-dashboard\\nodes\\ui_numeric.js"
             },
             "ui_text_input": {
                 "name": "ui_text_input",
@@ -508,7 +508,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "\\Users\\kripe\\.node-red\\node_modules\\node-red-dashboard\\nodes\\ui_text_input.js"
+                "file": "D:\\Projects\\Node-RED\\InternetOfThings\\node-red\\node_modules\\node-red-dashboard\\nodes\\ui_text_input.js"
             },
             "ui_date_picker": {
                 "name": "ui_date_picker",
@@ -519,7 +519,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "\\Users\\kripe\\.node-red\\node_modules\\node-red-dashboard\\nodes\\ui_date_picker.js"
+                "file": "D:\\Projects\\Node-RED\\InternetOfThings\\node-red\\node_modules\\node-red-dashboard\\nodes\\ui_date_picker.js"
             },
             "ui_colour_picker": {
                 "name": "ui_colour_picker",
@@ -530,7 +530,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "\\Users\\kripe\\.node-red\\node_modules\\node-red-dashboard\\nodes\\ui_colour_picker.js"
+                "file": "D:\\Projects\\Node-RED\\InternetOfThings\\node-red\\node_modules\\node-red-dashboard\\nodes\\ui_colour_picker.js"
             },
             "ui_form": {
                 "name": "ui_form",
@@ -541,7 +541,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "\\Users\\kripe\\.node-red\\node_modules\\node-red-dashboard\\nodes\\ui_form.js"
+                "file": "D:\\Projects\\Node-RED\\InternetOfThings\\node-red\\node_modules\\node-red-dashboard\\nodes\\ui_form.js"
             },
             "ui_text": {
                 "name": "ui_text",
@@ -552,7 +552,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "\\Users\\kripe\\.node-red\\node_modules\\node-red-dashboard\\nodes\\ui_text.js"
+                "file": "D:\\Projects\\Node-RED\\InternetOfThings\\node-red\\node_modules\\node-red-dashboard\\nodes\\ui_text.js"
             },
             "ui_gauge": {
                 "name": "ui_gauge",
@@ -563,7 +563,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "\\Users\\kripe\\.node-red\\node_modules\\node-red-dashboard\\nodes\\ui_gauge.js"
+                "file": "D:\\Projects\\Node-RED\\InternetOfThings\\node-red\\node_modules\\node-red-dashboard\\nodes\\ui_gauge.js"
             },
             "ui_chart": {
                 "name": "ui_chart",
@@ -574,7 +574,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "\\Users\\kripe\\.node-red\\node_modules\\node-red-dashboard\\nodes\\ui_chart.js"
+                "file": "D:\\Projects\\Node-RED\\InternetOfThings\\node-red\\node_modules\\node-red-dashboard\\nodes\\ui_chart.js"
             },
             "ui_audio": {
                 "name": "ui_audio",
@@ -585,7 +585,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "\\Users\\kripe\\.node-red\\node_modules\\node-red-dashboard\\nodes\\ui_audio.js"
+                "file": "D:\\Projects\\Node-RED\\InternetOfThings\\node-red\\node_modules\\node-red-dashboard\\nodes\\ui_audio.js"
             },
             "ui_toast": {
                 "name": "ui_toast",
@@ -596,7 +596,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "\\Users\\kripe\\.node-red\\node_modules\\node-red-dashboard\\nodes\\ui_toast.js"
+                "file": "D:\\Projects\\Node-RED\\InternetOfThings\\node-red\\node_modules\\node-red-dashboard\\nodes\\ui_toast.js"
             },
             "ui_ui_control": {
                 "name": "ui_ui_control",
@@ -607,7 +607,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "\\Users\\kripe\\.node-red\\node_modules\\node-red-dashboard\\nodes\\ui_ui_control.js"
+                "file": "D:\\Projects\\Node-RED\\InternetOfThings\\node-red\\node_modules\\node-red-dashboard\\nodes\\ui_ui_control.js"
             },
             "ui_template": {
                 "name": "ui_template",
@@ -618,7 +618,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "\\Users\\kripe\\.node-red\\node_modules\\node-red-dashboard\\nodes\\ui_template.js"
+                "file": "D:\\Projects\\Node-RED\\InternetOfThings\\node-red\\node_modules\\node-red-dashboard\\nodes\\ui_template.js"
             },
             "ui_link": {
                 "name": "ui_link",
@@ -629,7 +629,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "\\Users\\kripe\\.node-red\\node_modules\\node-red-dashboard\\nodes\\ui_link.js"
+                "file": "D:\\Projects\\Node-RED\\InternetOfThings\\node-red\\node_modules\\node-red-dashboard\\nodes\\ui_link.js"
             },
             "ui_tab": {
                 "name": "ui_tab",
@@ -640,7 +640,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "\\Users\\kripe\\.node-red\\node_modules\\node-red-dashboard\\nodes\\ui_tab.js"
+                "file": "D:\\Projects\\Node-RED\\InternetOfThings\\node-red\\node_modules\\node-red-dashboard\\nodes\\ui_tab.js"
             },
             "ui_group": {
                 "name": "ui_group",
@@ -651,7 +651,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "\\Users\\kripe\\.node-red\\node_modules\\node-red-dashboard\\nodes\\ui_group.js"
+                "file": "D:\\Projects\\Node-RED\\InternetOfThings\\node-red\\node_modules\\node-red-dashboard\\nodes\\ui_group.js"
             },
             "ui_spacer": {
                 "name": "ui_spacer",
@@ -662,7 +662,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-dashboard",
-                "file": "\\Users\\kripe\\.node-red\\node_modules\\node-red-dashboard\\nodes\\ui_spacer.js"
+                "file": "D:\\Projects\\Node-RED\\InternetOfThings\\node-red\\node_modules\\node-red-dashboard\\nodes\\ui_spacer.js"
             }
         }
     },
@@ -681,7 +681,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-contrib-iot-controlcenter",
-                "file": "\\Users\\kripe\\.node-red\\node_modules\\node-red-contrib-iot-controlcenter\\IOT_connectNode.js"
+                "file": "D:\\Projects\\Node-RED\\InternetOfThings\\node-red\\node_modules\\node-red-contrib-iot-controlcenter\\IOT_connectNode.js"
             },
             "Get": {
                 "name": "Get",
@@ -692,7 +692,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-contrib-iot-controlcenter",
-                "file": "\\Users\\kripe\\.node-red\\node_modules\\node-red-contrib-iot-controlcenter\\IOT_getNode.js"
+                "file": "D:\\Projects\\Node-RED\\InternetOfThings\\node-red\\node_modules\\node-red-contrib-iot-controlcenter\\IOT_getNode.js"
             },
             "Function": {
                 "name": "Function",
@@ -703,7 +703,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-contrib-iot-controlcenter",
-                "file": "\\Users\\kripe\\.node-red\\node_modules\\node-red-contrib-iot-controlcenter\\IOT_function.js"
+                "file": "D:\\Projects\\Node-RED\\InternetOfThings\\node-red\\node_modules\\node-red-contrib-iot-controlcenter\\IOT_function.js"
             },
             "Request": {
                 "name": "Request",
@@ -714,7 +714,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-contrib-iot-controlcenter",
-                "file": "\\Users\\kripe\\.node-red\\node_modules\\node-red-contrib-iot-controlcenter\\IOT_dataBase_add.js"
+                "file": "D:\\Projects\\Node-RED\\InternetOfThings\\node-red\\node_modules\\node-red-contrib-iot-controlcenter\\IOT_dataBase_add.js"
             }
         }
     },
@@ -733,7 +733,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-contrib-ui-digital-display",
-                "file": "\\Users\\kripe\\.node-red\\node_modules\\node-red-contrib-ui-digital-display\\display.js"
+                "file": "D:\\Projects\\Node-RED\\InternetOfThings\\node-red\\node_modules\\node-red-contrib-ui-digital-display\\display.js"
             }
         }
     },
@@ -752,7 +752,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-contrib-ui-led",
-                "file": "\\Users\\kripe\\.node-red\\node_modules\\node-red-contrib-ui-led\\dist\\nodes\\ui_led\\ui_led.js"
+                "file": "D:\\Projects\\Node-RED\\InternetOfThings\\node-red\\node_modules\\node-red-contrib-ui-led\\dist\\nodes\\ui_led\\ui_led.js"
             }
         }
     },
@@ -772,7 +772,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-node-mysql",
-                "file": "\\Users\\kripe\\.node-red\\node_modules\\node-red-node-mysql\\68-mysql.js"
+                "file": "D:\\Projects\\Node-RED\\InternetOfThings\\node-red\\node_modules\\node-red-node-mysql\\68-mysql.js"
             }
         }
     },
@@ -791,7 +791,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-node-ping",
-                "file": "\\Users\\kripe\\.node-red\\node_modules\\node-red-node-ping\\88-ping.js"
+                "file": "D:\\Projects\\Node-RED\\InternetOfThings\\node-red\\node_modules\\node-red-node-ping\\88-ping.js"
             }
         }
     },
@@ -810,7 +810,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-node-random",
-                "file": "\\Users\\kripe\\.node-red\\node_modules\\node-red-node-random\\random.js"
+                "file": "D:\\Projects\\Node-RED\\InternetOfThings\\node-red\\node_modules\\node-red-node-random\\random.js"
             }
         }
     },
@@ -829,7 +829,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-contrib-python-function",
-                "file": "\\Users\\kripe\\.node-red\\node_modules\\node-red-contrib-python-function\\lib\\python-function.js"
+                "file": "D:\\Projects\\Node-RED\\InternetOfThings\\node-red\\node_modules\\node-red-contrib-python-function\\lib\\python-function.js"
             }
         }
     },
@@ -848,7 +848,7 @@
                 "local": true,
                 "user": false,
                 "module": "node-red-contrib-java-function",
-                "file": "\\Users\\kripe\\.node-red\\node_modules\\node-red-contrib-java-function\\javafunction.js"
+                "file": "D:\\Projects\\Node-RED\\InternetOfThings\\node-red\\node_modules\\node-red-contrib-java-function\\javafunction.js"
             }
         }
     }

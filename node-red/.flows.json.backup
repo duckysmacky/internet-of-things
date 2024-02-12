@@ -280,7 +280,7 @@
         "type": "function",
         "z": "6f0e28b75d17d8a5",
         "name": "function 2",
-        "func": "if (msg.payload.name == \"Robot1_1\") {\n    var keys = []\n    for (let key of Object.keys(msg.payload)) {\n        keys.push(key)\n    }\n    return keys\n}",
+        "func": "if (msg.payload.name == \"Robot1_1\") {\n    var keys = []\n    for (let key of Object.keys(msg.payload)) {\n        keys.push(msg.payload.key)\n    }\n    return keys\n}",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
