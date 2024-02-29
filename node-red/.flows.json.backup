@@ -8,10 +8,18 @@
         "env": []
     },
     {
+        "id": "5bd0da370cf69c96",
+        "type": "tab",
+        "label": "Flow 3",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "0db56204ee20180e",
         "type": "ui_base",
         "theme": {
-            "name": "theme-light",
+            "name": "theme-dark",
             "lightTheme": {
                 "default": "#0094CE",
                 "baseColor": "#0094CE",
@@ -23,7 +31,8 @@
                 "default": "#097479",
                 "baseColor": "#097479",
                 "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": false
+                "edited": true,
+                "reset": false
             },
             "customTheme": {
                 "name": "Untitled Theme 1",
@@ -33,44 +42,44 @@
             },
             "themeState": {
                 "base-color": {
-                    "default": "#0094CE",
-                    "value": "#0094CE",
+                    "default": "#097479",
+                    "value": "#097479",
                     "edited": false
                 },
                 "page-titlebar-backgroundColor": {
-                    "value": "#0094CE",
+                    "value": "#097479",
                     "edited": false
                 },
                 "page-backgroundColor": {
-                    "value": "#fafafa",
-                    "edited": false
-                },
-                "page-sidebar-backgroundColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "group-textColor": {
-                    "value": "#1bbfff",
-                    "edited": false
-                },
-                "group-borderColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "group-backgroundColor": {
-                    "value": "#ffffff",
-                    "edited": false
-                },
-                "widget-textColor": {
                     "value": "#111111",
                     "edited": false
                 },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
                 "widget-backgroundColor": {
-                    "value": "#0094ce",
+                    "value": "#097479",
                     "edited": false
                 },
                 "widget-borderColor": {
-                    "value": "#ffffff",
+                    "value": "#333333",
                     "edited": false
                 },
                 "base-font": {
@@ -309,6 +318,136 @@
         "statusType": "auto",
         "x": 500,
         "y": 600,
+        "wires": []
+    },
+    {
+        "id": "b482904f5486caf2",
+        "type": "inject",
+        "z": "5bd0da370cf69c96",
+        "name": "Button",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 330,
+        "y": 140,
+        "wires": [
+            [
+                "4227b518105f715a"
+            ]
+        ]
+    },
+    {
+        "id": "4227b518105f715a",
+        "type": "IOT Function",
+        "z": "5bd0da370cf69c96",
+        "name": "Robot4_1",
+        "robot_name": "Robot4_1",
+        "N": "0",
+        "X": "180",
+        "Y": "180",
+        "T": "0",
+        "G": "210",
+        "V": "0",
+        "D0": "0",
+        "L1": "0",
+        "L2": "0",
+        "L3": "0",
+        "L4": "0",
+        "P": "0",
+        "Text": "",
+        "x": 560,
+        "y": 140,
+        "wires": [
+            [
+                "d9395a9e4dc0b114"
+            ]
+        ]
+    },
+    {
+        "id": "d9395a9e4dc0b114",
+        "type": "IOT Send",
+        "z": "5bd0da370cf69c96",
+        "name": "",
+        "x": 800,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "393fae4653f27728",
+        "type": "inject",
+        "z": "5bd0da370cf69c96",
+        "name": "Button",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 330,
+        "y": 240,
+        "wires": [
+            [
+                "945e0b6dab58057f"
+            ]
+        ]
+    },
+    {
+        "id": "945e0b6dab58057f",
+        "type": "IOT Function",
+        "z": "5bd0da370cf69c96",
+        "name": "Robot4_2",
+        "robot_name": "Robot4_2",
+        "N": "0",
+        "X": "180",
+        "Y": "180",
+        "T": "0",
+        "G": "210",
+        "V": "0",
+        "D0": "0",
+        "L1": "0",
+        "L2": "0",
+        "L3": "0",
+        "L4": "0",
+        "P": "0",
+        "Text": "",
+        "x": 560,
+        "y": 240,
+        "wires": [
+            [
+                "6ab7f731c7284961"
+            ]
+        ]
+    },
+    {
+        "id": "6ab7f731c7284961",
+        "type": "IOT Send",
+        "z": "5bd0da370cf69c96",
+        "name": "",
+        "x": 800,
+        "y": 240,
         "wires": []
     }
 ]
