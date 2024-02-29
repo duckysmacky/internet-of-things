@@ -34,7 +34,7 @@
     {
         "id": "107ff8c238bcc061",
         "type": "tab",
-        "label": "Data Request",
+        "label": "Monitoring",
         "disabled": false,
         "info": "",
         "env": []
@@ -263,7 +263,7 @@
     {
         "id": "99187ee94ebba41c",
         "type": "ui_tab",
-        "name": "Control",
+        "name": "Monitoring",
         "icon": "dashboard",
         "order": 1,
         "disabled": false,
@@ -285,6 +285,37 @@
         "type": "ui_group",
         "name": "Robot 2",
         "tab": "99187ee94ebba41c",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0099cc047f067bd5",
+        "type": "ui_tab",
+        "name": "Control",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "26242c89e093eda8",
+        "type": "ui_group",
+        "name": "Robot 1",
+        "tab": "0099cc047f067bd5",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4ad0ca5f63196c38",
+        "type": "ui_group",
+        "name": "Robot 2",
+        "tab": "0099cc047f067bd5",
         "order": 2,
         "disp": true,
         "width": "6",
@@ -426,7 +457,7 @@
         "type": "ui_button",
         "z": "5bd0da370cf69c96",
         "name": "Confirm Button",
-        "group": "b852b2f0ea5468f5",
+        "group": "26242c89e093eda8",
         "order": 7,
         "width": 0,
         "height": 0,
@@ -454,7 +485,7 @@
         "type": "ui_button",
         "z": "5bd0da370cf69c96",
         "name": "Confirm Button",
-        "group": "bb676c794922defe",
+        "group": "4ad0ca5f63196c38",
         "order": 7,
         "width": 0,
         "height": 0,
@@ -471,6 +502,33 @@
         "topicType": "msg",
         "x": 340,
         "y": 420,
+        "wires": [
+            [
+                "945e0b6dab58057f"
+            ]
+        ]
+    },
+    {
+        "id": "d4df45f3d36462f7",
+        "type": "ui_slider",
+        "z": "5bd0da370cf69c96",
+        "name": "",
+        "label": "posX",
+        "tooltip": "",
+        "group": "bb676c794922defe",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "payload.X",
+        "topicType": "msg",
+        "min": "100",
+        "max": "200",
+        "step": "10",
+        "className": "",
+        "x": 330,
+        "y": 300,
         "wires": [
             [
                 "945e0b6dab58057f"
