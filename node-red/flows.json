@@ -243,7 +243,7 @@
         "tab": "99187ee94ebba41c",
         "order": 2,
         "disp": true,
-        "width": 6,
+        "width": 13,
         "collapse": false,
         "className": ""
     },
@@ -339,6 +339,57 @@
         "disp": true,
         "width": "6",
         "collapse": false
+    },
+    {
+        "id": "d4b80f060233293a",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "83b8a8508a9b66ba",
+        "type": "ui_group",
+        "name": "Robot 2 Motors",
+        "tab": "99187ee94ebba41c",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "62ffe78fb8e5dc34",
+        "type": "ui_group",
+        "name": "Robot 2 Load",
+        "tab": "99187ee94ebba41c",
+        "order": 4,
+        "disp": true,
+        "width": 13,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "da262c594c2acfa3",
+        "type": "ui_spacer",
+        "z": "107ff8c238bcc061",
+        "name": "spacer",
+        "group": "b852b2f0ea5468f5",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "27bcb8e587e460eb",
+        "type": "ui_spacer",
+        "z": "107ff8c238bcc061",
+        "name": "spacer",
+        "group": "62ffe78fb8e5dc34",
+        "order": 3,
+        "width": 1,
+        "height": 1
     },
     {
         "id": "b482904f5486caf2",
@@ -559,68 +610,33 @@
         "z": "107ff8c238bcc061",
         "name": "L1",
         "group": "b852b2f0ea5468f5",
-        "order": 2,
-        "width": 0,
-        "height": 0,
+        "order": 4,
+        "width": 6,
+        "height": 1,
         "digits": "4",
         "decimals": "0",
-        "x": 570,
+        "x": 830,
         "y": 420,
         "wires": []
-    },
-    {
-        "id": "e59a8063e0c1ab66",
-        "type": "function",
-        "z": "107ff8c238bcc061",
-        "name": "Get Load Data",
-        "func": "if (msg.payload.name == \"Robot4_1\") {\n    var messages = []\n    messages.push({ payload: msg.payload.l1 });\n    messages.push({ payload: msg.payload.l2 });\n    messages.push({ payload: msg.payload.l3 });\n    messages.push({ payload: msg.payload.l4 });\n    messages.push({ payload: msg.payload.l5 });\n    messages.push({ payload: msg.payload.l6 });\n    for (let i = 0; i < messages.length; i++) {\n        messages[i].payload = messages[i].payload / 1024 * 100\n    }\n    return messages;\n}",
-        "outputs": 6,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 320,
-        "y": 520,
-        "wires": [
-            [
-                "a4c0aad89f4a9581"
-            ],
-            [
-                "b61bc52e702375ff"
-            ],
-            [
-                "f4fb88b6d33c7a63"
-            ],
-            [
-                "ac9716c0932ebdca"
-            ],
-            [
-                "000a3d1e698d7562"
-            ],
-            [
-                "f9c41f39c0bdb140"
-            ]
-        ]
     },
     {
         "id": "64be4c5f9d76c8be",
         "type": "ui_text",
         "z": "107ff8c238bcc061",
         "group": "b852b2f0ea5468f5",
-        "order": 1,
-        "width": 0,
-        "height": 0,
+        "order": 2,
+        "width": 6,
+        "height": 1,
         "name": "",
         "label": "Load",
         "format": "{{msg.payload}}",
-        "layout": "row-spread",
+        "layout": "col-center",
         "className": "",
         "style": false,
         "font": "",
         "fontSize": 16,
         "color": "#000000",
-        "x": 570,
+        "x": 830,
         "y": 380,
         "wires": []
     },
@@ -633,8 +649,8 @@
         "y": 360,
         "wires": [
             [
-                "e59a8063e0c1ab66",
-                "7a06e9f83029b55f"
+                "7a06e9f83029b55f",
+                "936e17f602469ddb"
             ]
         ]
     },
@@ -774,7 +790,7 @@
         "name": "",
         "label": "Motors",
         "format": "{{msg.payload}}",
-        "layout": "row-spread",
+        "layout": "col-center",
         "className": "",
         "style": false,
         "font": "",
@@ -790,13 +806,13 @@
         "z": "107ff8c238bcc061",
         "name": "L2",
         "group": "b852b2f0ea5468f5",
-        "order": 3,
-        "width": 0,
-        "height": 0,
+        "order": 7,
+        "width": 6,
+        "height": 1,
         "digits": "4",
         "decimals": "0",
-        "x": 570,
-        "y": 460,
+        "x": 830,
+        "y": 500,
         "wires": []
     },
     {
@@ -805,13 +821,13 @@
         "z": "107ff8c238bcc061",
         "name": "L3",
         "group": "b852b2f0ea5468f5",
-        "order": 4,
-        "width": 0,
-        "height": 0,
+        "order": 10,
+        "width": 6,
+        "height": 1,
         "digits": "4",
         "decimals": "0",
-        "x": 570,
-        "y": 500,
+        "x": 830,
+        "y": 580,
         "wires": []
     },
     {
@@ -820,13 +836,13 @@
         "z": "107ff8c238bcc061",
         "name": "L4",
         "group": "b852b2f0ea5468f5",
-        "order": 5,
-        "width": 0,
-        "height": 0,
+        "order": 13,
+        "width": 6,
+        "height": 1,
         "digits": "4",
         "decimals": "0",
-        "x": 570,
-        "y": 540,
+        "x": 830,
+        "y": 660,
         "wires": []
     },
     {
@@ -835,13 +851,13 @@
         "z": "107ff8c238bcc061",
         "name": "L5",
         "group": "b852b2f0ea5468f5",
-        "order": 6,
-        "width": 0,
-        "height": 0,
+        "order": 16,
+        "width": 6,
+        "height": 1,
         "digits": "4",
         "decimals": "0",
-        "x": 570,
-        "y": 580,
+        "x": 830,
+        "y": 740,
         "wires": []
     },
     {
@@ -850,13 +866,1296 @@
         "z": "107ff8c238bcc061",
         "name": "L6",
         "group": "b852b2f0ea5468f5",
+        "order": 19,
+        "width": 6,
+        "height": 1,
+        "digits": "4",
+        "decimals": "0",
+        "x": 830,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "43103c95fa077e97",
+        "type": "IOT Get",
+        "z": "107ff8c238bcc061",
+        "name": "Robot 2",
+        "x": 1090,
+        "y": 360,
+        "wires": [
+            [
+                "b006b367e160245c",
+                "7764afb1d3a45bc0"
+            ]
+        ]
+    },
+    {
+        "id": "63016c9de094783b",
+        "type": "ui_digital_display",
+        "z": "107ff8c238bcc061",
+        "name": "M1_2",
+        "group": "83b8a8508a9b66ba",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "digits": "4",
+        "decimals": "0",
+        "x": 1550,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "b006b367e160245c",
+        "type": "function",
+        "z": "107ff8c238bcc061",
+        "name": "Get Motor Data",
+        "func": "if (msg.payload.name == \"Robot4_2\") {\n    var messages = []\n    messages.push({ payload: msg.payload.m1 });\n    messages.push({ payload: msg.payload.m2 });\n    messages.push({ payload: msg.payload.m3 });\n    messages.push({ payload: msg.payload.m4 });\n    messages.push({ payload: msg.payload.m5 });\n    messages.push({ payload: msg.payload.m6 });\n    return messages;\n}",
+        "outputs": 6,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1300,
+        "y": 200,
+        "wires": [
+            [
+                "63016c9de094783b"
+            ],
+            [
+                "bb3f3b10889061d8"
+            ],
+            [
+                "e211e34f773991d6"
+            ],
+            [
+                "7296e6419c33b364"
+            ],
+            [
+                "3173d8bb44bd7bf4"
+            ],
+            [
+                "a4f21584c4b067c0"
+            ]
+        ]
+    },
+    {
+        "id": "bb3f3b10889061d8",
+        "type": "ui_digital_display",
+        "z": "107ff8c238bcc061",
+        "name": "M2_2",
+        "group": "83b8a8508a9b66ba",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "digits": "4",
+        "decimals": "0",
+        "x": 1550,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "e211e34f773991d6",
+        "type": "ui_digital_display",
+        "z": "107ff8c238bcc061",
+        "name": "M3_2",
+        "group": "83b8a8508a9b66ba",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "digits": "4",
+        "decimals": "0",
+        "x": 1550,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "7296e6419c33b364",
+        "type": "ui_digital_display",
+        "z": "107ff8c238bcc061",
+        "name": "M4_2",
+        "group": "83b8a8508a9b66ba",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "digits": "4",
+        "decimals": "0",
+        "x": 1550,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "3173d8bb44bd7bf4",
+        "type": "ui_digital_display",
+        "z": "107ff8c238bcc061",
+        "name": "M5_2",
+        "group": "83b8a8508a9b66ba",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "digits": "4",
+        "decimals": "0",
+        "x": 1550,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "a4f21584c4b067c0",
+        "type": "ui_digital_display",
+        "z": "107ff8c238bcc061",
+        "name": "M6_2",
+        "group": "83b8a8508a9b66ba",
         "order": 7,
         "width": 0,
         "height": 0,
         "digits": "4",
         "decimals": "0",
+        "x": 1550,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "7320ae8a06bcf03a",
+        "type": "ui_text",
+        "z": "107ff8c238bcc061",
+        "group": "83b8a8508a9b66ba",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Motors",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1550,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "dc93b442fd95de81",
+        "type": "ui_digital_display",
+        "z": "107ff8c238bcc061",
+        "name": "RL1",
+        "group": "b852b2f0ea5468f5",
+        "order": 5,
+        "width": 6,
+        "height": 1,
+        "digits": "4",
+        "decimals": "0",
         "x": 570,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "936e17f602469ddb",
+        "type": "function",
+        "z": "107ff8c238bcc061",
+        "name": "Get Raw Load Data",
+        "func": "if (msg.payload.name == \"Robot4_1\") {\n    var messages = []\n    messages.push({ payload: msg.payload.l1 });\n    messages.push({ payload: msg.payload.l2 });\n    messages.push({ payload: msg.payload.l3 });\n    messages.push({ payload: msg.payload.l4 });\n    messages.push({ payload: msg.payload.l5 });\n    messages.push({ payload: msg.payload.l6 });\n    return messages;\n}",
+        "outputs": 6,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 540,
+        "wires": [
+            [
+                "dc93b442fd95de81",
+                "3105a4110ba85263"
+            ],
+            [
+                "db22b82ad3654c3b",
+                "79338e6d09977c65"
+            ],
+            [
+                "bdaebdbe00093e49",
+                "3a6699ca9753393e"
+            ],
+            [
+                "af63692a9afd4572",
+                "e19c7987aeb08681"
+            ],
+            [
+                "cac607720d855077",
+                "c156b0c815065f3e"
+            ],
+            [
+                "661edefbc1333476",
+                "4a38dc1f490a7254"
+            ]
+        ]
+    },
+    {
+        "id": "a58ea7f3adaf73e1",
+        "type": "ui_text",
+        "z": "107ff8c238bcc061",
+        "group": "b852b2f0ea5468f5",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "Raw Load",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 580,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "db22b82ad3654c3b",
+        "type": "ui_digital_display",
+        "z": "107ff8c238bcc061",
+        "name": "RL2",
+        "group": "b852b2f0ea5468f5",
+        "order": 8,
+        "width": 6,
+        "height": 1,
+        "digits": "4",
+        "decimals": "0",
+        "x": 570,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "bdaebdbe00093e49",
+        "type": "ui_digital_display",
+        "z": "107ff8c238bcc061",
+        "name": "RL3",
+        "group": "b852b2f0ea5468f5",
+        "order": 11,
+        "width": 6,
+        "height": 1,
+        "digits": "4",
+        "decimals": "0",
+        "x": 570,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "af63692a9afd4572",
+        "type": "ui_digital_display",
+        "z": "107ff8c238bcc061",
+        "name": "RL4",
+        "group": "b852b2f0ea5468f5",
+        "order": 14,
+        "width": 6,
+        "height": 1,
+        "digits": "4",
+        "decimals": "0",
+        "x": 570,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "cac607720d855077",
+        "type": "ui_digital_display",
+        "z": "107ff8c238bcc061",
+        "name": "RL5",
+        "group": "b852b2f0ea5468f5",
+        "order": 17,
+        "width": 6,
+        "height": 1,
+        "digits": "4",
+        "decimals": "0",
+        "x": 570,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "661edefbc1333476",
+        "type": "ui_digital_display",
+        "z": "107ff8c238bcc061",
+        "name": "RL6",
+        "group": "b852b2f0ea5468f5",
+        "order": 20,
+        "width": 6,
+        "height": 1,
+        "digits": "4",
+        "decimals": "0",
+        "x": 570,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "3105a4110ba85263",
+        "type": "function",
+        "z": "107ff8c238bcc061",
+        "name": "Convert and Check",
+        "func": "var value = msg.payload;\nvar status = { payload: 0 };\nvar number = { payload: 0 };\n\nif (value <= 1024) {\n    number.payload = value / 1024 * 100;\n} else {\n    number.payload = (value - 1024) / 1024 * 100;\n}\n\nif (value > 0 && value < 1024) {\n    status.payload = 2;\n} else if (value >= 3072 && value < 4096) {\n    status.payload = 2;\n} else if (value >= 1024 && value < 3072) {\n    status.payload = 1;\n} else if (value <= 0 && value >= 4096) {\n    status.payload = 0;\n} else{\n    status.payload = 0;\n}\n\nreturn [number, status];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 460,
+        "wires": [
+            [
+                "a4c0aad89f4a9581"
+            ],
+            [
+                "c807162896571e01"
+            ]
+        ]
+    },
+    {
+        "id": "c807162896571e01",
+        "type": "ui_led",
+        "z": "107ff8c238bcc061",
+        "order": 6,
+        "group": "b852b2f0ea5468f5",
+        "width": 1,
+        "height": 1,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "0",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffff00",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#008000",
+                "value": "2",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "LED1",
+        "x": 830,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "79338e6d09977c65",
+        "type": "function",
+        "z": "107ff8c238bcc061",
+        "name": "Convert and Check",
+        "func": "var value = msg.payload;\nvar status = { payload: 0 };\nvar number = { payload: 0 };\n\nif (value <= 1024) {\n    number.payload = value / 1024 * 100;\n} else {\n    number.payload = (value - 1024) / 1024 * 100;\n}\n\nif (value > 0 && value < 1024) {\n    status.payload = 2;\n} else if (value >= 3072 && value < 4096) {\n    status.payload = 2;\n} else if (value >= 1024 && value < 3072) {\n    status.payload = 1;\n} else if (value <= 0 && value >= 4096) {\n    status.payload = 0;\n} else {\n    status.payload = 0;\n}\n\nreturn [number, status];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 540,
+        "wires": [
+            [
+                "b61bc52e702375ff"
+            ],
+            [
+                "434014c1a3d4b64b"
+            ]
+        ]
+    },
+    {
+        "id": "434014c1a3d4b64b",
+        "type": "ui_led",
+        "z": "107ff8c238bcc061",
+        "order": 9,
+        "group": "b852b2f0ea5468f5",
+        "width": 1,
+        "height": 1,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "0",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffff00",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#008000",
+                "value": "2",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "LED2",
+        "x": 830,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "3a6699ca9753393e",
+        "type": "function",
+        "z": "107ff8c238bcc061",
+        "name": "Convert and Check",
+        "func": "var value = msg.payload;\nvar status = { payload: 0 };\nvar number = { payload: 0 };\n\nif (value <= 1024) {\n    number.payload = value / 1024 * 100;\n} else {\n    number.payload = (value - 1024) / 1024 * 100;\n}\n\nif (value > 0 && value < 1024) {\n    status.payload = 2;\n} else if (value >= 3072 && value < 4096) {\n    status.payload = 2;\n} else if (value >= 1024 && value < 3072) {\n    status.payload = 1;\n} else if (value <= 0 && value >= 4096) {\n    status.payload = 0;\n} else {\n    status.payload = 0;\n}\n\nreturn [number, status];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
         "y": 620,
+        "wires": [
+            [
+                "f4fb88b6d33c7a63"
+            ],
+            [
+                "4e6901db67f003e0"
+            ]
+        ]
+    },
+    {
+        "id": "4e6901db67f003e0",
+        "type": "ui_led",
+        "z": "107ff8c238bcc061",
+        "order": 12,
+        "group": "b852b2f0ea5468f5",
+        "width": 1,
+        "height": 1,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "0",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffff00",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#008000",
+                "value": "2",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "LED3",
+        "x": 830,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "e19c7987aeb08681",
+        "type": "function",
+        "z": "107ff8c238bcc061",
+        "name": "Convert and Check",
+        "func": "var value = msg.payload;\nvar status = { payload: 0 };\nvar number = { payload: 0 };\n\nif (value <= 1024) {\n    number.payload = value / 1024 * 100;\n} else {\n    number.payload = (value - 1024) / 1024 * 100;\n}\n\nif (value > 0 && value < 1024) {\n    status.payload = 2;\n} else if (value >= 3072 && value < 4096) {\n    status.payload = 2;\n} else if (value >= 1024 && value < 3072) {\n    status.payload = 1;\n} else if (value <= 0 && value >= 4096) {\n    status.payload = 0;\n} else{\n    status.payload = 0;\n}\n\nreturn [number, status];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 700,
+        "wires": [
+            [
+                "ac9716c0932ebdca"
+            ],
+            [
+                "194eea84b258b987"
+            ]
+        ]
+    },
+    {
+        "id": "194eea84b258b987",
+        "type": "ui_led",
+        "z": "107ff8c238bcc061",
+        "order": 15,
+        "group": "b852b2f0ea5468f5",
+        "width": 1,
+        "height": 1,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "0",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffff00",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#008000",
+                "value": "2",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "LED4",
+        "x": 830,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "c156b0c815065f3e",
+        "type": "function",
+        "z": "107ff8c238bcc061",
+        "name": "Convert and Check",
+        "func": "var value = msg.payload;\nvar status = { payload: 0 };\nvar number = { payload: 0 };\n\nif (value <= 1024) {\n    number.payload = value / 1024 * 100;\n} else {\n    number.payload = (value - 1024) / 1024 * 100;\n}\n\nif (value > 0 && value < 1024) {\n    status.payload = 2;\n} else if (value >= 3072 && value < 4096) {\n    status.payload = 2;\n} else if (value >= 1024 && value < 3072) {\n    status.payload = 1;\n} else if (value <= 0 && value >= 4096) {\n    status.payload = 0;\n} else {\n    status.payload = 0;\n}\n\nreturn [number, status];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 780,
+        "wires": [
+            [
+                "000a3d1e698d7562"
+            ],
+            [
+                "7dc41355c17d8989"
+            ]
+        ]
+    },
+    {
+        "id": "7dc41355c17d8989",
+        "type": "ui_led",
+        "z": "107ff8c238bcc061",
+        "order": 18,
+        "group": "b852b2f0ea5468f5",
+        "width": 1,
+        "height": 1,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "0",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffff00",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#008000",
+                "value": "2",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "LED5",
+        "x": 830,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "4a38dc1f490a7254",
+        "type": "function",
+        "z": "107ff8c238bcc061",
+        "name": "Convert and Check",
+        "func": "var value = msg.payload;\nvar status = { payload: 0 };\nvar number = { payload: 0 };\n\nif (value <= 1024) {\n    number.payload = value / 1024 * 100;\n} else {\n    number.payload = (value - 1024) / 1024 * 100;\n}\n\nif (value > 0 && value < 1024) {\n    status.payload = 2;\n} else if (value >= 3072 && value < 4096) {\n    status.payload = 2;\n} else if (value >= 1024 && value < 3072) {\n    status.payload = 1;\n} else if (value <= 0 && value >= 4096) {\n    status.payload = 0;\n} else{\n    status.payload = 0;\n}\n\nreturn [number, status];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 860,
+        "wires": [
+            [
+                "f9c41f39c0bdb140"
+            ],
+            [
+                "ce4fa86d4c0127cc"
+            ]
+        ]
+    },
+    {
+        "id": "ce4fa86d4c0127cc",
+        "type": "ui_led",
+        "z": "107ff8c238bcc061",
+        "order": 21,
+        "group": "b852b2f0ea5468f5",
+        "width": 1,
+        "height": 1,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "0",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffff00",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#008000",
+                "value": "2",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "LED6",
+        "x": 830,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "f301164f9eeb8d8b",
+        "type": "ui_digital_display",
+        "z": "107ff8c238bcc061",
+        "name": "L1_2",
+        "group": "62ffe78fb8e5dc34",
+        "order": 4,
+        "width": 6,
+        "height": 1,
+        "digits": "4",
+        "decimals": "0",
+        "x": 1810,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "dae4776d8d9b6a3a",
+        "type": "ui_text",
+        "z": "107ff8c238bcc061",
+        "group": "62ffe78fb8e5dc34",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "Load",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1810,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "19cd01a08d304aa1",
+        "type": "ui_digital_display",
+        "z": "107ff8c238bcc061",
+        "name": "L2_2",
+        "group": "62ffe78fb8e5dc34",
+        "order": 7,
+        "width": 6,
+        "height": 1,
+        "digits": "4",
+        "decimals": "0",
+        "x": 1810,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "bd357653c00b219a",
+        "type": "ui_digital_display",
+        "z": "107ff8c238bcc061",
+        "name": "L3_2",
+        "group": "62ffe78fb8e5dc34",
+        "order": 10,
+        "width": 6,
+        "height": 1,
+        "digits": "4",
+        "decimals": "0",
+        "x": 1810,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "baf48708849875f8",
+        "type": "ui_digital_display",
+        "z": "107ff8c238bcc061",
+        "name": "L4_2",
+        "group": "62ffe78fb8e5dc34",
+        "order": 13,
+        "width": 6,
+        "height": 1,
+        "digits": "4",
+        "decimals": "0",
+        "x": 1810,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "b9051e15a9de4a3c",
+        "type": "ui_digital_display",
+        "z": "107ff8c238bcc061",
+        "name": "L5_2",
+        "group": "62ffe78fb8e5dc34",
+        "order": 16,
+        "width": 6,
+        "height": 1,
+        "digits": "4",
+        "decimals": "0",
+        "x": 1810,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "a3c010fe10f4f0bf",
+        "type": "ui_digital_display",
+        "z": "107ff8c238bcc061",
+        "name": "L6_2",
+        "group": "62ffe78fb8e5dc34",
+        "order": 19,
+        "width": 6,
+        "height": 1,
+        "digits": "4",
+        "decimals": "0",
+        "x": 1810,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "a4107921ab071e5d",
+        "type": "ui_digital_display",
+        "z": "107ff8c238bcc061",
+        "name": "RL1_2",
+        "group": "62ffe78fb8e5dc34",
+        "order": 5,
+        "width": 6,
+        "height": 1,
+        "digits": "4",
+        "decimals": "0",
+        "x": 1550,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "7764afb1d3a45bc0",
+        "type": "function",
+        "z": "107ff8c238bcc061",
+        "name": "Get Raw Load Data",
+        "func": "if (msg.payload.name == \"Robot4_2\") {\n    var messages = []\n    messages.push({ payload: msg.payload.l1 });\n    messages.push({ payload: msg.payload.l2 });\n    messages.push({ payload: msg.payload.l3 });\n    messages.push({ payload: msg.payload.l4 });\n    messages.push({ payload: msg.payload.l5 });\n    messages.push({ payload: msg.payload.l6 });\n    return messages;\n}",
+        "outputs": 6,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1310,
+        "y": 540,
+        "wires": [
+            [
+                "a4107921ab071e5d",
+                "81dcb7777ea0e66b"
+            ],
+            [
+                "7af3d641212769d4",
+                "c6d32f11743dbfb1"
+            ],
+            [
+                "5466bea7c5d50668",
+                "43c24eb91162e1da"
+            ],
+            [
+                "69f696ebbba33cc5",
+                "fc5604ceab2ed62c"
+            ],
+            [
+                "b1ed554461c6fc3f",
+                "6e2e46a876faea3d"
+            ],
+            [
+                "f9ee71c5ed1be33c",
+                "65b0f6ffb4b2bd5b"
+            ]
+        ]
+    },
+    {
+        "id": "d8c1dd07dde08b24",
+        "type": "ui_text",
+        "z": "107ff8c238bcc061",
+        "group": "62ffe78fb8e5dc34",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "name": "",
+        "label": "Raw Load",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 1560,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "7af3d641212769d4",
+        "type": "ui_digital_display",
+        "z": "107ff8c238bcc061",
+        "name": "RL2_2",
+        "group": "62ffe78fb8e5dc34",
+        "order": 8,
+        "width": 6,
+        "height": 1,
+        "digits": "4",
+        "decimals": "0",
+        "x": 1550,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "5466bea7c5d50668",
+        "type": "ui_digital_display",
+        "z": "107ff8c238bcc061",
+        "name": "RL3_2",
+        "group": "62ffe78fb8e5dc34",
+        "order": 11,
+        "width": 6,
+        "height": 1,
+        "digits": "4",
+        "decimals": "0",
+        "x": 1550,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "69f696ebbba33cc5",
+        "type": "ui_digital_display",
+        "z": "107ff8c238bcc061",
+        "name": "RL4_2",
+        "group": "62ffe78fb8e5dc34",
+        "order": 14,
+        "width": 6,
+        "height": 1,
+        "digits": "4",
+        "decimals": "0",
+        "x": 1550,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "b1ed554461c6fc3f",
+        "type": "ui_digital_display",
+        "z": "107ff8c238bcc061",
+        "name": "RL5_2",
+        "group": "62ffe78fb8e5dc34",
+        "order": 17,
+        "width": 6,
+        "height": 1,
+        "digits": "4",
+        "decimals": "0",
+        "x": 1550,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "f9ee71c5ed1be33c",
+        "type": "ui_digital_display",
+        "z": "107ff8c238bcc061",
+        "name": "RL6_2",
+        "group": "62ffe78fb8e5dc34",
+        "order": 20,
+        "width": 6,
+        "height": 1,
+        "digits": "4",
+        "decimals": "0",
+        "x": 1550,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "81dcb7777ea0e66b",
+        "type": "function",
+        "z": "107ff8c238bcc061",
+        "name": "Convert and Check",
+        "func": "var value = msg.payload;\nvar status = { payload: 0 };\nvar number = { payload: 0 };\n\nif (value <= 1024) {\n    number.payload = value / 1024 * 100;\n} else {\n    number.payload = (value - 1024) / 1024 * 100;\n}\n\nif (value > 0 && value < 1024) {\n    status.payload = 2;\n} else if (value >= 3072 && value < 4096) {\n    status.payload = 2;\n} else if (value >= 1024 && value < 3072) {\n    status.payload = 1;\n} else if (value <= 0 && value >= 4096) {\n    status.payload = 0;\n} else{\n    status.payload = 0;\n}\n\nreturn [number, status];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1590,
+        "y": 460,
+        "wires": [
+            [
+                "f301164f9eeb8d8b"
+            ],
+            [
+                "60b205da8e4bc510"
+            ]
+        ]
+    },
+    {
+        "id": "60b205da8e4bc510",
+        "type": "ui_led",
+        "z": "107ff8c238bcc061",
+        "order": 6,
+        "group": "62ffe78fb8e5dc34",
+        "width": 1,
+        "height": 1,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "0",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffff00",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#008000",
+                "value": "2",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "LED1_2",
+        "x": 1820,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "c6d32f11743dbfb1",
+        "type": "function",
+        "z": "107ff8c238bcc061",
+        "name": "Convert and Check",
+        "func": "var value = msg.payload;\nvar status = { payload: 0 };\nvar number = { payload: 0 };\n\nif (value <= 1024) {\n    number.payload = value / 1024 * 100;\n} else {\n    number.payload = (value - 1024) / 1024 * 100;\n}\n\nif (value > 0 && value < 1024) {\n    status.payload = 2;\n} else if (value >= 3072 && value < 4096) {\n    status.payload = 2;\n} else if (value >= 1024 && value < 3072) {\n    status.payload = 1;\n} else if (value <= 0 && value >= 4096) {\n    status.payload = 0;\n} else {\n    status.payload = 0;\n}\n\nreturn [number, status];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1590,
+        "y": 540,
+        "wires": [
+            [
+                "19cd01a08d304aa1"
+            ],
+            [
+                "6b1b3b9244e7db07"
+            ]
+        ]
+    },
+    {
+        "id": "6b1b3b9244e7db07",
+        "type": "ui_led",
+        "z": "107ff8c238bcc061",
+        "order": 9,
+        "group": "62ffe78fb8e5dc34",
+        "width": 1,
+        "height": 1,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "0",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffff00",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#008000",
+                "value": "2",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "LED2_2",
+        "x": 1820,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "43c24eb91162e1da",
+        "type": "function",
+        "z": "107ff8c238bcc061",
+        "name": "Convert and Check",
+        "func": "var value = msg.payload;\nvar status = { payload: 0 };\nvar number = { payload: 0 };\n\nif (value <= 1024) {\n    number.payload = value / 1024 * 100;\n} else {\n    number.payload = (value - 1024) / 1024 * 100;\n}\n\nif (value > 0 && value < 1024) {\n    status.payload = 2;\n} else if (value >= 3072 && value < 4096) {\n    status.payload = 2;\n} else if (value >= 1024 && value < 3072) {\n    status.payload = 1;\n} else if (value <= 0 && value >= 4096) {\n    status.payload = 0;\n} else {\n    status.payload = 0;\n}\n\nreturn [number, status];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1590,
+        "y": 620,
+        "wires": [
+            [
+                "bd357653c00b219a"
+            ],
+            [
+                "cbd12ced9b0af9df"
+            ]
+        ]
+    },
+    {
+        "id": "cbd12ced9b0af9df",
+        "type": "ui_led",
+        "z": "107ff8c238bcc061",
+        "order": 12,
+        "group": "62ffe78fb8e5dc34",
+        "width": 1,
+        "height": 1,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "0",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffff00",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#008000",
+                "value": "2",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "LED3_2",
+        "x": 1820,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "fc5604ceab2ed62c",
+        "type": "function",
+        "z": "107ff8c238bcc061",
+        "name": "Convert and Check",
+        "func": "var value = msg.payload;\nvar status = { payload: 0 };\nvar number = { payload: 0 };\n\nif (value <= 1024) {\n    number.payload = value / 1024 * 100;\n} else {\n    number.payload = (value - 1024) / 1024 * 100;\n}\n\nif (value > 0 && value < 1024) {\n    status.payload = 2;\n} else if (value >= 3072 && value < 4096) {\n    status.payload = 2;\n} else if (value >= 1024 && value < 3072) {\n    status.payload = 1;\n} else if (value <= 0 && value >= 4096) {\n    status.payload = 0;\n} else{\n    status.payload = 0;\n}\n\nreturn [number, status];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1590,
+        "y": 700,
+        "wires": [
+            [
+                "baf48708849875f8"
+            ],
+            [
+                "8406a311f4ab91bb"
+            ]
+        ]
+    },
+    {
+        "id": "8406a311f4ab91bb",
+        "type": "ui_led",
+        "z": "107ff8c238bcc061",
+        "order": 15,
+        "group": "62ffe78fb8e5dc34",
+        "width": 1,
+        "height": 1,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "0",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffff00",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#008000",
+                "value": "2",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "LED4_2",
+        "x": 1820,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "6e2e46a876faea3d",
+        "type": "function",
+        "z": "107ff8c238bcc061",
+        "name": "Convert and Check",
+        "func": "var value = msg.payload;\nvar status = { payload: 0 };\nvar number = { payload: 0 };\n\nif (value <= 1024) {\n    number.payload = value / 1024 * 100;\n} else {\n    number.payload = (value - 1024) / 1024 * 100;\n}\n\nif (value > 0 && value < 1024) {\n    status.payload = 2;\n} else if (value >= 3072 && value < 4096) {\n    status.payload = 2;\n} else if (value >= 1024 && value < 3072) {\n    status.payload = 1;\n} else if (value <= 0 && value >= 4096) {\n    status.payload = 0;\n} else {\n    status.payload = 0;\n}\n\nreturn [number, status];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1590,
+        "y": 780,
+        "wires": [
+            [
+                "b9051e15a9de4a3c"
+            ],
+            [
+                "59718b73a9e2c43e"
+            ]
+        ]
+    },
+    {
+        "id": "59718b73a9e2c43e",
+        "type": "ui_led",
+        "z": "107ff8c238bcc061",
+        "order": 18,
+        "group": "62ffe78fb8e5dc34",
+        "width": 1,
+        "height": 1,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "0",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffff00",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#008000",
+                "value": "2",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "LED5_2",
+        "x": 1820,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "65b0f6ffb4b2bd5b",
+        "type": "function",
+        "z": "107ff8c238bcc061",
+        "name": "Convert and Check",
+        "func": "var value = msg.payload;\nvar status = { payload: 0 };\nvar number = { payload: 0 };\n\nif (value <= 1024) {\n    number.payload = value / 1024 * 100;\n} else {\n    number.payload = (value - 1024) / 1024 * 100;\n}\n\nif (value > 0 && value < 1024) {\n    status.payload = 2;\n} else if (value >= 3072 && value < 4096) {\n    status.payload = 2;\n} else if (value >= 1024 && value < 3072) {\n    status.payload = 1;\n} else if (value <= 0 && value >= 4096) {\n    status.payload = 0;\n} else{\n    status.payload = 0;\n}\n\nreturn [number, status];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1590,
+        "y": 860,
+        "wires": [
+            [
+                "a3c010fe10f4f0bf"
+            ],
+            [
+                "d9261a48365a7cc9"
+            ]
+        ]
+    },
+    {
+        "id": "d9261a48365a7cc9",
+        "type": "ui_led",
+        "z": "107ff8c238bcc061",
+        "order": 21,
+        "group": "62ffe78fb8e5dc34",
+        "width": 1,
+        "height": 1,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "0",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffff00",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#008000",
+                "value": "2",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "LED6_2",
+        "x": 1820,
+        "y": 860,
         "wires": []
     }
 ]
