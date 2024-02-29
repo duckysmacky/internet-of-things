@@ -12,6 +12,7 @@
         "node-red-dashboard": "~3.6.2",
         "node-red-node-mysql": "~2.0.0",
         "node-red-node-ping": "~0.3.3",
-        "node-red-node-random": "~0.4.1"
+        "node-red-node-random": "~0.4.1",
+        "node-red-node-ui-table": "~0.4.3"
     }
 }
