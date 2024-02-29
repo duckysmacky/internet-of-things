@@ -392,6 +392,14 @@
         "height": 1
     },
     {
+        "id": "19f7feffe41ac9f9",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
         "id": "b482904f5486caf2",
         "type": "inject",
         "z": "5bd0da370cf69c96",
@@ -427,8 +435,8 @@
         "name": "Robot4_1",
         "robot_name": "Robot4_1",
         "N": "0",
-        "X": "60",
-        "Y": "200",
+        "X": "50",
+        "Y": "210",
         "T": "0",
         "G": "210",
         "V": "0",
@@ -478,7 +486,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 330,
-        "y": 360,
+        "y": 560,
         "wires": [
             [
                 "945e0b6dab58057f"
@@ -505,7 +513,7 @@
         "P": "0",
         "Text": "",
         "x": 560,
-        "y": 360,
+        "y": 560,
         "wires": [
             [
                 "6ab7f731c7284961"
@@ -518,7 +526,7 @@
         "z": "5bd0da370cf69c96",
         "name": "",
         "x": 800,
-        "y": 360,
+        "y": 560,
         "wires": []
     },
     {
@@ -570,7 +578,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 340,
-        "y": 420,
+        "y": 620,
         "wires": [
             [
                 "945e0b6dab58057f"
@@ -578,26 +586,27 @@
         ]
     },
     {
-        "id": "d4df45f3d36462f7",
-        "type": "ui_slider",
+        "id": "b3f5210e266b29da",
+        "type": "ui_numeric",
         "z": "5bd0da370cf69c96",
-        "name": "",
-        "label": "posX",
+        "name": "X",
+        "label": "X",
         "tooltip": "",
         "group": "4ad0ca5f63196c38",
-        "order": 6,
+        "order": 2,
         "width": 0,
         "height": 0,
+        "wrap": false,
         "passthru": true,
-        "outs": "all",
-        "topic": "payload:X",
+        "topic": "payload",
         "topicType": "msg",
-        "min": "100",
+        "format": "{{value}}",
+        "min": 0,
         "max": "300",
         "step": "10",
         "className": "",
-        "x": 330,
-        "y": 300,
+        "x": 310,
+        "y": 500,
         "wires": [
             [
                 "945e0b6dab58057f"
