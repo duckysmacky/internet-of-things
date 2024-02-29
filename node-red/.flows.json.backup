@@ -29,7 +29,7 @@
             },
             "darkTheme": {
                 "default": "#097479",
-                "baseColor": "#097479",
+                "baseColor": "#d8a2c7",
                 "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
                 "edited": true,
                 "reset": false
@@ -37,17 +37,18 @@
             "customTheme": {
                 "name": "Untitled Theme 1",
                 "default": "#4B7930",
-                "baseColor": "#4B7930",
-                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                "baseColor": "#773078",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
             },
             "themeState": {
                 "base-color": {
                     "default": "#097479",
-                    "value": "#097479",
-                    "edited": false
+                    "value": "#d8a2c7",
+                    "edited": true
                 },
                 "page-titlebar-backgroundColor": {
-                    "value": "#097479",
+                    "value": "#d8a2c7",
                     "edited": false
                 },
                 "page-backgroundColor": {
@@ -55,11 +56,11 @@
                     "edited": false
                 },
                 "page-sidebar-backgroundColor": {
-                    "value": "#333333",
+                    "value": "#ffffff",
                     "edited": false
                 },
                 "group-textColor": {
-                    "value": "#0eb8c0",
+                    "value": "#efd8e7",
                     "edited": false
                 },
                 "group-borderColor": {
@@ -75,7 +76,7 @@
                     "edited": false
                 },
                 "widget-backgroundColor": {
-                    "value": "#097479",
+                    "value": "#d8a2c7",
                     "edited": false
                 },
                 "widget-borderColor": {
@@ -238,20 +239,20 @@
     {
         "id": "b852b2f0ea5468f5",
         "type": "ui_group",
-        "name": "Robot 1",
+        "name": "Robot 1 Load",
         "tab": "99187ee94ebba41c",
-        "order": 1,
+        "order": 2,
         "disp": true,
-        "width": "6",
+        "width": 6,
         "collapse": false,
         "className": ""
     },
     {
         "id": "bb676c794922defe",
         "type": "ui_group",
-        "name": "Robot 2",
+        "name": "Robot 1 Motors",
         "tab": "99187ee94ebba41c",
-        "order": 2,
+        "order": 1,
         "disp": true,
         "width": "6",
         "collapse": false,
@@ -287,6 +288,67 @@
         "width": "6",
         "collapse": false,
         "className": ""
+    },
+    {
+        "id": "571a38b1.5e3638",
+        "type": "ui_group",
+        "name": "Richer Table",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "8",
+        "collapse": false
+    },
+    {
+        "id": "141c0df2ae71b1e9",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "30",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "af01fb4d6f9064fc",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "172.16.0.89",
+        "port": "8888",
+        "db": "Device",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "51ce6aa1.620754",
+        "type": "ui_group",
+        "name": "ui_control",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "22",
+        "collapse": false
+    },
+    {
+        "id": "625872f.40b1e8c",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "202627675a81706c",
+        "type": "ui_spacer",
+        "z": "107ff8c238bcc061",
+        "name": "spacer",
+        "group": "bb676c794922defe",
+        "order": 1,
+        "width": 6,
+        "height": 1
     },
     {
         "id": "b482904f5486caf2",
@@ -481,13 +543,13 @@
         "name": "",
         "label": "posX",
         "tooltip": "",
-        "group": "bb676c794922defe",
+        "group": "4ad0ca5f63196c38",
         "order": 6,
         "width": 0,
         "height": 0,
         "passthru": true,
         "outs": "all",
-        "topic": "Robot4_2.x",
+        "topic": "payload:X",
         "topicType": "msg",
         "min": "100",
         "max": "300",
@@ -502,279 +564,309 @@
         ]
     },
     {
-        "id": "91dabd1646de7628",
-        "type": "IOT Get",
-        "z": "107ff8c238bcc061",
-        "name": "Robot 1",
-        "x": 150,
-        "y": 180,
-        "wires": [
-            [
-                "3da585c6e8752ec4"
-            ]
-        ]
-    },
-    {
-        "id": "384458ed91ada098",
+        "id": "a4c0aad89f4a9581",
         "type": "ui_digital_display",
         "z": "107ff8c238bcc061",
-        "name": "M1",
-        "group": "b852b2f0ea5468f5",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "digits": "4",
-        "decimals": "0",
-        "x": 510,
-        "y": 80,
-        "wires": []
-    },
-    {
-        "id": "3da585c6e8752ec4",
-        "type": "function",
-        "z": "107ff8c238bcc061",
-        "name": "Get Data",
-        "func": "if (msg.payload.name == \"Robot4_1\")\n{\n    var msg1 = { payload: msg.payload.m1 };\n    var msg2 = { payload: msg.payload.m2 };\n    var msg3 = { payload: msg.payload.m3 };\n    var msg4 = { payload: msg.payload.m4 };\n    var msg5 = { payload: msg.payload.m5 };\n    var msg6 = { payload: msg.payload.m6 };\n    return [msg1, msg2, msg3, msg4, msg5, msg6]\n}",
-        "outputs": 6,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 340,
-        "y": 180,
-        "wires": [
-            [
-                "384458ed91ada098"
-            ],
-            [
-                "d5a8cd57d6542792"
-            ],
-            [
-                "2c10675981753719"
-            ],
-            [
-                "7bf885a662c1c5a3"
-            ],
-            [
-                "922a92dd86b5ca90"
-            ],
-            [
-                "7082b7f2644c7598"
-            ]
-        ]
-    },
-    {
-        "id": "d5a8cd57d6542792",
-        "type": "ui_digital_display",
-        "z": "107ff8c238bcc061",
-        "name": "M2",
+        "name": "L1",
         "group": "b852b2f0ea5468f5",
         "order": 2,
         "width": 0,
         "height": 0,
         "digits": "4",
         "decimals": "0",
-        "x": 510,
-        "y": 120,
-        "wires": []
-    },
-    {
-        "id": "2c10675981753719",
-        "type": "ui_digital_display",
-        "z": "107ff8c238bcc061",
-        "name": "M3",
-        "group": "b852b2f0ea5468f5",
-        "order": 3,
-        "width": 0,
-        "height": 0,
-        "digits": "4",
-        "decimals": "0",
-        "x": 510,
-        "y": 160,
-        "wires": []
-    },
-    {
-        "id": "7bf885a662c1c5a3",
-        "type": "ui_digital_display",
-        "z": "107ff8c238bcc061",
-        "name": "M4",
-        "group": "b852b2f0ea5468f5",
-        "order": 4,
-        "width": 0,
-        "height": 0,
-        "digits": "4",
-        "decimals": "0",
-        "x": 510,
-        "y": 200,
-        "wires": []
-    },
-    {
-        "id": "922a92dd86b5ca90",
-        "type": "ui_digital_display",
-        "z": "107ff8c238bcc061",
-        "name": "M5",
-        "group": "b852b2f0ea5468f5",
-        "order": 5,
-        "width": 0,
-        "height": 0,
-        "digits": "4",
-        "decimals": "0",
-        "x": 510,
-        "y": 240,
-        "wires": []
-    },
-    {
-        "id": "7082b7f2644c7598",
-        "type": "ui_digital_display",
-        "z": "107ff8c238bcc061",
-        "name": "M6",
-        "group": "b852b2f0ea5468f5",
-        "order": 6,
-        "width": 0,
-        "height": 0,
-        "digits": "4",
-        "decimals": "0",
-        "x": 510,
-        "y": 280,
-        "wires": []
-    },
-    {
-        "id": "340f0800e1b646f3",
-        "type": "IOT Get",
-        "z": "107ff8c238bcc061",
-        "name": "Robot 2",
-        "x": 150,
-        "y": 460,
-        "wires": [
-            [
-                "e59a8063e0c1ab66"
-            ]
-        ]
-    },
-    {
-        "id": "a4c0aad89f4a9581",
-        "type": "ui_digital_display",
-        "z": "107ff8c238bcc061",
-        "name": "M1",
-        "group": "bb676c794922defe",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "digits": "4",
-        "decimals": "0",
-        "x": 510,
-        "y": 360,
+        "x": 570,
+        "y": 420,
         "wires": []
     },
     {
         "id": "e59a8063e0c1ab66",
         "type": "function",
         "z": "107ff8c238bcc061",
-        "name": "Get Data",
-        "func": "if (msg.payload.name == \"Robot4_2\")\n{\n    var msg1 = { payload: msg.payload.m1 };\n    var msg2 = { payload: msg.payload.m2 };\n    var msg3 = { payload: msg.payload.m3 };\n    var msg4 = { payload: msg.payload.m4 };\n    var msg5 = { payload: msg.payload.m5 };\n    var msg6 = { payload: msg.payload.m6 };\n    return [msg1, msg2, msg3, msg4, msg5, msg6]\n}",
+        "name": "Get Load Data",
+        "func": "if (msg.payload.name == \"Robot4_1\") {\n    var messages = []\n    messages.push({ payload: msg.payload.l1 });\n    messages.push({ payload: msg.payload.l2 });\n    messages.push({ payload: msg.payload.l3 });\n    messages.push({ payload: msg.payload.l4 });\n    messages.push({ payload: msg.payload.l5 });\n    messages.push({ payload: msg.payload.l6 });\n    for (let i = 0; i < messages.length; i++) {\n        messages[i].payload = messages[i].payload / 1024 * 100\n    }\n    return messages;\n}",
         "outputs": 6,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 340,
-        "y": 460,
+        "x": 320,
+        "y": 520,
         "wires": [
             [
                 "a4c0aad89f4a9581"
             ],
             [
-                "893237df72dbff70"
+                "b61bc52e702375ff"
             ],
             [
-                "45e83318e30c92f2"
+                "f4fb88b6d33c7a63"
             ],
             [
-                "49bf729858f7490b"
+                "ac9716c0932ebdca"
             ],
             [
-                "a17ce5075095ad18"
+                "000a3d1e698d7562"
             ],
             [
-                "cf8d89f9e5370f45"
+                "f9c41f39c0bdb140"
             ]
         ]
     },
     {
-        "id": "893237df72dbff70",
-        "type": "ui_digital_display",
+        "id": "64be4c5f9d76c8be",
+        "type": "ui_text",
         "z": "107ff8c238bcc061",
-        "name": "M2",
-        "group": "bb676c794922defe",
-        "order": 2,
+        "group": "b852b2f0ea5468f5",
+        "order": 1,
         "width": 0,
         "height": 0,
-        "digits": "4",
-        "decimals": "0",
-        "x": 510,
-        "y": 400,
+        "name": "",
+        "label": "Load",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 570,
+        "y": 380,
         "wires": []
     },
     {
-        "id": "45e83318e30c92f2",
+        "id": "e7c7e66bc75c7078",
+        "type": "IOT Get",
+        "z": "107ff8c238bcc061",
+        "name": "Robot 1",
+        "x": 110,
+        "y": 360,
+        "wires": [
+            [
+                "e59a8063e0c1ab66",
+                "7a06e9f83029b55f"
+            ]
+        ]
+    },
+    {
+        "id": "4f8d152e04aabb18",
         "type": "ui_digital_display",
         "z": "107ff8c238bcc061",
-        "name": "M3",
+        "name": "M1",
         "group": "bb676c794922defe",
         "order": 3,
         "width": 0,
         "height": 0,
         "digits": "4",
         "decimals": "0",
-        "x": 510,
-        "y": 440,
+        "x": 570,
+        "y": 100,
         "wires": []
     },
     {
-        "id": "49bf729858f7490b",
+        "id": "7a06e9f83029b55f",
+        "type": "function",
+        "z": "107ff8c238bcc061",
+        "name": "Get Motor Data",
+        "func": "if (msg.payload.name == \"Robot4_1\") {\n    var messages = []\n    messages.push({ payload: msg.payload.m1 });\n    messages.push({ payload: msg.payload.m2 });\n    messages.push({ payload: msg.payload.m3 });\n    messages.push({ payload: msg.payload.m4 });\n    messages.push({ payload: msg.payload.m5 });\n    messages.push({ payload: msg.payload.m6 });\n    return messages;\n}",
+        "outputs": 6,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 200,
+        "wires": [
+            [
+                "4f8d152e04aabb18"
+            ],
+            [
+                "b56e4cf4b5a5d3d6"
+            ],
+            [
+                "12a22cc69b2a5bfb"
+            ],
+            [
+                "9049a58fb921d44a"
+            ],
+            [
+                "62aadd376ff56856"
+            ],
+            [
+                "6fbeb0984802f085"
+            ]
+        ]
+    },
+    {
+        "id": "b56e4cf4b5a5d3d6",
         "type": "ui_digital_display",
         "z": "107ff8c238bcc061",
-        "name": "M4",
+        "name": "M2",
         "group": "bb676c794922defe",
         "order": 4,
         "width": 0,
         "height": 0,
         "digits": "4",
         "decimals": "0",
-        "x": 510,
-        "y": 480,
+        "x": 570,
+        "y": 140,
         "wires": []
     },
     {
-        "id": "a17ce5075095ad18",
+        "id": "12a22cc69b2a5bfb",
         "type": "ui_digital_display",
         "z": "107ff8c238bcc061",
-        "name": "M5",
+        "name": "M3",
         "group": "bb676c794922defe",
         "order": 5,
         "width": 0,
         "height": 0,
         "digits": "4",
         "decimals": "0",
-        "x": 510,
-        "y": 520,
+        "x": 570,
+        "y": 180,
         "wires": []
     },
     {
-        "id": "cf8d89f9e5370f45",
+        "id": "9049a58fb921d44a",
         "type": "ui_digital_display",
         "z": "107ff8c238bcc061",
-        "name": "M6",
+        "name": "M4",
         "group": "bb676c794922defe",
         "order": 6,
         "width": 0,
         "height": 0,
         "digits": "4",
         "decimals": "0",
-        "x": 510,
-        "y": 560,
+        "x": 570,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "62aadd376ff56856",
+        "type": "ui_digital_display",
+        "z": "107ff8c238bcc061",
+        "name": "M5",
+        "group": "bb676c794922defe",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "digits": "4",
+        "decimals": "0",
+        "x": 570,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "6fbeb0984802f085",
+        "type": "ui_digital_display",
+        "z": "107ff8c238bcc061",
+        "name": "M6",
+        "group": "bb676c794922defe",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "digits": "4",
+        "decimals": "0",
+        "x": 570,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "e6955a1a4b148ad8",
+        "type": "ui_text",
+        "z": "107ff8c238bcc061",
+        "group": "bb676c794922defe",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Motors",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 570,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "b61bc52e702375ff",
+        "type": "ui_digital_display",
+        "z": "107ff8c238bcc061",
+        "name": "L2",
+        "group": "b852b2f0ea5468f5",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "digits": "4",
+        "decimals": "0",
+        "x": 570,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "f4fb88b6d33c7a63",
+        "type": "ui_digital_display",
+        "z": "107ff8c238bcc061",
+        "name": "L3",
+        "group": "b852b2f0ea5468f5",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "digits": "4",
+        "decimals": "0",
+        "x": 570,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "ac9716c0932ebdca",
+        "type": "ui_digital_display",
+        "z": "107ff8c238bcc061",
+        "name": "L4",
+        "group": "b852b2f0ea5468f5",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "digits": "4",
+        "decimals": "0",
+        "x": 570,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "000a3d1e698d7562",
+        "type": "ui_digital_display",
+        "z": "107ff8c238bcc061",
+        "name": "L5",
+        "group": "b852b2f0ea5468f5",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "digits": "4",
+        "decimals": "0",
+        "x": 570,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "f9c41f39c0bdb140",
+        "type": "ui_digital_display",
+        "z": "107ff8c238bcc061",
+        "name": "L6",
+        "group": "b852b2f0ea5468f5",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "digits": "4",
+        "decimals": "0",
+        "x": 570,
+        "y": 620,
         "wires": []
     }
 ]
