@@ -435,22 +435,13 @@
         "L4": "0",
         "P": "0",
         "Text": "",
-        "x": 460,
+        "x": 520,
         "y": 120,
         "wires": [
             [
-                "d9395a9e4dc0b114"
+                "1680f92a56bdcef0"
             ]
         ]
-    },
-    {
-        "id": "d9395a9e4dc0b114",
-        "type": "IOT Send",
-        "z": "5bd0da370cf69c96",
-        "name": "",
-        "x": 660,
-        "y": 120,
-        "wires": []
     },
     {
         "id": "4a4e681e7c18e6d8",
@@ -462,7 +453,7 @@
         "width": 0,
         "height": 0,
         "passthru": false,
-        "label": "Robot 1 Pos 1",
+        "label": "Pos 1",
         "tooltip": "",
         "color": "",
         "bgcolor": "",
@@ -472,7 +463,7 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 240,
+        "x": 330,
         "y": 120,
         "wires": [
             [
@@ -499,7 +490,7 @@
         "L4": "0",
         "P": "0",
         "Text": "",
-        "x": 460,
+        "x": 520,
         "y": 180,
         "wires": [
             [
@@ -512,7 +503,7 @@
         "type": "IOT Send",
         "z": "5bd0da370cf69c96",
         "name": "",
-        "x": 660,
+        "x": 880,
         "y": 180,
         "wires": []
     },
@@ -526,7 +517,7 @@
         "width": 0,
         "height": 0,
         "passthru": false,
-        "label": "Robot 1 Pos 2",
+        "label": "Pos 2",
         "tooltip": "",
         "color": "",
         "bgcolor": "",
@@ -536,7 +527,7 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 240,
+        "x": 330,
         "y": 180,
         "wires": [
             [
@@ -563,22 +554,13 @@
         "L4": "0",
         "P": "0",
         "Text": "",
-        "x": 460,
+        "x": 520,
         "y": 240,
         "wires": [
             [
-                "cb48e2cbd61a1749"
+                "1680f92a56bdcef0"
             ]
         ]
-    },
-    {
-        "id": "cb48e2cbd61a1749",
-        "type": "IOT Send",
-        "z": "5bd0da370cf69c96",
-        "name": "",
-        "x": 660,
-        "y": 240,
-        "wires": []
     },
     {
         "id": "34270b4eeab9bae7",
@@ -590,7 +572,7 @@
         "width": 0,
         "height": 0,
         "passthru": false,
-        "label": "Robot 1 Pos 3",
+        "label": "Pos 3",
         "tooltip": "",
         "color": "",
         "bgcolor": "",
@@ -600,7 +582,7 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 240,
+        "x": 330,
         "y": 240,
         "wires": [
             [
@@ -612,7 +594,7 @@
         "id": "9e22a0ec951f30a5",
         "type": "IOT Function",
         "z": "5bd0da370cf69c96",
-        "name": "Robot4_2 pos1",
+        "name": "Robot4_2",
         "robot_name": "Robot4_2",
         "N": "0",
         "X": "250",
@@ -627,28 +609,19 @@
         "L4": "0",
         "P": "0",
         "Text": "",
-        "x": 540,
-        "y": 620,
+        "x": 1240,
+        "y": 120,
         "wires": [
             [
-                "04617818d6c2daed"
+                "af35d6fed871e85d"
             ]
         ]
-    },
-    {
-        "id": "04617818d6c2daed",
-        "type": "IOT Send",
-        "z": "5bd0da370cf69c96",
-        "name": "",
-        "x": 800,
-        "y": 620,
-        "wires": []
     },
     {
         "id": "d5a3b05a3beab15b",
         "type": "IOT Function",
         "z": "5bd0da370cf69c96",
-        "name": "Robot4_2 pos2",
+        "name": "Robot4_2",
         "robot_name": "Robot4_2",
         "N": "0",
         "X": "275",
@@ -663,8 +636,8 @@
         "L4": "0",
         "P": "0",
         "Text": "",
-        "x": 540,
-        "y": 660,
+        "x": 1240,
+        "y": 180,
         "wires": [
             [
                 "af35d6fed871e85d"
@@ -676,15 +649,15 @@
         "type": "IOT Send",
         "z": "5bd0da370cf69c96",
         "name": "",
-        "x": 800,
-        "y": 660,
+        "x": 1560,
+        "y": 180,
         "wires": []
     },
     {
         "id": "97f64347de9f2f30",
         "type": "IOT Function",
         "z": "5bd0da370cf69c96",
-        "name": "Robot4_2 pos3",
+        "name": "Robot4_2",
         "robot_name": "Robot4_2",
         "N": "0",
         "X": "300",
@@ -699,34 +672,25 @@
         "L4": "0",
         "P": "0",
         "Text": "Parking",
-        "x": 540,
-        "y": 700,
+        "x": 1240,
+        "y": 240,
         "wires": [
             [
-                "2f1a0ca36f189b05"
+                "af35d6fed871e85d"
             ]
         ]
-    },
-    {
-        "id": "2f1a0ca36f189b05",
-        "type": "IOT Send",
-        "z": "5bd0da370cf69c96",
-        "name": "",
-        "x": 800,
-        "y": 700,
-        "wires": []
     },
     {
         "id": "2c8eff42dc92745b",
         "type": "ui_button",
         "z": "5bd0da370cf69c96",
-        "name": "Pose1",
+        "name": "",
         "group": "4ad0ca5f63196c38",
         "order": 1,
         "width": 0,
         "height": 0,
         "passthru": false,
-        "label": "Pose1",
+        "label": "Pos 1",
         "tooltip": "",
         "color": "",
         "bgcolor": "",
@@ -736,8 +700,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 270,
-        "y": 620,
+        "x": 1050,
+        "y": 120,
         "wires": [
             [
                 "9e22a0ec951f30a5"
@@ -748,13 +712,13 @@
         "id": "8b6fa14154cbd04b",
         "type": "ui_button",
         "z": "5bd0da370cf69c96",
-        "name": "Pose2",
+        "name": "",
         "group": "4ad0ca5f63196c38",
         "order": 2,
         "width": 0,
         "height": 0,
         "passthru": false,
-        "label": "Pose2",
+        "label": "Pos 2",
         "tooltip": "",
         "color": "",
         "bgcolor": "",
@@ -764,8 +728,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 270,
-        "y": 660,
+        "x": 1050,
+        "y": 180,
         "wires": [
             [
                 "d5a3b05a3beab15b"
@@ -776,13 +740,13 @@
         "id": "14135113ad6778f0",
         "type": "ui_button",
         "z": "5bd0da370cf69c96",
-        "name": "Pose3",
+        "name": "",
         "group": "4ad0ca5f63196c38",
         "order": 3,
         "width": 0,
         "height": 0,
         "passthru": false,
-        "label": "Pose3",
+        "label": "Pos 3",
         "tooltip": "",
         "color": "",
         "bgcolor": "",
@@ -792,10 +756,234 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 270,
-        "y": 700,
+        "x": 1050,
+        "y": 240,
         "wires": [
             [
+                "97f64347de9f2f30"
+            ]
+        ]
+    },
+    {
+        "id": "35e976e1c995fc31",
+        "type": "ui_switch",
+        "z": "5bd0da370cf69c96",
+        "name": "",
+        "label": "Vacuum",
+        "tooltip": "",
+        "group": "26242c89e093eda8",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 140,
+        "y": 300,
+        "wires": [
+            [
+                "578c0769560fe06a"
+            ]
+        ]
+    },
+    {
+        "id": "578c0769560fe06a",
+        "type": "function",
+        "z": "5bd0da370cf69c96",
+        "name": "function 1",
+        "func": "switch (msg.payload) {\n    case true:\n        flow.set(\"V\", 1)\n    case false:\n        flow.set(\"V\", 0)\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 300,
+        "wires": [
+            [
+                "ae126dba76871fbb",
+                "5d27fcf084170107",
+                "4227b518105f715a"
+            ]
+        ]
+    },
+    {
+        "id": "d9b55505c0e17b9d",
+        "type": "ui_switch",
+        "z": "5bd0da370cf69c96",
+        "name": "",
+        "label": "Vacuum",
+        "tooltip": "",
+        "group": "4ad0ca5f63196c38",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 860,
+        "y": 300,
+        "wires": [
+            [
+                "500ffaec5e581412"
+            ]
+        ]
+    },
+    {
+        "id": "500ffaec5e581412",
+        "type": "function",
+        "z": "5bd0da370cf69c96",
+        "name": "function 2",
+        "func": "switch (msg.payload) {\n    case true:\n        flow.set(\"V\", 1)\n    case false:\n        flow.set(\"V\", 0)\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 300,
+        "wires": [
+            [
+                "97f64347de9f2f30",
+                "d5a3b05a3beab15b",
+                "9e22a0ec951f30a5"
+            ]
+        ]
+    },
+    {
+        "id": "a2a39f7e27f60fba",
+        "type": "ui_switch",
+        "z": "5bd0da370cf69c96",
+        "name": "",
+        "label": "Lower",
+        "tooltip": "",
+        "group": "26242c89e093eda8",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 130,
+        "y": 380,
+        "wires": [
+            [
+                "5d9b84c3bbd65266"
+            ]
+        ]
+    },
+    {
+        "id": "5d9b84c3bbd65266",
+        "type": "function",
+        "z": "5bd0da370cf69c96",
+        "name": "function 3",
+        "func": "switch (msg.payload) {\n    case true:\n        flow.set(\"G\", 150)\n    case false:\n        flow.set(\"G\", 200)\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 380,
+        "wires": [
+            [
+                "4227b518105f715a",
+                "5d27fcf084170107",
+                "ae126dba76871fbb"
+            ]
+        ]
+    },
+    {
+        "id": "bca8162e11e5f97e",
+        "type": "ui_switch",
+        "z": "5bd0da370cf69c96",
+        "name": "",
+        "label": "Lower",
+        "tooltip": "",
+        "group": "4ad0ca5f63196c38",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 850,
+        "y": 380,
+        "wires": [
+            [
+                "a28092c25a919126"
+            ]
+        ]
+    },
+    {
+        "id": "a28092c25a919126",
+        "type": "function",
+        "z": "5bd0da370cf69c96",
+        "name": "function 4",
+        "func": "switch (msg.payload) {\n    case true:\n        flow.set(\"G\", 150)\n    case false:\n        flow.set(\"G\", 200)\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 380,
+        "wires": [
+            [
+                "9e22a0ec951f30a5",
+                "d5a3b05a3beab15b",
                 "97f64347de9f2f30"
             ]
         ]
