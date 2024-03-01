@@ -409,96 +409,6 @@
         "height": 1
     },
     {
-        "id": "23df151c593989cd",
-        "type": "ui_spacer",
-        "z": "5bd0da370cf69c96",
-        "name": "spacer",
-        "group": "26242c89e093eda8",
-        "order": 2,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "04d6d41af0ce85cf",
-        "type": "ui_spacer",
-        "z": "5bd0da370cf69c96",
-        "name": "spacer",
-        "group": "26242c89e093eda8",
-        "order": 4,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "c4ad74e6682b9cb3",
-        "type": "ui_spacer",
-        "z": "5bd0da370cf69c96",
-        "name": "spacer",
-        "group": "26242c89e093eda8",
-        "order": 6,
-        "width": 4,
-        "height": 1
-    },
-    {
-        "id": "6bde93886b247a0c",
-        "type": "ui_spacer",
-        "z": "5bd0da370cf69c96",
-        "name": "spacer",
-        "group": "26242c89e093eda8",
-        "order": 8,
-        "width": 2,
-        "height": 1
-    },
-    {
-        "id": "62b5ba6843032d66",
-        "type": "ui_spacer",
-        "z": "5bd0da370cf69c96",
-        "name": "spacer",
-        "group": "4ad0ca5f63196c38",
-        "order": 1,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "7e7161990910b5a5",
-        "type": "ui_spacer",
-        "z": "5bd0da370cf69c96",
-        "name": "spacer",
-        "group": "4ad0ca5f63196c38",
-        "order": 3,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "7f3b7084cb32a7e4",
-        "type": "ui_spacer",
-        "z": "5bd0da370cf69c96",
-        "name": "spacer",
-        "group": "4ad0ca5f63196c38",
-        "order": 6,
-        "width": 5,
-        "height": 1
-    },
-    {
-        "id": "7ab70755822ec69e",
-        "type": "ui_spacer",
-        "z": "5bd0da370cf69c96",
-        "name": "spacer",
-        "group": "4ad0ca5f63196c38",
-        "order": 7,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "df038378075c7be9",
-        "type": "ui_spacer",
-        "z": "5bd0da370cf69c96",
-        "name": "spacer",
-        "group": "4ad0ca5f63196c38",
-        "order": 9,
-        "width": 1,
-        "height": 1
-    },
-    {
         "id": "951407fec8b714db",
         "type": "ui_tab",
         "name": "Home",
@@ -514,6 +424,56 @@
         "order": 1,
         "disabled": false,
         "hidden": false
+    },
+    {
+        "id": "6ddb1bdf3752af95",
+        "type": "ui_spacer",
+        "z": "5bd0da370cf69c96",
+        "name": "spacer",
+        "group": "26242c89e093eda8",
+        "order": 2,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "d2d7bad7de64389f",
+        "type": "ui_spacer",
+        "z": "5bd0da370cf69c96",
+        "name": "spacer",
+        "group": "26242c89e093eda8",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "541dc9936029fd9b",
+        "type": "ui_spacer",
+        "z": "5bd0da370cf69c96",
+        "name": "spacer",
+        "group": "26242c89e093eda8",
+        "order": 6,
+        "width": 4,
+        "height": 1
+    },
+    {
+        "id": "b0d8bfd69e9b2fd3",
+        "type": "ui_spacer",
+        "z": "5bd0da370cf69c96",
+        "name": "spacer",
+        "group": "26242c89e093eda8",
+        "order": 8,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "615f0e2438d51879",
+        "type": "ui_spacer",
+        "z": "5bd0da370cf69c96",
+        "name": "spacer",
+        "group": "4ad0ca5f63196c38",
+        "order": 8,
+        "width": 3,
+        "height": 1
     },
     {
         "id": "ba642d43506a45e5",
@@ -536,7 +496,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 70,
-        "y": 100,
+        "y": 140,
         "wires": [
             [
                 "ac9d18fe8bf92b89"
@@ -564,7 +524,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 70,
-        "y": 160,
+        "y": 200,
         "wires": [
             [
                 "4456a8137788181a"
@@ -592,7 +552,7 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 70,
-        "y": 220,
+        "y": 260,
         "wires": [
             [
                 "bcf6df084057b40c"
@@ -626,7 +586,7 @@
         "animate": false,
         "className": "",
         "x": 80,
-        "y": 40,
+        "y": 80,
         "wires": [
             [
                 "55a443d59b13bdaa"
@@ -646,7 +606,7 @@
         "finalize": "",
         "libs": [],
         "x": 260,
-        "y": 40,
+        "y": 80,
         "wires": [
             [
                 "9034dc819c6e7f2b"
@@ -680,7 +640,7 @@
         "animate": false,
         "className": "",
         "x": 70,
-        "y": 280,
+        "y": 320,
         "wires": [
             [
                 "d9e2c6b9fe2eba83"
@@ -699,8 +659,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 280,
-        "y": 280,
+        "x": 260,
+        "y": 320,
         "wires": [
             [
                 "9034dc819c6e7f2b"
@@ -720,7 +680,7 @@
         "finalize": "",
         "libs": [],
         "x": 270,
-        "y": 100,
+        "y": 140,
         "wires": [
             [
                 "9034dc819c6e7f2b"
@@ -733,7 +693,7 @@
         "z": "5bd0da370cf69c96",
         "name": "Robot 1",
         "x": 740,
-        "y": 160,
+        "y": 200,
         "wires": []
     },
     {
@@ -749,7 +709,7 @@
         "finalize": "",
         "libs": [],
         "x": 270,
-        "y": 160,
+        "y": 200,
         "wires": [
             [
                 "9034dc819c6e7f2b"
@@ -769,7 +729,7 @@
         "finalize": "",
         "libs": [],
         "x": 270,
-        "y": 220,
+        "y": 260,
         "wires": [
             [
                 "9034dc819c6e7f2b"
@@ -781,8 +741,8 @@
         "type": "IOT Send",
         "z": "5bd0da370cf69c96",
         "name": "Robot 2",
-        "x": 1600,
-        "y": 160,
+        "x": 760,
+        "y": 820,
         "wires": []
     },
     {
@@ -791,7 +751,7 @@
         "z": "5bd0da370cf69c96",
         "name": "",
         "group": "4ad0ca5f63196c38",
-        "order": 2,
+        "order": 1,
         "width": 1,
         "height": 1,
         "passthru": false,
@@ -805,11 +765,11 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 930,
-        "y": 40,
+        "x": 70,
+        "y": 520,
         "wires": [
             [
-                "0785f0d47a3864b3"
+                "ce06f2a78f17deff"
             ]
         ]
     },
@@ -819,7 +779,7 @@
         "z": "5bd0da370cf69c96",
         "name": "",
         "group": "4ad0ca5f63196c38",
-        "order": 5,
+        "order": 2,
         "width": 1,
         "height": 1,
         "passthru": false,
@@ -833,11 +793,11 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 930,
-        "y": 100,
+        "x": 70,
+        "y": 580,
         "wires": [
             [
-                "2f1662eccfad52c9"
+                "0785f0d47a3864b3"
             ]
         ]
     },
@@ -847,7 +807,7 @@
         "z": "5bd0da370cf69c96",
         "name": "",
         "group": "4ad0ca5f63196c38",
-        "order": 8,
+        "order": 3,
         "width": 1,
         "height": 1,
         "passthru": false,
@@ -861,11 +821,11 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 930,
-        "y": 160,
+        "x": 70,
+        "y": 640,
         "wires": [
             [
-                "375582f6d5fec2b6"
+                "32d57c89c494a9bb"
             ]
         ]
     },
@@ -895,8 +855,8 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 940,
-        "y": 220,
+        "x": 80,
+        "y": 1060,
         "wires": [
             [
                 "7d2e74f6c272e8de"
@@ -911,7 +871,7 @@
         "label": "Lower",
         "tooltip": "",
         "group": "4ad0ca5f63196c38",
-        "order": 10,
+        "order": 12,
         "width": 3,
         "height": 1,
         "passthru": true,
@@ -929,8 +889,8 @@
         "offcolor": "",
         "animate": false,
         "className": "",
-        "x": 930,
-        "y": 280,
+        "x": 70,
+        "y": 1120,
         "wires": [
             [
                 "d321aba499fdea0f"
@@ -970,11 +930,293 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1140,
-        "y": 40,
+        "x": 280,
+        "y": 580,
         "wires": [
             [
                 "c4db32d0a48c4324"
+            ]
+        ]
+    },
+    {
+        "id": "9034dc819c6e7f2b",
+        "type": "function",
+        "z": "5bd0da370cf69c96",
+        "name": "Apply Data",
+        "func": "if (global.get(\"X1\") == null) { global.set(\"X1\", 100); }\nif (global.get(\"Y1\") == null) { global.set(\"X1\", 100); }\nif (global.get(\"V1\") == null) { global.set(\"V1\", 0); }\nif (global.get(\"G1\") == null) { global.set(\"G1\", 230); }\n\nmsg.payload = {\n    \"robot_name\":\"Robot4_1\",\n    \"N\": \"0\",\n    \"X\": String(global.get(\"X1\")),\n    \"Y\": String(global.get(\"Y1\")),\n    \"T\": \"0\",\n    \"G\": String(global.get(\"G1\")),\n    \"V\": String(global.get(\"V1\")),\n    \"D0\": \"0\",\n    \"L1\": \"0\",\n    \"L2\": \"0\",\n    \"L3\": \"0\",\n    \"L4\": \"0\",\n    \"P\": \"0\",\n    \"Text\": \"\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 200,
+        "wires": [
+            [
+                "54293a9722e7e499",
+                "018667c89e2e8692"
+            ]
+        ]
+    },
+    {
+        "id": "c4db32d0a48c4324",
+        "type": "function",
+        "z": "5bd0da370cf69c96",
+        "name": "Apply Data",
+        "func": "if (global.get(\"X2\") == null) { global.set(\"X2\", 100); }\nif (global.get(\"Y2\") == null) { global.set(\"Y2\", 100); }\nif (global.get(\"V2\") == null) { global.set(\"V2\", 0); }\nif (global.get(\"G2\") == null) { global.set(\"G2\", 230); }\n\nmsg.payload = {\n    \"robot_name\":\"Robot4_2\",\n    \"N\": \"0\",\n    \"X\": String(global.get(\"X2\")),\n    \"Y\": String(global.get(\"Y2\")),\n    \"T\": \"0\",\n    \"G\": String(global.get(\"G2\")),\n    \"V\": String(global.get(\"V2\")),\n    \"D0\": \"0\",\n    \"L1\": \"0\",\n    \"L2\": \"0\",\n    \"L3\": \"0\",\n    \"L4\": \"0\",\n    \"P\": \"0\",\n    \"Text\": \"\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 820,
+        "wires": [
+            [
+                "173f53be24f52eb0",
+                "2e5ce517c37f831e"
+            ]
+        ]
+    },
+    {
+        "id": "173f53be24f52eb0",
+        "type": "debug",
+        "z": "5bd0da370cf69c96",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "d321aba499fdea0f",
+        "type": "function",
+        "z": "5bd0da370cf69c96",
+        "name": "Gripper",
+        "func": "if (msg.payload == 1) { global.set(\"G2\", \"135\"); }\nif (msg.payload == 0) { global.set(\"G2\", \"200\"); }\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 1120,
+        "wires": [
+            [
+                "c4db32d0a48c4324"
+            ]
+        ]
+    },
+    {
+        "id": "7d2e74f6c272e8de",
+        "type": "function",
+        "z": "5bd0da370cf69c96",
+        "name": "Vacuum",
+        "func": "global.set(\"V2\", String(msg.payload))\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 1060,
+        "wires": [
+            [
+                "c4db32d0a48c4324"
+            ]
+        ]
+    },
+    {
+        "id": "018667c89e2e8692",
+        "type": "debug",
+        "z": "5bd0da370cf69c96",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "0a1d189b88e4be3d",
+        "type": "ui_button",
+        "z": "5bd0da370cf69c96",
+        "name": "",
+        "group": "4ad0ca5f63196c38",
+        "order": 5,
+        "width": 1,
+        "height": 1,
+        "passthru": false,
+        "label": "Pos 4",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 70,
+        "y": 700,
+        "wires": [
+            [
+                "2f1662eccfad52c9"
+            ]
+        ]
+    },
+    {
+        "id": "d4f33b8c9973ce0c",
+        "type": "ui_button",
+        "z": "5bd0da370cf69c96",
+        "name": "",
+        "group": "4ad0ca5f63196c38",
+        "order": 6,
+        "width": 1,
+        "height": 1,
+        "passthru": false,
+        "label": "Pos 5",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 70,
+        "y": 760,
+        "wires": [
+            [
+                "819fee3ac0a21844"
+            ]
+        ]
+    },
+    {
+        "id": "9141ac23a94052cb",
+        "type": "ui_button",
+        "z": "5bd0da370cf69c96",
+        "name": "",
+        "group": "4ad0ca5f63196c38",
+        "order": 7,
+        "width": 1,
+        "height": 1,
+        "passthru": false,
+        "label": "Pos 6",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 70,
+        "y": 820,
+        "wires": [
+            [
+                "0221c74de22ee095"
+            ]
+        ]
+    },
+    {
+        "id": "c498c2e407961928",
+        "type": "ui_button",
+        "z": "5bd0da370cf69c96",
+        "name": "",
+        "group": "4ad0ca5f63196c38",
+        "order": 9,
+        "width": 1,
+        "height": 1,
+        "passthru": false,
+        "label": "Pos 7",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 70,
+        "y": 880,
+        "wires": [
+            [
+                "86324bebf29e66d7"
+            ]
+        ]
+    },
+    {
+        "id": "b17bb28719c45cc5",
+        "type": "ui_button",
+        "z": "5bd0da370cf69c96",
+        "name": "",
+        "group": "4ad0ca5f63196c38",
+        "order": 10,
+        "width": 1,
+        "height": 1,
+        "passthru": false,
+        "label": "Pos 8",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 70,
+        "y": 940,
+        "wires": [
+            [
+                "375582f6d5fec2b6"
+            ]
+        ]
+    },
+    {
+        "id": "d65e4b53f5846a1b",
+        "type": "ui_button",
+        "z": "5bd0da370cf69c96",
+        "name": "",
+        "group": "4ad0ca5f63196c38",
+        "order": 11,
+        "width": 1,
+        "height": 1,
+        "passthru": false,
+        "label": "Pos 9",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 70,
+        "y": 1000,
+        "wires": [
+            [
+                "5469ca29218ff02a"
             ]
         ]
     },
@@ -995,7 +1237,7 @@
                 "t": "set",
                 "p": "Y2",
                 "pt": "global",
-                "to": "-50",
+                "to": "-45",
                 "tot": "str"
             },
             {
@@ -1011,8 +1253,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1140,
-        "y": 100,
+        "x": 280,
+        "y": 700,
         "wires": [
             [
                 "c4db32d0a48c4324"
@@ -1029,7 +1271,7 @@
                 "t": "set",
                 "p": "X2",
                 "pt": "global",
-                "to": "325",
+                "to": "315",
                 "tot": "str"
             },
             {
@@ -1052,8 +1294,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1140,
-        "y": 160,
+        "x": 280,
+        "y": 940,
         "wires": [
             [
                 "c4db32d0a48c4324"
@@ -1061,77 +1303,40 @@
         ]
     },
     {
-        "id": "9034dc819c6e7f2b",
-        "type": "function",
+        "id": "ce06f2a78f17deff",
+        "type": "change",
         "z": "5bd0da370cf69c96",
-        "name": "Apply Data",
-        "func": "if (global.get(\"X1\") == null) { global.set(\"X1\", 100); }\nif (global.get(\"Y1\") == null) { global.set(\"X1\", 100); }\nif (global.get(\"V1\") == null) { global.set(\"V1\", 0); }\nif (global.get(\"G1\") == null) { global.set(\"G1\", 230); }\n\nmsg.payload = {\n    \"robot_name\":\"Robot4_1\",\n    \"N\": \"0\",\n    \"X\": String(global.get(\"X1\")),\n    \"Y\": String(global.get(\"Y1\")),\n    \"T\": \"0\",\n    \"G\": String(global.get(\"G1\")),\n    \"V\": String(global.get(\"V1\")),\n    \"D0\": \"0\",\n    \"L1\": \"0\",\n    \"L2\": \"0\",\n    \"L3\": \"0\",\n    \"L4\": \"0\",\n    \"P\": \"0\",\n    \"Text\": \"\"\n}\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 550,
-        "y": 160,
-        "wires": [
-            [
-                "54293a9722e7e499",
-                "018667c89e2e8692"
-            ]
-        ]
-    },
-    {
-        "id": "c4db32d0a48c4324",
-        "type": "function",
-        "z": "5bd0da370cf69c96",
-        "name": "Apply Data",
-        "func": "if (global.get(\"X2\") == null) { global.set(\"X2\", 100); }\nif (global.get(\"Y2\") == null) { global.set(\"Y2\", 100); }\nif (global.get(\"V2\") == null) { global.set(\"V2\", 0); }\nif (global.get(\"G2\") == null) { global.set(\"G2\", 230); }\n\nmsg.payload = {\n    \"robot_name\":\"Robot4_2\",\n    \"N\": \"0\",\n    \"X\": String(global.get(\"X2\")),\n    \"Y\": String(global.get(\"Y2\")),\n    \"T\": \"0\",\n    \"G\": String(global.get(\"G2\")),\n    \"V\": String(global.get(\"V2\")),\n    \"D0\": \"0\",\n    \"L1\": \"0\",\n    \"L2\": \"0\",\n    \"L3\": \"0\",\n    \"L4\": \"0\",\n    \"P\": \"0\",\n    \"Text\": \"\"\n}\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1410,
-        "y": 160,
-        "wires": [
-            [
-                "173f53be24f52eb0",
-                "2e5ce517c37f831e"
-            ]
-        ]
-    },
-    {
-        "id": "173f53be24f52eb0",
-        "type": "debug",
-        "z": "5bd0da370cf69c96",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1600,
-        "y": 200,
-        "wires": []
-    },
-    {
-        "id": "d321aba499fdea0f",
-        "type": "function",
-        "z": "5bd0da370cf69c96",
-        "name": "Gripper",
-        "func": "if (msg.payload == 1) { global.set(\"G2\", \"135\"); }\nif (msg.payload == 0) { global.set(\"G2\", \"200\"); }\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1180,
-        "y": 280,
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "X2",
+                "pt": "global",
+                "to": "225",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "G2",
+                "pt": "global",
+                "to": "200",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "Y2",
+                "pt": "global",
+                "to": "-45",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 280,
+        "y": 520,
         "wires": [
             [
                 "c4db32d0a48c4324"
@@ -1139,19 +1344,40 @@
         ]
     },
     {
-        "id": "7d2e74f6c272e8de",
-        "type": "function",
+        "id": "32d57c89c494a9bb",
+        "type": "change",
         "z": "5bd0da370cf69c96",
-        "name": "Vacuum",
-        "func": "global.set(\"V2\", String(msg.payload))\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1180,
-        "y": 220,
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "X2",
+                "pt": "global",
+                "to": "225",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "G2",
+                "pt": "global",
+                "to": "200",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "Y2",
+                "pt": "global",
+                "to": "55",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 280,
+        "y": 640,
         "wires": [
             [
                 "c4db32d0a48c4324"
@@ -1159,20 +1385,168 @@
         ]
     },
     {
-        "id": "018667c89e2e8692",
-        "type": "debug",
+        "id": "819fee3ac0a21844",
+        "type": "change",
         "z": "5bd0da370cf69c96",
-        "name": "debug 2",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 740,
-        "y": 220,
-        "wires": []
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "X2",
+                "pt": "global",
+                "to": "275",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "G2",
+                "pt": "global",
+                "to": "200",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "Y2",
+                "pt": "global",
+                "to": "0",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 280,
+        "y": 760,
+        "wires": [
+            [
+                "c4db32d0a48c4324"
+            ]
+        ]
+    },
+    {
+        "id": "0221c74de22ee095",
+        "type": "change",
+        "z": "5bd0da370cf69c96",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "X2",
+                "pt": "global",
+                "to": "275",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "G2",
+                "pt": "global",
+                "to": "200",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "Y2",
+                "pt": "global",
+                "to": "55",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 280,
+        "y": 820,
+        "wires": [
+            [
+                "c4db32d0a48c4324"
+            ]
+        ]
+    },
+    {
+        "id": "86324bebf29e66d7",
+        "type": "change",
+        "z": "5bd0da370cf69c96",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "X2",
+                "pt": "global",
+                "to": "315",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "G2",
+                "pt": "global",
+                "to": "200",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "Y2",
+                "pt": "global",
+                "to": "-45",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 280,
+        "y": 880,
+        "wires": [
+            [
+                "c4db32d0a48c4324"
+            ]
+        ]
+    },
+    {
+        "id": "5469ca29218ff02a",
+        "type": "change",
+        "z": "5bd0da370cf69c96",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "X2",
+                "pt": "global",
+                "to": "315",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "G2",
+                "pt": "global",
+                "to": "200",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "Y2",
+                "pt": "global",
+                "to": "50",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 280,
+        "y": 1000,
+        "wires": [
+            [
+                "c4db32d0a48c4324"
+            ]
+        ]
     },
     {
         "id": "a4c0aad89f4a9581",
