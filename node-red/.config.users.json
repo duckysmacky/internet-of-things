@@ -22,6 +22,7 @@
             }
         },
         "menu-deploymenu-item-node": true,
-        "menu-deploymenu-item-full": false
+        "menu-deploymenu-item-full": false,
+        "menu-menu-item-sidebar": true
     }
 }
