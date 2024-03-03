@@ -31,7 +31,7 @@
                 "default": "#097479",
                 "baseColor": "#097479",
                 "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
-                "edited": false,
+                "edited": true,
                 "reset": false
             },
             "customTheme": {
@@ -99,7 +99,7 @@
             "name": "Дэшборд",
             "hideToolbar": "false",
             "allowSwipe": "false",
-            "lockMenu": "true",
+            "lockMenu": "false",
             "allowTempTheme": "true",
             "dateFormat": "DD/MM/YYYY",
             "sizes": {
@@ -287,9 +287,9 @@
         "type": "ui_group",
         "name": "Мониторинг",
         "tab": "0bf48136a92eb76c",
-        "order": 1,
+        "order": 9,
         "disp": true,
-        "width": 22,
+        "width": 6,
         "collapse": false,
         "className": ""
     },
@@ -307,7 +307,7 @@
         "type": "ui_group",
         "name": "Настройки",
         "tab": "0bf48136a92eb76c",
-        "order": 2,
+        "order": 10,
         "disp": true,
         "width": 12,
         "collapse": false,
@@ -318,51 +318,218 @@
         "type": "ui_group",
         "name": "Терминал",
         "tab": "0bf48136a92eb76c",
-        "order": 3,
+        "order": 11,
         "disp": true,
         "width": "6",
         "collapse": false,
         "className": ""
     },
     {
-        "id": "31bf47b1149f2766",
+        "id": "84fc9e1e23b00902",
         "type": "ui_group",
-        "name": "Смарт-камера",
+        "name": "Raw Motors",
+        "tab": "0bf48136a92eb76c",
+        "order": 1,
+        "disp": true,
+        "width": 3,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4863af8c9b0bc051",
+        "type": "ui_group",
+        "name": "Motors",
+        "tab": "0bf48136a92eb76c",
+        "order": 2,
+        "disp": true,
+        "width": 3,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "53612cabdd4d603c",
+        "type": "ui_group",
+        "name": "Load Status",
+        "tab": "0bf48136a92eb76c",
+        "order": 6,
+        "disp": true,
+        "width": 1,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "632fd0842d7cf8b1",
+        "type": "ui_group",
+        "name": "Raw Load",
         "tab": "0bf48136a92eb76c",
         "order": 4,
         "disp": true,
-        "width": "6",
+        "width": 3,
         "collapse": false,
         "className": ""
     },
     {
-        "id": "80f1c21a8c9b30c2",
+        "id": "7049b5ae23159efb",
+        "type": "ui_group",
+        "name": "Load",
+        "tab": "0bf48136a92eb76c",
+        "order": 5,
+        "disp": true,
+        "width": 3,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "27883670a192734f",
+        "type": "ui_group",
+        "name": "Temp",
+        "tab": "0bf48136a92eb76c",
+        "order": 7,
+        "disp": true,
+        "width": 3,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4a09332c08c2f5b3",
+        "type": "ui_group",
+        "name": "Temp Status",
+        "tab": "0bf48136a92eb76c",
+        "order": 8,
+        "disp": true,
+        "width": 1,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "42646fbec66b7a63",
+        "type": "ui_group",
+        "name": "Motors Status",
+        "tab": "0bf48136a92eb76c",
+        "order": 3,
+        "disp": true,
+        "width": 3,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "826c9c28962d47ed",
         "type": "ui_spacer",
         "z": "b5fc59b555f8beb6",
         "name": "spacer",
-        "group": "5ba311ed9ef44c31",
+        "group": "42646fbec66b7a63",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "893acde640afa97a",
+        "type": "ui_spacer",
+        "z": "b5fc59b555f8beb6",
+        "name": "spacer",
+        "group": "42646fbec66b7a63",
         "order": 3,
         "width": 1,
         "height": 1
     },
     {
-        "id": "841129fcf2bd48e2",
+        "id": "08b207a78f8c6b23",
         "type": "ui_spacer",
         "z": "b5fc59b555f8beb6",
         "name": "spacer",
-        "group": "5ba311ed9ef44c31",
-        "order": 8,
-        "width": 6,
+        "group": "42646fbec66b7a63",
+        "order": 4,
+        "width": 1,
         "height": 1
     },
     {
-        "id": "32cad172a47a75d3",
+        "id": "85295a53fc277567",
         "type": "ui_spacer",
         "z": "b5fc59b555f8beb6",
         "name": "spacer",
-        "group": "5ba311ed9ef44c31",
+        "group": "42646fbec66b7a63",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "32b24e9d4ecf1493",
+        "type": "ui_spacer",
+        "z": "b5fc59b555f8beb6",
+        "name": "spacer",
+        "group": "42646fbec66b7a63",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "b8892dc76ae27bc5",
+        "type": "ui_spacer",
+        "z": "b5fc59b555f8beb6",
+        "name": "spacer",
+        "group": "42646fbec66b7a63",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "e6c01d373a74d9e8",
+        "type": "ui_spacer",
+        "z": "b5fc59b555f8beb6",
+        "name": "spacer",
+        "group": "42646fbec66b7a63",
         "order": 10,
-        "width": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "d960879cc10fc945",
+        "type": "ui_spacer",
+        "z": "b5fc59b555f8beb6",
+        "name": "spacer",
+        "group": "42646fbec66b7a63",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "6bc01623d4146f18",
+        "type": "ui_spacer",
+        "z": "b5fc59b555f8beb6",
+        "name": "spacer",
+        "group": "42646fbec66b7a63",
+        "order": 13,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "fa518e3248c78e68",
+        "type": "ui_spacer",
+        "z": "b5fc59b555f8beb6",
+        "name": "spacer",
+        "group": "42646fbec66b7a63",
+        "order": 15,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "6edf7c2357927ab0",
+        "type": "ui_spacer",
+        "z": "b5fc59b555f8beb6",
+        "name": "spacer",
+        "group": "42646fbec66b7a63",
+        "order": 16,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "125946432de92ba2",
+        "type": "ui_spacer",
+        "z": "b5fc59b555f8beb6",
+        "name": "spacer",
+        "group": "42646fbec66b7a63",
+        "order": 18,
+        "width": 1,
         "height": 1
     },
     {
@@ -480,8 +647,8 @@
         "type": "ui_form",
         "z": "b5fc59b555f8beb6",
         "name": "",
-        "label": "Raw Motors",
-        "group": "5ba311ed9ef44c31",
+        "label": "",
+        "group": "84fc9e1e23b00902",
         "order": 1,
         "width": 3,
         "height": 1,
@@ -544,7 +711,7 @@
         "topicType": "msg",
         "splitLayout": "",
         "className": "",
-        "x": 670,
+        "x": 650,
         "y": 40,
         "wires": [
             []
@@ -555,9 +722,9 @@
         "type": "ui_form",
         "z": "b5fc59b555f8beb6",
         "name": "",
-        "label": "Motors",
-        "group": "5ba311ed9ef44c31",
-        "order": 2,
+        "label": "",
+        "group": "4863af8c9b0bc051",
+        "order": 1,
         "width": 3,
         "height": 1,
         "options": [
@@ -630,9 +797,9 @@
         "type": "ui_form",
         "z": "b5fc59b555f8beb6",
         "name": "",
-        "label": "Raw Load",
-        "group": "5ba311ed9ef44c31",
-        "order": 4,
+        "label": "",
+        "group": "632fd0842d7cf8b1",
+        "order": 1,
         "width": 3,
         "height": 1,
         "options": [
@@ -694,7 +861,7 @@
         "topicType": "msg",
         "splitLayout": "",
         "className": "",
-        "x": 660,
+        "x": 650,
         "y": 260,
         "wires": [
             []
@@ -706,8 +873,8 @@
         "z": "b5fc59b555f8beb6",
         "name": "",
         "label": "Temp",
-        "group": "5ba311ed9ef44c31",
-        "order": 6,
+        "group": "27883670a192734f",
+        "order": 1,
         "width": 3,
         "height": 1,
         "options": [
@@ -780,9 +947,9 @@
         "type": "ui_form",
         "z": "b5fc59b555f8beb6",
         "name": "",
-        "label": "Load",
-        "group": "5ba311ed9ef44c31",
-        "order": 5,
+        "label": "",
+        "group": "7049b5ae23159efb",
+        "order": 1,
         "width": 3,
         "height": 1,
         "options": [
@@ -949,19 +1116,29 @@
             [
                 "14776111a05d9bb4"
             ],
-            [],
-            [],
-            [],
-            [],
-            []
+            [
+                "2d6b19ebc56c4842"
+            ],
+            [
+                "cdf133b673a8faa7"
+            ],
+            [
+                "51857c09cd0060f6"
+            ],
+            [
+                "11316064125384df"
+            ],
+            [
+                "e868ebd6732aa297"
+            ]
         ]
     },
     {
         "id": "14776111a05d9bb4",
         "type": "ui_led",
         "z": "b5fc59b555f8beb6",
-        "order": 9,
-        "group": "5ba311ed9ef44c31",
+        "order": 2,
+        "group": "42646fbec66b7a63",
         "width": 1,
         "height": 1,
         "label": "",
@@ -1001,7 +1178,7 @@
         "tooltip": "",
         "place": "Select option",
         "group": "5ba311ed9ef44c31",
-        "order": 11,
+        "order": 2,
         "width": 6,
         "height": 1,
         "passthru": true,
@@ -1054,7 +1231,7 @@
         "z": "b5fc59b555f8beb6",
         "name": "System Init",
         "group": "5ba311ed9ef44c31",
-        "order": 7,
+        "order": 1,
         "width": 6,
         "height": 1,
         "passthru": false,
@@ -1174,8 +1351,8 @@
         "topic": "topic",
         "topicType": "msg",
         "className": "",
-        "x": 130,
-        "y": 980,
+        "x": 150,
+        "y": 780,
         "wires": [
             [
                 "cfdf11e8bb869dd8"
@@ -1194,8 +1371,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 370,
-        "y": 980,
+        "x": 390,
+        "y": 780,
         "wires": [
             [
                 "abbc41c58ccffd16"
@@ -1327,8 +1504,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 560,
-        "y": 980,
+        "x": 580,
+        "y": 780,
         "wires": []
     },
     {
@@ -1462,84 +1639,190 @@
         "topicType": "msg",
         "splitLayout": "",
         "className": "",
-        "x": 1470,
+        "x": 1430,
         "y": 260,
         "wires": [
             []
         ]
     },
     {
-        "id": "10c73bfff68b99b7",
-        "type": "inject",
+        "id": "2d6b19ebc56c4842",
+        "type": "ui_led",
         "z": "b5fc59b555f8beb6",
-        "name": "Update Camera",
-        "props": [],
-        "repeat": "1",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 1030,
-        "y": 340,
-        "wires": [
-            [
-                "09cac27e41a2ca5b"
-            ]
-        ]
-    },
-    {
-        "id": "09cac27e41a2ca5b",
-        "type": "function",
-        "z": "b5fc59b555f8beb6",
-        "name": "Camera",
-        "func": "var camera = global.get(\"camera\");\n\nmsg.payload = camera;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1240,
-        "y": 340,
-        "wires": [
-            [
-                "a6b82ebbf2d28095"
-            ]
-        ]
-    },
-    {
-        "id": "a6b82ebbf2d28095",
-        "type": "ui_form",
-        "z": "b5fc59b555f8beb6",
-        "name": "",
-        "label": "Смарт-камера",
-        "group": "31bf47b1149f2766",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "options": [
+        "order": 5,
+        "group": "42646fbec66b7a63",
+        "width": 1,
+        "height": 1,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
             {
-                "label": "Code",
-                "value": "c",
-                "type": "number",
-                "required": true,
-                "rows": null
+                "color": "#008000",
+                "value": "0",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffff00",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#ff0000",
+                "value": "2",
+                "valueType": "num"
             }
         ],
-        "formValue": {
-            "c": ""
-        },
-        "payload": "",
-        "submit": "",
-        "cancel": "",
-        "topic": "topic",
-        "topicType": "msg",
-        "splitLayout": "",
-        "className": "",
-        "x": 1480,
-        "y": 340,
-        "wires": [
-            []
-        ]
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "",
+        "x": 830,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "cdf133b673a8faa7",
+        "type": "ui_led",
+        "z": "b5fc59b555f8beb6",
+        "order": 14,
+        "group": "42646fbec66b7a63",
+        "width": 1,
+        "height": 1,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#008000",
+                "value": "0",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffff00",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#ff0000",
+                "value": "2",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "",
+        "x": 830,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "51857c09cd0060f6",
+        "type": "ui_led",
+        "z": "b5fc59b555f8beb6",
+        "order": 8,
+        "group": "42646fbec66b7a63",
+        "width": 1,
+        "height": 1,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#008000",
+                "value": "0",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffff00",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#ff0000",
+                "value": "2",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "",
+        "x": 830,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "11316064125384df",
+        "type": "ui_led",
+        "z": "b5fc59b555f8beb6",
+        "order": 11,
+        "group": "42646fbec66b7a63",
+        "width": 1,
+        "height": 1,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#008000",
+                "value": "0",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffff00",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#ff0000",
+                "value": "2",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "",
+        "x": 830,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "e868ebd6732aa297",
+        "type": "ui_led",
+        "z": "b5fc59b555f8beb6",
+        "order": 17,
+        "group": "42646fbec66b7a63",
+        "width": 1,
+        "height": 1,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#008000",
+                "value": "0",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffff00",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#ff0000",
+                "value": "2",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "",
+        "x": 830,
+        "y": 260,
+        "wires": []
     }
 ]
