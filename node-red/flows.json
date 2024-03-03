@@ -2,7 +2,15 @@
     {
         "id": "c2899e0a7794b420",
         "type": "tab",
-        "label": "Flow 1",
+        "label": "Data",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2e7a746435651752",
+        "type": "tab",
+        "label": "Monitoring",
         "disabled": false,
         "info": "",
         "env": []
@@ -394,5 +402,1573 @@
         "width": 3,
         "collapse": false,
         "className": ""
+    },
+    {
+        "id": "f93e5670e3f24149",
+        "type": "ui_tab",
+        "name": "Дэшборд инженера-технолога",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a1d6d4c56a07fd97",
+        "type": "ui_group",
+        "name": "Raw Motors",
+        "tab": "f93e5670e3f24149",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d272ad6f92f0f1d9",
+        "type": "ui_group",
+        "name": "Raw Load",
+        "tab": "f93e5670e3f24149",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "062a81d9e8e45c77",
+        "type": "ui_group",
+        "name": "Load",
+        "tab": "f93e5670e3f24149",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b52e3aa09c1ab7fb",
+        "type": "ui_group",
+        "name": "Temp",
+        "tab": "f93e5670e3f24149",
+        "order": 6,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3b12922eaf46b03d",
+        "type": "ui_group",
+        "name": "Temp Status",
+        "tab": "f93e5670e3f24149",
+        "order": 7,
+        "disp": true,
+        "width": 3,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f01739839b13121f",
+        "type": "ui_group",
+        "name": "Motors",
+        "tab": "f93e5670e3f24149",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "267243152ab9c751",
+        "type": "ui_group",
+        "name": "Load Status",
+        "tab": "f93e5670e3f24149",
+        "order": 5,
+        "disp": true,
+        "width": 3,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "039404edb6747c97",
+        "type": "ui_group",
+        "name": "Мониторинг",
+        "tab": "f93e5670e3f24149",
+        "order": 8,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f0333f1ae6948c46",
+        "type": "ui_group",
+        "name": "Настройки",
+        "tab": "f93e5670e3f24149",
+        "order": 9,
+        "disp": true,
+        "width": 10,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c69a9e20b4fcf45a",
+        "type": "ui_group",
+        "name": "Терминал",
+        "tab": "f93e5670e3f24149",
+        "order": 10,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b69a8423905d7321",
+        "type": "IOT Get",
+        "z": "c2899e0a7794b420",
+        "name": "",
+        "x": 170,
+        "y": 200,
+        "wires": [
+            [
+                "9b0d9e9a30c667b9"
+            ]
+        ]
+    },
+    {
+        "id": "9b0d9e9a30c667b9",
+        "type": "function",
+        "z": "c2899e0a7794b420",
+        "name": "Get Data",
+        "func": "var thing = msg.payload;\n\nif (thing.name == \"Robot1_1\") {\n    global.set(\"motors_R1\", {\n        \"m1\": thing.m1,\n        \"m2\": thing.m2,\n        \"m3\": thing.m3,\n        \"m4\": thing.m4,\n        \"m5\": thing.m5,\n        \"m6\": thing.m6\n    });\n    global.set(\"load_R1\", {\n        \"l1\": thing.l1,\n        \"l2\": thing.l2,\n        \"l3\": thing.l3,\n        \"l4\": thing.l4,\n        \"l5\": thing.l5,\n        \"l6\": thing.l6\n    });\n    global.set(\"temp_R1\", {\n        \"t1\": thing.t1,\n        \"t2\": thing.t2,\n        \"t3\": thing.t3,\n        \"t4\": thing.t4,\n        \"t5\": thing.t5,\n        \"t6\": thing.t6\n    });\n    global.set(\"s_R1\", thing.s);\n    global.set(\"n_R1\", thing.n);\n\n}\nif (thing.name == \"Robot1_2\") {\n    global.set(\"motors_R2\", {\n        \"m1\": thing.m1,\n        \"m2\": thing.m2,\n        \"m3\": thing.m3,\n        \"m4\": thing.m4,\n        \"m5\": thing.m5,\n        \"m6\": thing.m6\n    });\n    global.set(\"load_R2\", {\n        \"l1\": thing.l1,\n        \"l2\": thing.l2,\n        \"l3\": thing.l3,\n        \"l4\": thing.l4,\n        \"l5\": thing.l5,\n        \"l6\": thing.l6\n    });\n    global.set(\"temp_R2\", {\n        \"t1\": thing.t1,\n        \"t2\": thing.t2,\n        \"t3\": thing.t3,\n        \"t4\": thing.t4,\n        \"t5\": thing.t5,\n        \"t6\": thing.t6\n    });\n    global.set(\"s_R2\", thing.s);\n    global.set(\"n_R2\", thing.n);\n}\nif (thing.name == \"WorkshiftTerminal1\") {\n    global.set(\"terminal\", {\n        \"p\": thing.p,\n        \"b1\": thing.b1,\n        \"b2\": thing.b2,\n        \"b3\": thing.b3\n    });\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 200,
+        "wires": [
+            [
+                "ad711aae888dc5a5"
+            ]
+        ]
+    },
+    {
+        "id": "ad711aae888dc5a5",
+        "type": "debug",
+        "z": "c2899e0a7794b420",
+        "name": "debug 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "35a718e0b6f976d2",
+        "type": "inject",
+        "z": "2e7a746435651752",
+        "name": "Update Robot",
+        "props": [],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 160,
+        "y": 240,
+        "wires": [
+            [
+                "3d8722c536fb8bf6",
+                "1e6bbd378c3c9301",
+                "9dd5537d66bf9e87",
+                "54c3876520731590",
+                "2453caf9079996cc"
+            ]
+        ]
+    },
+    {
+        "id": "3d8722c536fb8bf6",
+        "type": "function",
+        "z": "2e7a746435651752",
+        "name": "Raw Motors",
+        "func": "if (global.get(\"selected_robot\") == 1) {\n    var motors = global.get(\"motors_R1\");\n} else if (global.get(\"selected_robot\") == 2) {\n    var motors = global.get(\"motors_R2\");\n}\n\nmsg.payload = motors;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 80,
+        "wires": [
+            [
+                "b845ac5989cb3db5"
+            ]
+        ]
+    },
+    {
+        "id": "1e6bbd378c3c9301",
+        "type": "function",
+        "z": "2e7a746435651752",
+        "name": "Clean Motors",
+        "func": "if (global.get(\"selected_robot\") == 1) {\n    var motors = global.get(\"motors_R1\");\n} else if (global.get(\"selected_robot\") == 2) {\n    var motors = global.get(\"motors_R2\");\n}\n\nvar motorsGrad = {}\nvar c = 1;\nfor (var [key, value] of Object.entries(motors)) {\n    if (c <= 4) {\n        motorsGrad[key] = Math.round(value / 4096 * 360);\n    } else {\n        motorsGrad[key] = Math.round(value / 2048 * 360);\n    }\n    c++;\n}\n\nmsg.payload = motorsGrad;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 140,
+        "wires": [
+            [
+                "2991cea35b37d747"
+            ]
+        ]
+    },
+    {
+        "id": "9dd5537d66bf9e87",
+        "type": "function",
+        "z": "2e7a746435651752",
+        "name": "Raw Load",
+        "func": "if (global.get(\"selected_robot\") == 1) {\n    var load = global.get(\"load_R1\");\n} else if (global.get(\"selected_robot\") == 2) {\n    var load = global.get(\"load_R2\");\n}\n\nmsg.payload = load;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 200,
+        "wires": [
+            [
+                "f853811e4ccc31cc"
+            ]
+        ]
+    },
+    {
+        "id": "54c3876520731590",
+        "type": "function",
+        "z": "2e7a746435651752",
+        "name": "Clean Load",
+        "func": "if (global.get(\"selected_robot\") == 1) {\n    var load = global.get(\"load_R1\");\n} else if (global.get(\"selected_robot\") == 2) {\n    var load = global.get(\"load_R2\");\n}\n\nvar loadProc = {}\nfor (var [key, value] of Object.entries(load)) {\n    if (value <= 1024) {\n        loadProc[key] = Math.round(value / 1024 * 100);\n    } else {\n        loadProc[key] = Math.round((value - 1024) / 1024 * 100);\n    }\n}\n\nmsg.payload = loadProc;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 260,
+        "wires": [
+            [
+                "1f78a6817150fd99",
+                "bf053afd95bef829"
+            ]
+        ]
+    },
+    {
+        "id": "2453caf9079996cc",
+        "type": "function",
+        "z": "2e7a746435651752",
+        "name": "Temp",
+        "func": "if (global.get(\"selected_robot\") == 1) {\n    var temp = global.get(\"temp_R1\");\n} else if (global.get(\"selected_robot\") == 2) {\n    var temp = global.get(\"temp_R2\");\n}\n\nmsg.payload = temp;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 420,
+        "wires": [
+            [
+                "e63065d5723f5eeb",
+                "d4e8a7c3196d2d34"
+            ]
+        ]
+    },
+    {
+        "id": "bf053afd95bef829",
+        "type": "function",
+        "z": "2e7a746435651752",
+        "name": "Status",
+        "func": "if (global.get(\"selected_robot\") == 1) {\n    var r = \"_R1\";\n} else if (global.get(\"selected_robot\") == 2) {\n    var r = \"_R2\";\n}\n\nvar load = msg.payload;\nvar status = [];\n\nvar i = 0;\nfor (var [key, value] of Object.entries(load)) {\n    var key_ = Object.keys(global.get(\"loadProcMin\" + r))[i];\n    if (value < global.get(\"loadProcMin\" + r)[key_]) {\n        status[i] = {payload: 2};\n    } else if (value > global.get(\"loadProcMax\" + r)[key_]) {\n        status[i] = {payload: 2};\n    } else if (value < global.get(\"loadProcCritMin\" + r)[key_]) {\n        status[i] = {payload: 1};\n    } else if (value > global.get(\"loadProcCritMax\" + r)[key_]) {\n        status[i] = {payload: 1};\n    } else {\n        status[i] = {payload: 0};\n    }\n    i++;\n}\n\nreturn status;",
+        "outputs": 6,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 340,
+        "wires": [
+            [
+                "cec0c7e3c320df20"
+            ],
+            [
+                "ccd65dd59988a169"
+            ],
+            [
+                "a1c2e31f9fc82f26"
+            ],
+            [
+                "d106aea6f6aa8835"
+            ],
+            [
+                "cd2179c26b4e6550"
+            ],
+            [
+                "a2ccbefe1a6221d1"
+            ]
+        ]
+    },
+    {
+        "id": "b845ac5989cb3db5",
+        "type": "ui_form",
+        "z": "2e7a746435651752",
+        "name": "Motors",
+        "label": "",
+        "group": "a1d6d4c56a07fd97",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "motor 1",
+                "value": "m1",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "motor 2",
+                "value": "m2",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "motor 3",
+                "value": "m3",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "motor 4",
+                "value": "m4",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "motor 5",
+                "value": "m5",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "motor 6",
+                "value": "m6",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "m1": "",
+            "m2": "",
+            "m3": "",
+            "m4": "",
+            "m5": "",
+            "m6": ""
+        },
+        "payload": "",
+        "submit": "",
+        "cancel": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 590,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f853811e4ccc31cc",
+        "type": "ui_form",
+        "z": "2e7a746435651752",
+        "name": "Load",
+        "label": "",
+        "group": "d272ad6f92f0f1d9",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "motor 1",
+                "value": "l1",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "motor 2",
+                "value": "l2",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "motor 3",
+                "value": "l3",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "motor 4",
+                "value": "l4",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "motor 5",
+                "value": "l5",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "motor 6",
+                "value": "l6",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "l1": "",
+            "l2": "",
+            "l3": "",
+            "l4": "",
+            "l5": "",
+            "l6": ""
+        },
+        "payload": "",
+        "submit": "",
+        "cancel": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 590,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e63065d5723f5eeb",
+        "type": "ui_form",
+        "z": "2e7a746435651752",
+        "name": "Temp",
+        "label": "",
+        "group": "b52e3aa09c1ab7fb",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "motor 1",
+                "value": "t1",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "motor 2",
+                "value": "t2",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "motor 3",
+                "value": "t3",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "motor 4",
+                "value": "t4",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "motor 5",
+                "value": "t5",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "motor 6",
+                "value": "t6",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "t1": "",
+            "t2": "",
+            "t3": "",
+            "t4": "",
+            "t5": "",
+            "t6": ""
+        },
+        "payload": "",
+        "submit": "",
+        "cancel": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 590,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2991cea35b37d747",
+        "type": "ui_form",
+        "z": "2e7a746435651752",
+        "name": "Motors",
+        "label": "",
+        "group": "f01739839b13121f",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "motor 1",
+                "value": "m1",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "motor 2",
+                "value": "m2",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "motor 3",
+                "value": "m3",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "motor 4",
+                "value": "m4",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "motor 5",
+                "value": "m5",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "motor 6",
+                "value": "m6",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "m1": "",
+            "m2": "",
+            "m3": "",
+            "m4": "",
+            "m5": "",
+            "m6": ""
+        },
+        "payload": "",
+        "submit": "",
+        "cancel": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 590,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1f78a6817150fd99",
+        "type": "ui_form",
+        "z": "2e7a746435651752",
+        "name": "Load",
+        "label": "",
+        "group": "062a81d9e8e45c77",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "motor 1",
+                "value": "l1",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "motor 2",
+                "value": "l2",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "motor 3",
+                "value": "l3",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "motor 4",
+                "value": "l4",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "motor 5",
+                "value": "l5",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "motor 6",
+                "value": "l6",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "l1": "",
+            "l2": "",
+            "l3": "",
+            "l4": "",
+            "l5": "",
+            "l6": ""
+        },
+        "payload": "",
+        "submit": "",
+        "cancel": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 590,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ad00647f060b5e98",
+        "type": "ui_button",
+        "z": "2e7a746435651752",
+        "name": "Reset",
+        "group": "039404edb6747c97",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Инициализация Значений",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 110,
+        "y": 680,
+        "wires": [
+            [
+                "39023b62b1ea3518"
+            ]
+        ]
+    },
+    {
+        "id": "39023b62b1ea3518",
+        "type": "function",
+        "z": "2e7a746435651752",
+        "name": "Set Default",
+        "func": "global.set(\"selected_robot\", 1);\nglobal.set(\"selected_limit\", \"loadProcMin\");\n\nglobal.set(\"loadProcMin_R1\", {\n    \"m1\": 5,\n    \"m2\": 5,\n    \"m3\": 5,\n    \"m4\": 5,\n    \"m5\": 5,\n    \"m6\": 5\n});\nglobal.set(\"loadProcCritMin_R1\", {\n    \"m1\": 20,\n    \"m2\": 20,\n    \"m3\": 20,\n    \"m4\": 20,\n    \"m5\": 20,\n    \"m6\": 20\n});\nglobal.set(\"loadProcCritMax_R1\", {\n    \"m1\": 80,\n    \"m2\": 80,\n    \"m3\": 80,\n    \"m4\": 80,\n    \"m5\": 80,\n    \"m6\": 80\n});\nglobal.set(\"loadProcMax_R1\", {\n    \"m1\": 95,\n    \"m2\": 95,\n    \"m3\": 95,\n    \"m4\": 95,\n    \"m5\": 95,\n    \"m6\": 95\n});\nglobal.set(\"tempMin_R1\", {\n    \"m1\": 5,\n    \"m2\": 5,\n    \"m3\": 5,\n    \"m4\": 5,\n    \"m5\": 5,\n    \"m6\": 5\n});\nglobal.set(\"tempCritMin_R1\", {\n    \"m1\": 15,\n    \"m2\": 15,\n    \"m3\": 15,\n    \"m4\": 15,\n    \"m5\": 15,\n    \"m6\": 15\n});\nglobal.set(\"tempCritMax_R1\", {\n    \"m1\": 85,\n    \"m2\": 85,\n    \"m3\": 85,\n    \"m4\": 85,\n    \"m5\": 85,\n    \"m6\": 85\n});\nglobal.set(\"tempMax_R1\", {\n    \"m1\": 95,\n    \"m2\": 95,\n    \"m3\": 95,\n    \"m4\": 95,\n    \"m5\": 95,\n    \"m6\": 95\n});\nglobal.set(\"loadProcMin_R2\", {\n    \"m1\": 5,\n    \"m2\": 5,\n    \"m3\": 5,\n    \"m4\": 5,\n    \"m5\": 5,\n    \"m6\": 5\n});\nglobal.set(\"loadProcCritMin_R2\", {\n    \"m1\": 20,\n    \"m2\": 20,\n    \"m3\": 20,\n    \"m4\": 20,\n    \"m5\": 20,\n    \"m6\": 20\n});\nglobal.set(\"loadProcCritMax_R2\", {\n    \"m1\": 80,\n    \"m2\": 80,\n    \"m3\": 80,\n    \"m4\": 80,\n    \"m5\": 80,\n    \"m6\": 80\n});\nglobal.set(\"loadProcMax_R2\", {\n    \"m1\": 95,\n    \"m2\": 95,\n    \"m3\": 95,\n    \"m4\": 95,\n    \"m5\": 95,\n    \"m6\": 95\n});\nglobal.set(\"tempMin_R2\", {\n    \"m1\": 5,\n    \"m2\": 5,\n    \"m3\": 5,\n    \"m4\": 5,\n    \"m5\": 5,\n    \"m6\": 5\n});\nglobal.set(\"tempCritMin_R2\", {\n    \"m1\": 15,\n    \"m2\": 15,\n    \"m3\": 15,\n    \"m4\": 15,\n    \"m5\": 15,\n    \"m6\": 15\n});\nglobal.set(\"tempCritMax_R2\", {\n    \"m1\": 85,\n    \"m2\": 85,\n    \"m3\": 85,\n    \"m4\": 85,\n    \"m5\": 85,\n    \"m6\": 85\n});\nglobal.set(\"tempMax_R2\", {\n    \"m1\": 95,\n    \"m2\": 95,\n    \"m3\": 95,\n    \"m4\": 95,\n    \"m5\": 95,\n    \"m6\": 95\n});\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4c7d7147dc24df10",
+        "type": "ui_dropdown",
+        "z": "2e7a746435651752",
+        "name": "Select Robot",
+        "label": "Робот",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "039404edb6747c97",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Робот 1",
+                "value": 1,
+                "type": "num"
+            },
+            {
+                "label": "Робот 2",
+                "value": 2,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 130,
+        "y": 740,
+        "wires": [
+            [
+                "e471d30e58b7a9ae"
+            ]
+        ]
+    },
+    {
+        "id": "e471d30e58b7a9ae",
+        "type": "function",
+        "z": "2e7a746435651752",
+        "name": "Set Robot",
+        "func": "global.set(\"selected_robot\", msg.payload);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "53d7e074544c8e1c",
+        "type": "ui_dropdown",
+        "z": "2e7a746435651752",
+        "name": "Select Limit",
+        "label": "Выбор значений",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "f0333f1ae6948c46",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Нагрузка Минимально Допустимая",
+                "value": "loadProcMin",
+                "type": "str"
+            },
+            {
+                "label": "Нагрузка Минимально Критическая",
+                "value": "loadProcCritMin",
+                "type": "str"
+            },
+            {
+                "label": "Нагрузка Минимально Критическая",
+                "value": "loadProcCritMax",
+                "type": "str"
+            },
+            {
+                "label": "Нагрузка Максимально Допустимая",
+                "value": "loadProcMax",
+                "type": "str"
+            },
+            {
+                "label": "Температура Минимально Допустимая",
+                "value": "tempMin",
+                "type": "str"
+            },
+            {
+                "label": "Температура Минимально Критическая",
+                "value": "tempCritMin",
+                "type": "str"
+            },
+            {
+                "label": "Температура Минимально Критическая",
+                "value": "tempCritMax",
+                "type": "str"
+            },
+            {
+                "label": "Температура Максимально Допустимая",
+                "value": "tempMax",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 130,
+        "y": 800,
+        "wires": [
+            [
+                "470f94ed6628e02b"
+            ]
+        ]
+    },
+    {
+        "id": "470f94ed6628e02b",
+        "type": "function",
+        "z": "2e7a746435651752",
+        "name": "Set Limit",
+        "func": "global.set(\"selected_limit\", msg.payload);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cec0c7e3c320df20",
+        "type": "ui_led",
+        "z": "2e7a746435651752",
+        "order": 1,
+        "group": "267243152ab9c751",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "2",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffff00",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#008000",
+                "value": "0",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "CL1",
+        "x": 790,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "40873acebbde4c8f",
+        "type": "inject",
+        "z": "2e7a746435651752",
+        "name": "Update Limit",
+        "props": [],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 160,
+        "y": 860,
+        "wires": [
+            [
+                "f355b5e1b752e6bc"
+            ]
+        ]
+    },
+    {
+        "id": "f355b5e1b752e6bc",
+        "type": "function",
+        "z": "2e7a746435651752",
+        "name": "Update Limit",
+        "func": "if (global.get(\"selected_robot\") == 1) {\n    var limit = global.get(\"selected_limit\") + \"_R1\";\n} else if (global.get(\"selected_robot\") == 2) {\n    var limit = global.get(\"selected_limit\") + \"_R2\";\n}\n\nmsg.payload = global.get(limit);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 860,
+        "wires": [
+            [
+                "8f64257347803d2b"
+            ]
+        ]
+    },
+    {
+        "id": "8f64257347803d2b",
+        "type": "ui_form",
+        "z": "2e7a746435651752",
+        "name": "Limits",
+        "label": "Ограничения",
+        "group": "f0333f1ae6948c46",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Motor 1",
+                "value": "m1",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Motor 2",
+                "value": "m2",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Motor 3",
+                "value": "m3",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Motor 4",
+                "value": "m4",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Motor 5",
+                "value": "m5",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Motor 6",
+                "value": "m6",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "m1": "",
+            "m2": "",
+            "m3": "",
+            "m4": "",
+            "m5": "",
+            "m6": ""
+        },
+        "payload": "",
+        "submit": "Применить",
+        "cancel": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 130,
+        "y": 920,
+        "wires": [
+            [
+                "ae4306d835434ca7"
+            ]
+        ]
+    },
+    {
+        "id": "ae4306d835434ca7",
+        "type": "function",
+        "z": "2e7a746435651752",
+        "name": "Set Limit",
+        "func": "if (global.get(\"selected_robot\") == 1) {\n    var limit = global.get(\"selected_limit\") + \"_R1\";\n} else if (global.get(\"selected_robot\") == 2) {\n    var limit = global.get(\"selected_limit\") + \"_R2\";\n}\n\nglobal.set(limit, msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d4e8a7c3196d2d34",
+        "type": "function",
+        "z": "2e7a746435651752",
+        "name": "Status",
+        "func": "if (global.get(\"selected_robot\") == 1) {\n    var r = \"_R1\";\n} else if (global.get(\"selected_robot\") == 2) {\n    var r = \"_R2\";\n}\n\nvar temp = msg.payload;\nvar status = [];\n\nvar i = 0;\nfor (var [key, value] of Object.entries(temp)) {\n    var key_ = Object.keys(global.get(\"tempMin\" + r))[i];\n    if (value < global.get(\"tempMin\" + r)[key_]) {\n        status[i] = {payload: 2};\n    } else if (value > global.get(\"tempMax\" + r)[key_]) {\n        status[i] = {payload: 2};\n    } else if (value < global.get(\"tempCritMin\" + r)[key_]) {\n        status[i] = {payload: 1};\n    } else if (value > global.get(\"tempCritMax\" + r)[key_]) {\n        status[i] = {payload: 1};\n    } else {\n        status[i] = {payload: 0};\n    }\n    i++;\n}\n\nreturn status;",
+        "outputs": 6,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 520,
+        "wires": [
+            [
+                "43bfb8ebb5c4fe56"
+            ],
+            [
+                "32bc801d567b568f"
+            ],
+            [
+                "d2e0c57cc4eeba57"
+            ],
+            [
+                "7219cd1d6e846226"
+            ],
+            [
+                "60e5f95f008ad5b2"
+            ],
+            [
+                "f1b23e39a763a849"
+            ]
+        ]
+    },
+    {
+        "id": "43bfb8ebb5c4fe56",
+        "type": "ui_led",
+        "z": "2e7a746435651752",
+        "order": 1,
+        "group": "3b12922eaf46b03d",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "2",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffff00",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#008000",
+                "value": "0",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "T1",
+        "x": 790,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "3b176c36d65090a6",
+        "type": "inject",
+        "z": "2e7a746435651752",
+        "name": "Update Terminal",
+        "props": [],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 170,
+        "y": 620,
+        "wires": [
+            [
+                "2173699dc978c474"
+            ]
+        ]
+    },
+    {
+        "id": "2173699dc978c474",
+        "type": "ui_form",
+        "z": "2e7a746435651752",
+        "name": "Temp",
+        "label": "",
+        "group": "c69a9e20b4fcf45a",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "DeadManSwitch",
+                "value": "p",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Button 1",
+                "value": "b1",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Button 1",
+                "value": "b1",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Button 1",
+                "value": "b1",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "p": "",
+            "b1": ""
+        },
+        "payload": "",
+        "submit": "",
+        "cancel": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 350,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ccd65dd59988a169",
+        "type": "ui_led",
+        "z": "2e7a746435651752",
+        "order": 2,
+        "group": "267243152ab9c751",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "2",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffff00",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#008000",
+                "value": "0",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "CL2",
+        "x": 790,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "a1c2e31f9fc82f26",
+        "type": "ui_led",
+        "z": "2e7a746435651752",
+        "order": 3,
+        "group": "267243152ab9c751",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "2",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffff00",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#008000",
+                "value": "0",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "CL3",
+        "x": 790,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "d106aea6f6aa8835",
+        "type": "ui_led",
+        "z": "2e7a746435651752",
+        "order": 4,
+        "group": "267243152ab9c751",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "2",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffff00",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#008000",
+                "value": "0",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "CL4",
+        "x": 790,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "cd2179c26b4e6550",
+        "type": "ui_led",
+        "z": "2e7a746435651752",
+        "order": 5,
+        "group": "267243152ab9c751",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "2",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffff00",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#008000",
+                "value": "0",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "CL5",
+        "x": 790,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "a2ccbefe1a6221d1",
+        "type": "ui_led",
+        "z": "2e7a746435651752",
+        "order": 6,
+        "group": "267243152ab9c751",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "2",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffff00",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#008000",
+                "value": "0",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "CL6",
+        "x": 790,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "32bc801d567b568f",
+        "type": "ui_led",
+        "z": "2e7a746435651752",
+        "order": 2,
+        "group": "3b12922eaf46b03d",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "2",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffff00",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#008000",
+                "value": "0",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "T2",
+        "x": 790,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "d2e0c57cc4eeba57",
+        "type": "ui_led",
+        "z": "2e7a746435651752",
+        "order": 3,
+        "group": "3b12922eaf46b03d",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "2",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffff00",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#008000",
+                "value": "0",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "T3",
+        "x": 790,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "7219cd1d6e846226",
+        "type": "ui_led",
+        "z": "2e7a746435651752",
+        "order": 4,
+        "group": "3b12922eaf46b03d",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "2",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffff00",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#008000",
+                "value": "0",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "T4",
+        "x": 790,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "60e5f95f008ad5b2",
+        "type": "ui_led",
+        "z": "2e7a746435651752",
+        "order": 5,
+        "group": "3b12922eaf46b03d",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "2",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffff00",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#008000",
+                "value": "0",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "T5",
+        "x": 790,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "f1b23e39a763a849",
+        "type": "ui_led",
+        "z": "2e7a746435651752",
+        "order": 6,
+        "group": "3b12922eaf46b03d",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "2",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffff00",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#008000",
+                "value": "0",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "T6",
+        "x": 790,
+        "y": 620,
+        "wires": []
     }
 ]

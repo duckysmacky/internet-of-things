@@ -1,14 +1,14 @@
 [
     {
-        "id": "4a06fcdd722cb60d",
+        "id": "c2899e0a7794b420",
         "type": "tab",
-        "label": "Get Data",
+        "label": "Data",
         "disabled": false,
         "info": "",
         "env": []
     },
     {
-        "id": "b5fc59b555f8beb6",
+        "id": "2e7a746435651752",
         "type": "tab",
         "label": "Monitoring",
         "disabled": false,
@@ -274,19 +274,10 @@
         "className": ""
     },
     {
-        "id": "0bf48136a92eb76c",
-        "type": "ui_tab",
-        "name": "Инженер-технолог",
-        "icon": "dashboard",
-        "order": 1,
-        "disabled": false,
-        "hidden": false
-    },
-    {
         "id": "5ba311ed9ef44c31",
         "type": "ui_group",
         "name": "Мониторинг",
-        "tab": "0bf48136a92eb76c",
+        "tab": "",
         "order": 9,
         "disp": true,
         "width": 6,
@@ -306,7 +297,7 @@
         "id": "4983803d4416cdc6",
         "type": "ui_group",
         "name": "Настройки",
-        "tab": "0bf48136a92eb76c",
+        "tab": "",
         "order": 10,
         "disp": true,
         "width": 12,
@@ -317,7 +308,7 @@
         "id": "be207fdb611e54bc",
         "type": "ui_group",
         "name": "Терминал",
-        "tab": "0bf48136a92eb76c",
+        "tab": "",
         "order": 11,
         "disp": true,
         "width": "6",
@@ -328,7 +319,7 @@
         "id": "84fc9e1e23b00902",
         "type": "ui_group",
         "name": "Raw Motors",
-        "tab": "0bf48136a92eb76c",
+        "tab": "",
         "order": 1,
         "disp": true,
         "width": 3,
@@ -339,7 +330,7 @@
         "id": "4863af8c9b0bc051",
         "type": "ui_group",
         "name": "Motors",
-        "tab": "0bf48136a92eb76c",
+        "tab": "",
         "order": 2,
         "disp": true,
         "width": 3,
@@ -350,7 +341,7 @@
         "id": "53612cabdd4d603c",
         "type": "ui_group",
         "name": "Load Status",
-        "tab": "0bf48136a92eb76c",
+        "tab": "",
         "order": 6,
         "disp": true,
         "width": 1,
@@ -361,7 +352,7 @@
         "id": "632fd0842d7cf8b1",
         "type": "ui_group",
         "name": "Raw Load",
-        "tab": "0bf48136a92eb76c",
+        "tab": "",
         "order": 4,
         "disp": true,
         "width": 3,
@@ -372,7 +363,7 @@
         "id": "7049b5ae23159efb",
         "type": "ui_group",
         "name": "Load",
-        "tab": "0bf48136a92eb76c",
+        "tab": "",
         "order": 5,
         "disp": true,
         "width": 3,
@@ -383,7 +374,7 @@
         "id": "27883670a192734f",
         "type": "ui_group",
         "name": "Temp",
-        "tab": "0bf48136a92eb76c",
+        "tab": "",
         "order": 7,
         "disp": true,
         "width": 3,
@@ -394,7 +385,7 @@
         "id": "4a09332c08c2f5b3",
         "type": "ui_group",
         "name": "Temp Status",
-        "tab": "0bf48136a92eb76c",
+        "tab": "",
         "order": 8,
         "disp": true,
         "width": 1,
@@ -405,7 +396,7 @@
         "id": "42646fbec66b7a63",
         "type": "ui_group",
         "name": "Motors Status",
-        "tab": "0bf48136a92eb76c",
+        "tab": "",
         "order": 3,
         "disp": true,
         "width": 3,
@@ -413,163 +404,161 @@
         "className": ""
     },
     {
-        "id": "826c9c28962d47ed",
-        "type": "ui_spacer",
-        "z": "b5fc59b555f8beb6",
-        "name": "spacer",
-        "group": "42646fbec66b7a63",
+        "id": "f93e5670e3f24149",
+        "type": "ui_tab",
+        "name": "Дэшборд инженера-технолога",
+        "icon": "dashboard",
         "order": 1,
-        "width": 1,
-        "height": 1
+        "disabled": false,
+        "hidden": false
     },
     {
-        "id": "893acde640afa97a",
-        "type": "ui_spacer",
-        "z": "b5fc59b555f8beb6",
-        "name": "spacer",
-        "group": "42646fbec66b7a63",
+        "id": "a1d6d4c56a07fd97",
+        "type": "ui_group",
+        "name": "Raw Motors",
+        "tab": "f93e5670e3f24149",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d272ad6f92f0f1d9",
+        "type": "ui_group",
+        "name": "Raw Load",
+        "tab": "f93e5670e3f24149",
         "order": 3,
-        "width": 1,
-        "height": 1
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
     },
     {
-        "id": "08b207a78f8c6b23",
-        "type": "ui_spacer",
-        "z": "b5fc59b555f8beb6",
-        "name": "spacer",
-        "group": "42646fbec66b7a63",
+        "id": "062a81d9e8e45c77",
+        "type": "ui_group",
+        "name": "Load",
+        "tab": "f93e5670e3f24149",
         "order": 4,
-        "width": 1,
-        "height": 1
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
     },
     {
-        "id": "85295a53fc277567",
-        "type": "ui_spacer",
-        "z": "b5fc59b555f8beb6",
-        "name": "spacer",
-        "group": "42646fbec66b7a63",
+        "id": "b52e3aa09c1ab7fb",
+        "type": "ui_group",
+        "name": "Temp",
+        "tab": "f93e5670e3f24149",
         "order": 6,
-        "width": 1,
-        "height": 1
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
     },
     {
-        "id": "32b24e9d4ecf1493",
-        "type": "ui_spacer",
-        "z": "b5fc59b555f8beb6",
-        "name": "spacer",
-        "group": "42646fbec66b7a63",
+        "id": "3b12922eaf46b03d",
+        "type": "ui_group",
+        "name": "Temp Status",
+        "tab": "f93e5670e3f24149",
         "order": 7,
-        "width": 1,
-        "height": 1
+        "disp": true,
+        "width": 3,
+        "collapse": false,
+        "className": ""
     },
     {
-        "id": "b8892dc76ae27bc5",
-        "type": "ui_spacer",
-        "z": "b5fc59b555f8beb6",
-        "name": "spacer",
-        "group": "42646fbec66b7a63",
+        "id": "f01739839b13121f",
+        "type": "ui_group",
+        "name": "Motors",
+        "tab": "f93e5670e3f24149",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "267243152ab9c751",
+        "type": "ui_group",
+        "name": "Load Status",
+        "tab": "f93e5670e3f24149",
+        "order": 5,
+        "disp": true,
+        "width": 3,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "039404edb6747c97",
+        "type": "ui_group",
+        "name": "Мониторинг",
+        "tab": "f93e5670e3f24149",
+        "order": 8,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f0333f1ae6948c46",
+        "type": "ui_group",
+        "name": "Настройки",
+        "tab": "f93e5670e3f24149",
         "order": 9,
-        "width": 1,
-        "height": 1
+        "disp": true,
+        "width": 10,
+        "collapse": false,
+        "className": ""
     },
     {
-        "id": "e6c01d373a74d9e8",
-        "type": "ui_spacer",
-        "z": "b5fc59b555f8beb6",
-        "name": "spacer",
-        "group": "42646fbec66b7a63",
+        "id": "c69a9e20b4fcf45a",
+        "type": "ui_group",
+        "name": "Терминал",
+        "tab": "f93e5670e3f24149",
         "order": 10,
-        "width": 1,
-        "height": 1
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
     },
     {
-        "id": "d960879cc10fc945",
-        "type": "ui_spacer",
-        "z": "b5fc59b555f8beb6",
-        "name": "spacer",
-        "group": "42646fbec66b7a63",
-        "order": 12,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "6bc01623d4146f18",
-        "type": "ui_spacer",
-        "z": "b5fc59b555f8beb6",
-        "name": "spacer",
-        "group": "42646fbec66b7a63",
-        "order": 13,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "fa518e3248c78e68",
-        "type": "ui_spacer",
-        "z": "b5fc59b555f8beb6",
-        "name": "spacer",
-        "group": "42646fbec66b7a63",
-        "order": 15,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "6edf7c2357927ab0",
-        "type": "ui_spacer",
-        "z": "b5fc59b555f8beb6",
-        "name": "spacer",
-        "group": "42646fbec66b7a63",
-        "order": 16,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "125946432de92ba2",
-        "type": "ui_spacer",
-        "z": "b5fc59b555f8beb6",
-        "name": "spacer",
-        "group": "42646fbec66b7a63",
-        "order": 18,
-        "width": 1,
-        "height": 1
-    },
-    {
-        "id": "406a608efcf714bf",
+        "id": "b69a8423905d7321",
         "type": "IOT Get",
-        "z": "4a06fcdd722cb60d",
+        "z": "c2899e0a7794b420",
         "name": "",
-        "x": 110,
-        "y": 220,
+        "x": 170,
+        "y": 200,
         "wires": [
             [
-                "7b5e139aad8149f7",
-                "0aced6ef01b8feaf"
+                "9b0d9e9a30c667b9"
             ]
         ]
     },
     {
-        "id": "7b5e139aad8149f7",
+        "id": "9b0d9e9a30c667b9",
         "type": "function",
-        "z": "4a06fcdd722cb60d",
-        "name": "Write Data",
-        "func": "var thing = msg.payload;\n\nif (thing.name == \"Robot1_1\") {\n    global.set(\"motor_R1\", {\n        \"m1\": thing.m1,\n        \"m2\": thing.m2,\n        \"m3\": thing.m3,\n        \"m4\": thing.m4,\n        \"m5\": thing.m5,\n        \"m6\": thing.m6\n        });\n    global.set(\"load_R1\", {\n        \"l1\": thing.l1,\n        \"l2\": thing.l2,\n        \"l3\": thing.l3,\n        \"l4\": thing.l4,\n        \"l5\": thing.l5,\n        \"l6\": thing.l6\n        });\n    global.set(\"temp_R1\", {\n        \"t1\": thing.t1,\n        \"t2\": thing.t2,\n        \"t3\": thing.t3,\n        \"t4\": thing.t4,\n        \"t5\": thing.t5,\n        \"t6\": thing.t6\n        });\n    global.set(\"s_R1\", thing.s);\n    global.set(\"n_R1\", thing.n);\n\n} else if (thing.name == \"Robot1_2\") {\n    global.set(\"motor_R2\", {\n        \"m1\": thing.m1,\n        \"m2\": thing.m2,\n        \"m3\": thing.m3,\n        \"m4\": thing.m4,\n        \"m5\": thing.m5,\n        \"m6\": thing.m6\n        });\n    global.set(\"load_R2\", {\n        \"l1\": thing.l1,\n        \"l2\": thing.l2,\n        \"l3\": thing.l3,\n        \"l4\": thing.l4,\n        \"l5\": thing.l5,\n        \"l6\": thing.l6\n        });\n    global.set(\"temp_R2\", {\n        \"t1\": thing.t1,\n        \"t2\": thing.t2,\n        \"t3\": thing.t3,\n        \"t4\": thing.t4,\n        \"t5\": thing.t5,\n        \"t6\": thing.t6\n        });\n    global.set(\"s_R2\", thing.s);\n    global.set(\"n_R2\", thing.n);\n} else if (thing.name == \"WorkshiftTerminal1\") {\n    global.set(\"terminal\", {\n        \"p\": thing.p,\n        \"b1\": thing.b1,\n        \"b2\": thing.b2,\n        \"b3\": thing.b3\n        });\n} else if (thing.name == \"SmartCamera1\") {\n    global.set(\"camera\", {\n        \"c\": thing.c\n        });\n}\n\nmsg.payload = [thing.name, global.get(\"motor_R1\")[\"m1\"]];\n\nreturn msg;",
+        "z": "c2899e0a7794b420",
+        "name": "Get Data",
+        "func": "var thing = msg.payload;\n\nif (thing.name == \"Robot1_1\") {\n    global.set(\"motors_R1\", {\n        \"m1\": thing.m1,\n        \"m2\": thing.m2,\n        \"m3\": thing.m3,\n        \"m4\": thing.m4,\n        \"m5\": thing.m5,\n        \"m6\": thing.m6\n    });\n    global.set(\"load_R1\", {\n        \"l1\": thing.l1,\n        \"l2\": thing.l2,\n        \"l3\": thing.l3,\n        \"l4\": thing.l4,\n        \"l5\": thing.l5,\n        \"l6\": thing.l6\n    });\n    global.set(\"temp_R1\", {\n        \"t1\": thing.t1,\n        \"t2\": thing.t2,\n        \"t3\": thing.t3,\n        \"t4\": thing.t4,\n        \"t5\": thing.t5,\n        \"t6\": thing.t6\n    });\n    global.set(\"s_R1\", thing.s);\n    global.set(\"n_R1\", thing.n);\n\n}\nif (thing.name == \"Robot1_2\") {\n    global.set(\"motors_R2\", {\n        \"m1\": thing.m1,\n        \"m2\": thing.m2,\n        \"m3\": thing.m3,\n        \"m4\": thing.m4,\n        \"m5\": thing.m5,\n        \"m6\": thing.m6\n    });\n    global.set(\"load_R2\", {\n        \"l1\": thing.l1,\n        \"l2\": thing.l2,\n        \"l3\": thing.l3,\n        \"l4\": thing.l4,\n        \"l5\": thing.l5,\n        \"l6\": thing.l6\n    });\n    global.set(\"temp_R2\", {\n        \"t1\": thing.t1,\n        \"t2\": thing.t2,\n        \"t3\": thing.t3,\n        \"t4\": thing.t4,\n        \"t5\": thing.t5,\n        \"t6\": thing.t6\n    });\n    global.set(\"s_R2\", thing.s);\n    global.set(\"n_R2\", thing.n);\n}\nif (thing.name == \"WorkshiftTerminal1\") {\n    global.set(\"terminal\", {\n        \"p\": thing.p,\n        \"b1\": thing.b1,\n        \"b2\": thing.b2,\n        \"b3\": thing.b3\n    });\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 310,
-        "y": 220,
+        "x": 380,
+        "y": 200,
         "wires": [
             [
-                "c37a01d79922e14a"
+                "ad711aae888dc5a5"
             ]
         ]
     },
     {
-        "id": "0aced6ef01b8feaf",
+        "id": "ad711aae888dc5a5",
         "type": "debug",
-        "z": "4a06fcdd722cb60d",
+        "z": "c2899e0a7794b420",
         "name": "debug 1",
         "active": false,
         "tosidebar": true,
@@ -578,32 +567,15 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 300,
-        "y": 300,
+        "x": 600,
+        "y": 200,
         "wires": []
     },
     {
-        "id": "c37a01d79922e14a",
-        "type": "debug",
-        "z": "4a06fcdd722cb60d",
-        "name": "debug 2",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 520,
-        "y": 220,
-        "wires": []
-    },
-    {
-        "id": "fe7b0fd84bdce80b",
+        "id": "35a718e0b6f976d2",
         "type": "inject",
-        "z": "b5fc59b555f8beb6",
-        "name": "Update Robots",
+        "z": "2e7a746435651752",
+        "name": "Update Robot",
         "props": [],
         "repeat": "1",
         "crontab": "",
@@ -611,85 +583,203 @@
         "onceDelay": 0.1,
         "topic": "",
         "x": 160,
-        "y": 260,
+        "y": 240,
         "wires": [
             [
-                "89000d68142050d5",
-                "d65e5e2d3c0ef145",
-                "f73683f6ab974cca",
-                "276abefffe8df2e9",
-                "b19cf876a46beca6"
+                "3d8722c536fb8bf6",
+                "1e6bbd378c3c9301",
+                "9dd5537d66bf9e87",
+                "54c3876520731590",
+                "2453caf9079996cc"
             ]
         ]
     },
     {
-        "id": "89000d68142050d5",
+        "id": "3d8722c536fb8bf6",
         "type": "function",
-        "z": "b5fc59b555f8beb6",
+        "z": "2e7a746435651752",
         "name": "Raw Motors",
-        "func": "if (global.get(\"selected_robot\") == 1) {\n    var motor = global.get(\"motor_R1\");\n} else if (global.get(\"selected_robot\") == 2) {\n    var motor = global.get(\"motor_R2\");\n}\n\nmsg.payload = motor;\nreturn msg;",
+        "func": "if (global.get(\"selected_robot\") == 1) {\n    var motors = global.get(\"motors_R1\");\n} else if (global.get(\"selected_robot\") == 2) {\n    var motors = global.get(\"motors_R2\");\n}\n\nmsg.payload = motors;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 450,
-        "y": 40,
+        "x": 390,
+        "y": 80,
         "wires": [
             [
-                "3e9f4745429b6383"
+                "b845ac5989cb3db5"
             ]
         ]
     },
     {
-        "id": "3e9f4745429b6383",
+        "id": "1e6bbd378c3c9301",
+        "type": "function",
+        "z": "2e7a746435651752",
+        "name": "Clean Motors",
+        "func": "if (global.get(\"selected_robot\") == 1) {\n    var motors = global.get(\"motors_R1\");\n} else if (global.get(\"selected_robot\") == 2) {\n    var motors = global.get(\"motors_R2\");\n}\n\nvar motorsGrad = {}\nvar c = 1;\nfor (var [key, value] of Object.entries(motors)) {\n    if (c <= 4) {\n        motorsGrad[key] = Math.round(value / 4096 * 360);\n    } else {\n        motorsGrad[key] = Math.round(value / 2048 * 360);\n    }\n    c++;\n}\n\nmsg.payload = motorsGrad;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 140,
+        "wires": [
+            [
+                "2991cea35b37d747"
+            ]
+        ]
+    },
+    {
+        "id": "9dd5537d66bf9e87",
+        "type": "function",
+        "z": "2e7a746435651752",
+        "name": "Raw Load",
+        "func": "if (global.get(\"selected_robot\") == 1) {\n    var load = global.get(\"load_R1\");\n} else if (global.get(\"selected_robot\") == 2) {\n    var load = global.get(\"load_R2\");\n}\n\nmsg.payload = load;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 200,
+        "wires": [
+            [
+                "f853811e4ccc31cc"
+            ]
+        ]
+    },
+    {
+        "id": "54c3876520731590",
+        "type": "function",
+        "z": "2e7a746435651752",
+        "name": "Clean Load",
+        "func": "if (global.get(\"selected_robot\") == 1) {\n    var load = global.get(\"load_R1\");\n} else if (global.get(\"selected_robot\") == 2) {\n    var load = global.get(\"load_R2\");\n}\n\nvar loadProc = {}\nfor (var [key, value] of Object.entries(load)) {\n    if (value <= 1024) {\n        loadProc[key] = Math.round(value / 1024 * 100);\n    } else {\n        loadProc[key] = Math.round((value - 1024) / 1024 * 100);\n    }\n}\n\nmsg.payload = loadProc;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 260,
+        "wires": [
+            [
+                "1f78a6817150fd99",
+                "bf053afd95bef829"
+            ]
+        ]
+    },
+    {
+        "id": "2453caf9079996cc",
+        "type": "function",
+        "z": "2e7a746435651752",
+        "name": "Temp",
+        "func": "if (global.get(\"selected_robot\") == 1) {\n    var temp = global.get(\"temp_R1\");\n} else if (global.get(\"selected_robot\") == 2) {\n    var temp = global.get(\"temp_R2\");\n}\n\nmsg.payload = temp;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 420,
+        "wires": [
+            [
+                "e63065d5723f5eeb",
+                "d4e8a7c3196d2d34"
+            ]
+        ]
+    },
+    {
+        "id": "bf053afd95bef829",
+        "type": "function",
+        "z": "2e7a746435651752",
+        "name": "Status",
+        "func": "if (global.get(\"selected_robot\") == 1) {\n    var r = \"_R1\";\n} else if (global.get(\"selected_robot\") == 2) {\n    var r = \"_R2\";\n}\n\nvar load = msg.payload;\nvar status = [];\n\nvar i = 0;\nfor (var [key, value] of Object.entries(load)) {\n    var key_ = Object.keys(global.get(\"loadProcMin\" + r))[i];\n    if (value < global.get(\"loadProcMin\" + r)[key_]) {\n        status[i] = {payload: 2};\n    } else if (value > global.get(\"loadProcMax\" + r)[key_]) {\n        status[i] = {payload: 2};\n    } else if (value < global.get(\"loadProcCritMin\" + r)[key_]) {\n        status[i] = {payload: 1};\n    } else if (value > global.get(\"loadProcCritMax\" + r)[key_]) {\n        status[i] = {payload: 1};\n    } else {\n        status[i] = {payload: 0};\n    }\n    i++;\n}\n\nreturn status;",
+        "outputs": 6,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 340,
+        "wires": [
+            [
+                "cec0c7e3c320df20",
+                "02f97d397d9fa31e"
+            ],
+            [
+                "ccd65dd59988a169"
+            ],
+            [
+                "a1c2e31f9fc82f26"
+            ],
+            [
+                "d106aea6f6aa8835"
+            ],
+            [
+                "cd2179c26b4e6550"
+            ],
+            [
+                "a2ccbefe1a6221d1"
+            ]
+        ]
+    },
+    {
+        "id": "b845ac5989cb3db5",
         "type": "ui_form",
-        "z": "b5fc59b555f8beb6",
-        "name": "",
+        "z": "2e7a746435651752",
+        "name": "Motors",
         "label": "",
-        "group": "84fc9e1e23b00902",
+        "group": "a1d6d4c56a07fd97",
         "order": 1,
-        "width": 3,
-        "height": 1,
+        "width": 0,
+        "height": 0,
         "options": [
             {
-                "label": "Motor 1",
+                "label": "motor 1",
                 "value": "m1",
                 "type": "number",
                 "required": true,
                 "rows": null
             },
             {
-                "label": "Motor 2",
+                "label": "motor 2",
                 "value": "m2",
                 "type": "number",
                 "required": true,
                 "rows": null
             },
             {
-                "label": "Motor 3",
+                "label": "motor 3",
                 "value": "m3",
                 "type": "number",
                 "required": true,
                 "rows": null
             },
             {
-                "label": "Motor 4",
+                "label": "motor 4",
                 "value": "m4",
                 "type": "number",
                 "required": true,
                 "rows": null
             },
             {
-                "label": "Motor 5",
+                "label": "motor 5",
                 "value": "m5",
                 "type": "number",
                 "required": true,
                 "rows": null
             },
             {
-                "label": "Motor 6",
+                "label": "motor 6",
                 "value": "m6",
                 "type": "number",
                 "required": true,
@@ -711,135 +801,60 @@
         "topicType": "msg",
         "splitLayout": "",
         "className": "",
-        "x": 650,
-        "y": 40,
+        "x": 590,
+        "y": 80,
         "wires": [
             []
         ]
     },
     {
-        "id": "e4e2e1aa9a66e4ce",
+        "id": "f853811e4ccc31cc",
         "type": "ui_form",
-        "z": "b5fc59b555f8beb6",
-        "name": "",
+        "z": "2e7a746435651752",
+        "name": "Load",
         "label": "",
-        "group": "4863af8c9b0bc051",
+        "group": "d272ad6f92f0f1d9",
         "order": 1,
-        "width": 3,
-        "height": 1,
+        "width": 0,
+        "height": 0,
         "options": [
             {
-                "label": "Motor 1",
-                "value": "m1",
-                "type": "number",
-                "required": true,
-                "rows": null
-            },
-            {
-                "label": "Motor 2",
-                "value": "m2",
-                "type": "number",
-                "required": true,
-                "rows": null
-            },
-            {
-                "label": "Motor 3",
-                "value": "m3",
-                "type": "number",
-                "required": true,
-                "rows": null
-            },
-            {
-                "label": "Motor 4",
-                "value": "m4",
-                "type": "number",
-                "required": true,
-                "rows": null
-            },
-            {
-                "label": "Motor 5",
-                "value": "m5",
-                "type": "number",
-                "required": true,
-                "rows": null
-            },
-            {
-                "label": "Motor 6",
-                "value": "m6",
-                "type": "number",
-                "required": true,
-                "rows": null
-            }
-        ],
-        "formValue": {
-            "m1": "",
-            "m2": "",
-            "m3": "",
-            "m4": "",
-            "m5": "",
-            "m6": ""
-        },
-        "payload": "",
-        "submit": "",
-        "cancel": "",
-        "topic": "topic",
-        "topicType": "msg",
-        "splitLayout": "",
-        "className": "",
-        "x": 650,
-        "y": 100,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "c75a9375d1303d3d",
-        "type": "ui_form",
-        "z": "b5fc59b555f8beb6",
-        "name": "",
-        "label": "",
-        "group": "632fd0842d7cf8b1",
-        "order": 1,
-        "width": 3,
-        "height": 1,
-        "options": [
-            {
-                "label": "Load 1",
+                "label": "motor 1",
                 "value": "l1",
                 "type": "number",
                 "required": true,
                 "rows": null
             },
             {
-                "label": "Load 2",
+                "label": "motor 2",
                 "value": "l2",
                 "type": "number",
                 "required": true,
                 "rows": null
             },
             {
-                "label": "Load 3",
+                "label": "motor 3",
                 "value": "l3",
                 "type": "number",
                 "required": true,
                 "rows": null
             },
             {
-                "label": "Load 4",
+                "label": "motor 4",
                 "value": "l4",
                 "type": "number",
                 "required": true,
                 "rows": null
             },
             {
-                "label": "Load 5",
+                "label": "motor 5",
                 "value": "l5",
                 "type": "number",
                 "required": true,
                 "rows": null
             },
             {
-                "label": "Load 6",
+                "label": "motor 6",
                 "value": "l6",
                 "type": "number",
                 "required": true,
@@ -861,60 +876,60 @@
         "topicType": "msg",
         "splitLayout": "",
         "className": "",
-        "x": 650,
-        "y": 260,
+        "x": 590,
+        "y": 200,
         "wires": [
             []
         ]
     },
     {
-        "id": "19ae0dcdf43b2478",
+        "id": "e63065d5723f5eeb",
         "type": "ui_form",
-        "z": "b5fc59b555f8beb6",
-        "name": "",
+        "z": "2e7a746435651752",
+        "name": "Temp",
         "label": "",
-        "group": "27883670a192734f",
+        "group": "b52e3aa09c1ab7fb",
         "order": 1,
-        "width": 3,
-        "height": 1,
+        "width": 0,
+        "height": 0,
         "options": [
             {
-                "label": "Temp 1",
+                "label": "motor 1",
                 "value": "t1",
                 "type": "number",
                 "required": true,
                 "rows": null
             },
             {
-                "label": "Temp 2",
+                "label": "motor 2",
                 "value": "t2",
                 "type": "number",
                 "required": true,
                 "rows": null
             },
             {
-                "label": "Temp 3",
+                "label": "motor 3",
                 "value": "t3",
                 "type": "number",
                 "required": true,
                 "rows": null
             },
             {
-                "label": "Temp 4",
+                "label": "motor 4",
                 "value": "t4",
                 "type": "number",
                 "required": true,
                 "rows": null
             },
             {
-                "label": "Temp 5",
+                "label": "motor 5",
                 "value": "t5",
                 "type": "number",
                 "required": true,
                 "rows": null
             },
             {
-                "label": "Temp 6",
+                "label": "motor 6",
                 "value": "t6",
                 "type": "number",
                 "required": true,
@@ -936,60 +951,135 @@
         "topicType": "msg",
         "splitLayout": "",
         "className": "",
-        "x": 650,
+        "x": 590,
         "y": 420,
         "wires": [
             []
         ]
     },
     {
-        "id": "55fdcee204dbee12",
+        "id": "2991cea35b37d747",
         "type": "ui_form",
-        "z": "b5fc59b555f8beb6",
-        "name": "",
+        "z": "2e7a746435651752",
+        "name": "Motors",
         "label": "",
-        "group": "7049b5ae23159efb",
+        "group": "f01739839b13121f",
         "order": 1,
-        "width": 3,
-        "height": 1,
+        "width": 0,
+        "height": 0,
         "options": [
             {
-                "label": "Load 1",
+                "label": "motor 1",
+                "value": "m1",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "motor 2",
+                "value": "m2",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "motor 3",
+                "value": "m3",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "motor 4",
+                "value": "m4",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "motor 5",
+                "value": "m5",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "motor 6",
+                "value": "m6",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "m1": "",
+            "m2": "",
+            "m3": "",
+            "m4": "",
+            "m5": "",
+            "m6": ""
+        },
+        "payload": "",
+        "submit": "",
+        "cancel": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 590,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1f78a6817150fd99",
+        "type": "ui_form",
+        "z": "2e7a746435651752",
+        "name": "Load",
+        "label": "",
+        "group": "062a81d9e8e45c77",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "motor 1",
                 "value": "l1",
                 "type": "number",
                 "required": true,
                 "rows": null
             },
             {
-                "label": "Load 2",
+                "label": "motor 2",
                 "value": "l2",
                 "type": "number",
                 "required": true,
                 "rows": null
             },
             {
-                "label": "Load 3",
+                "label": "motor 3",
                 "value": "l3",
                 "type": "number",
                 "required": true,
                 "rows": null
             },
             {
-                "label": "Load 4",
+                "label": "motor 4",
                 "value": "l4",
                 "type": "number",
                 "required": true,
                 "rows": null
             },
             {
-                "label": "Load 5",
+                "label": "motor 5",
                 "value": "l5",
                 "type": "number",
                 "required": true,
                 "rows": null
             },
             {
-                "label": "Load 6",
+                "label": "motor 6",
                 "value": "l6",
                 "type": "number",
                 "required": true,
@@ -1011,176 +1101,70 @@
         "topicType": "msg",
         "splitLayout": "",
         "className": "",
-        "x": 650,
-        "y": 320,
+        "x": 590,
+        "y": 260,
         "wires": [
             []
         ]
     },
     {
-        "id": "d65e5e2d3c0ef145",
+        "id": "ad00647f060b5e98",
+        "type": "ui_button",
+        "z": "2e7a746435651752",
+        "name": "Reset",
+        "group": "039404edb6747c97",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Инициализация Значений",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 110,
+        "y": 680,
+        "wires": [
+            [
+                "39023b62b1ea3518"
+            ]
+        ]
+    },
+    {
+        "id": "39023b62b1ea3518",
         "type": "function",
-        "z": "b5fc59b555f8beb6",
-        "name": "Motors",
-        "func": "if (global.get(\"selected_robot\") == 1) {\n    var motor = global.get(\"motor_R1\");\n} else if (global.get(\"selected_robot\") == 2) {\n    var motor = global.get(\"motor_R2\");\n}\n\nvar motorGrad = {};\n\nvar counter = 1;\nfor (var [key, value] of Object.entries(motor)) {\n    if (counter <= 4) {\n        motorGrad[key] = Math.round(value / 4096 * 360);\n    } else {\n        motorGrad[key] = Math.round(value / 1024 * 360);\n    }\n    counter++;\n}\n\nmsg.payload = motorGrad;\nreturn msg;",
+        "z": "2e7a746435651752",
+        "name": "Set Default",
+        "func": "global.set(\"selected_robot\", 1);\nglobal.set(\"selected_limit\", \"loadProcMin\");\n\nglobal.set(\"loadProcMin_R1\", {\n    \"m1\": 5,\n    \"m2\": 5,\n    \"m3\": 5,\n    \"m4\": 5,\n    \"m5\": 5,\n    \"m6\": 5\n});\nglobal.set(\"loadProcCritMin_R1\", {\n    \"m1\": 20,\n    \"m2\": 20,\n    \"m3\": 20,\n    \"m4\": 20,\n    \"m5\": 20,\n    \"m6\": 20\n});\nglobal.set(\"loadProcCritMax_R1\", {\n    \"m1\": 80,\n    \"m2\": 80,\n    \"m3\": 80,\n    \"m4\": 80,\n    \"m5\": 80,\n    \"m6\": 80\n});\nglobal.set(\"loadProcMax_R1\", {\n    \"m1\": 95,\n    \"m2\": 95,\n    \"m3\": 95,\n    \"m4\": 95,\n    \"m5\": 95,\n    \"m6\": 95\n});\nglobal.set(\"tempMin_R1\", {\n    \"m1\": 5,\n    \"m2\": 5,\n    \"m3\": 5,\n    \"m4\": 5,\n    \"m5\": 5,\n    \"m6\": 5\n});\nglobal.set(\"tempCritMin_R1\", {\n    \"m1\": 15,\n    \"m2\": 15,\n    \"m3\": 15,\n    \"m4\": 15,\n    \"m5\": 15,\n    \"m6\": 15\n});\nglobal.set(\"tempCritMax_R1\", {\n    \"m1\": 85,\n    \"m2\": 85,\n    \"m3\": 85,\n    \"m4\": 85,\n    \"m5\": 85,\n    \"m6\": 85\n});\nglobal.set(\"tempMax_R1\", {\n    \"m1\": 95,\n    \"m2\": 95,\n    \"m3\": 95,\n    \"m4\": 95,\n    \"m5\": 95,\n    \"m6\": 95\n});\nglobal.set(\"loadProcMin_R2\", {\n    \"m1\": 5,\n    \"m2\": 5,\n    \"m3\": 5,\n    \"m4\": 5,\n    \"m5\": 5,\n    \"m6\": 5\n});\nglobal.set(\"loadProcCritMin_R2\", {\n    \"m1\": 20,\n    \"m2\": 20,\n    \"m3\": 20,\n    \"m4\": 20,\n    \"m5\": 20,\n    \"m6\": 20\n});\nglobal.set(\"loadProcCritMax_R2\", {\n    \"m1\": 80,\n    \"m2\": 80,\n    \"m3\": 80,\n    \"m4\": 80,\n    \"m5\": 80,\n    \"m6\": 80\n});\nglobal.set(\"loadProcMax_R2\", {\n    \"m1\": 95,\n    \"m2\": 95,\n    \"m3\": 95,\n    \"m4\": 95,\n    \"m5\": 95,\n    \"m6\": 95\n});\nglobal.set(\"tempMin_R2\", {\n    \"m1\": 5,\n    \"m2\": 5,\n    \"m3\": 5,\n    \"m4\": 5,\n    \"m5\": 5,\n    \"m6\": 5\n});\nglobal.set(\"tempCritMin_R2\", {\n    \"m1\": 15,\n    \"m2\": 15,\n    \"m3\": 15,\n    \"m4\": 15,\n    \"m5\": 15,\n    \"m6\": 15\n});\nglobal.set(\"tempCritMax_R2\", {\n    \"m1\": 85,\n    \"m2\": 85,\n    \"m3\": 85,\n    \"m4\": 85,\n    \"m5\": 85,\n    \"m6\": 85\n});\nglobal.set(\"tempMax_R2\", {\n    \"m1\": 95,\n    \"m2\": 95,\n    \"m3\": 95,\n    \"m4\": 95,\n    \"m5\": 95,\n    \"m6\": 95\n});\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 430,
-        "y": 100,
+        "x": 330,
+        "y": 680,
         "wires": [
-            [
-                "e4e2e1aa9a66e4ce",
-                "075d071ff23226b1"
-            ]
+            []
         ]
     },
     {
-        "id": "f73683f6ab974cca",
-        "type": "function",
-        "z": "b5fc59b555f8beb6",
-        "name": "Raw Load",
-        "func": "if (global.get(\"selected_robot\") == 1) {\n    var load = global.get(\"load_R1\");\n} else if (global.get(\"selected_robot\") == 2) {\n    var load = global.get(\"load_R2\");\n}\n\nmsg.payload = load;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 440,
-        "y": 260,
-        "wires": [
-            [
-                "c75a9375d1303d3d"
-            ]
-        ]
-    },
-    {
-        "id": "b19cf876a46beca6",
-        "type": "function",
-        "z": "b5fc59b555f8beb6",
-        "name": "Temp",
-        "func": "if (global.get(\"selected_robot\") == 1) {\n    var temp = global.get(\"temp_R1\");\n} else if (global.get(\"selected_robot\") == 2) {\n    var temp = global.get(\"temp_R2\");\n}\n\nmsg.payload = temp;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 430,
-        "y": 420,
-        "wires": [
-            [
-                "19ae0dcdf43b2478"
-            ]
-        ]
-    },
-    {
-        "id": "276abefffe8df2e9",
-        "type": "function",
-        "z": "b5fc59b555f8beb6",
-        "name": "Load",
-        "func": "if (global.get(\"selected_robot\") == 1) {\n    var load = global.get(\"load_R1\");\n} else if (global.get(\"selected_robot\") == 2) {\n    var load = global.get(\"load_R2\");\n}\n\nvar loadProc = {};\n\nfor (var [key, value] of Object.entries(load)) {\n    if (value <= 1024) {\n        loadProc[key] = Math.round(value / 1024 * 100);\n    } else if (value > 1024) {\n        loadProc[key] = Math.round((value - 1024) / 1024 * 100);\n    }\n}\n\nmsg.payload = loadProc;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 430,
-        "y": 320,
-        "wires": [
-            [
-                "55fdcee204dbee12"
-            ]
-        ]
-    },
-    {
-        "id": "075d071ff23226b1",
-        "type": "function",
-        "z": "b5fc59b555f8beb6",
-        "name": "Status",
-        "func": "var motors = msg.payload;\nvar status = [0, 0, 0, 0, 0, 0];\nvar i = 0;\nfor (var [key, value] of Object.entries(motors)) {\n    if (global.get(\"selected_robot\") == 1) {\n        if (value < global.get(\"motorGradMin_R1\")[key]) {\n            status[i] = {payload: 2};\n        } else if (value > global.get(\"motorGradMax_R1\")[key]) {\n            status[i] = {payload: 2};\n        } else if (value < global.get(\"motorGradCritMin_R1\")[key]) {\n            status[i] = {payload: 1};\n        } else if (value > global.get(\"motorGradCritMax_R1\")[key]) {\n            status[i] = {payload: 1};\n        } else {\n            status[i] = {payload: 0};\n        }\n    }\n    i++;\n}\n\nreturn status;",
-        "outputs": 6,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 650,
-        "y": 180,
-        "wires": [
-            [
-                "14776111a05d9bb4"
-            ],
-            [
-                "2d6b19ebc56c4842"
-            ],
-            [
-                "cdf133b673a8faa7"
-            ],
-            [
-                "51857c09cd0060f6"
-            ],
-            [
-                "11316064125384df"
-            ],
-            [
-                "e868ebd6732aa297"
-            ]
-        ]
-    },
-    {
-        "id": "14776111a05d9bb4",
-        "type": "ui_led",
-        "z": "b5fc59b555f8beb6",
-        "order": 2,
-        "group": "42646fbec66b7a63",
-        "width": 1,
-        "height": 1,
-        "label": "",
-        "labelPlacement": "left",
-        "labelAlignment": "left",
-        "colorForValue": [
-            {
-                "color": "#008000",
-                "value": "0",
-                "valueType": "num"
-            },
-            {
-                "color": "#ffff00",
-                "value": "1",
-                "valueType": "num"
-            },
-            {
-                "color": "#ff0000",
-                "value": "2",
-                "valueType": "num"
-            }
-        ],
-        "allowColorForValueInMessage": false,
-        "shape": "square",
-        "showGlow": true,
-        "name": "",
-        "x": 830,
-        "y": 60,
-        "wires": []
-    },
-    {
-        "id": "0ed9920290c852a8",
+        "id": "4c7d7147dc24df10",
         "type": "ui_dropdown",
-        "z": "b5fc59b555f8beb6",
-        "name": "Robot Selector",
+        "z": "2e7a746435651752",
+        "name": "Select Robot",
         "label": "Робот",
         "tooltip": "",
         "place": "Select option",
-        "group": "5ba311ed9ef44c31",
+        "group": "039404edb6747c97",
         "order": 2,
-        "width": 6,
-        "height": 1,
+        "width": 0,
+        "height": 0,
         "passthru": true,
         "multiple": false,
         "options": [
@@ -1199,113 +1183,47 @@
         "topic": "topic",
         "topicType": "msg",
         "className": "",
-        "x": 140,
-        "y": 500,
-        "wires": [
-            [
-                "4ccf9c96169b0f8f"
-            ]
-        ]
-    },
-    {
-        "id": "4ccf9c96169b0f8f",
-        "type": "function",
-        "z": "b5fc59b555f8beb6",
-        "name": "Switch Robot",
-        "func": "global.set(\"selected_robot\", msg.payload);\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 370,
-        "y": 500,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "79c37742b02b67da",
-        "type": "ui_button",
-        "z": "b5fc59b555f8beb6",
-        "name": "System Init",
-        "group": "5ba311ed9ef44c31",
-        "order": 1,
-        "width": 6,
-        "height": 1,
-        "passthru": false,
-        "label": "Инициализация системы",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
         "x": 130,
-        "y": 580,
+        "y": 740,
         "wires": [
             [
-                "3617dbf5f2127e63"
+                "e471d30e58b7a9ae"
             ]
         ]
     },
     {
-        "id": "3617dbf5f2127e63",
+        "id": "e471d30e58b7a9ae",
         "type": "function",
-        "z": "b5fc59b555f8beb6",
-        "name": "Set Defaults",
-        "func": "global.set(\"robot_selected\", 1);\nglobal.set(\"current_limit\", \"motorGradMin\");\n\nglobal.set(\"motorGradMin_R1\", {\n    \"m1\": 10,\n    \"m2\": 10,\n    \"m3\": 10,\n    \"m4\": 10,\n    \"m5\": 10,\n    \"m6\": 10\n});\nglobal.set(\"motorGradCritMin_R1\", {\n    \"m1\": 15,\n    \"m2\": 15,\n    \"m3\": 15,\n    \"m4\": 15,\n    \"m5\": 15,\n    \"m6\": 15\n});\nglobal.set(\"motorGradCritMax_R1\", {\n    \"m1\": 85,\n    \"m2\": 85,\n    \"m3\": 85,\n    \"m4\": 85,\n    \"m5\": 85,\n    \"m6\": 85\n});\nglobal.set(\"motorGradMax_R1\", {\n    \"m1\": 90,\n    \"m2\": 90,\n    \"m3\": 90,\n    \"m4\": 90,\n    \"m5\": 90,\n    \"m6\": 90\n});\n\n\nreturn msg;",
+        "z": "2e7a746435651752",
+        "name": "Set Robot",
+        "func": "global.set(\"selected_robot\", msg.payload);\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 370,
-        "y": 580,
+        "x": 320,
+        "y": 740,
         "wires": [
             []
         ]
     },
     {
-        "id": "62afe6fc66dde5f5",
+        "id": "53d7e074544c8e1c",
         "type": "ui_dropdown",
-        "z": "b5fc59b555f8beb6",
-        "name": "",
-        "label": "Выбор параметра",
+        "z": "2e7a746435651752",
+        "name": "Select Limit",
+        "label": "Выбор значений",
         "tooltip": "",
         "place": "Select option",
-        "group": "4983803d4416cdc6",
-        "order": 2,
+        "group": "f0333f1ae6948c46",
+        "order": 1,
         "width": 0,
         "height": 0,
         "passthru": true,
         "multiple": false,
         "options": [
-            {
-                "label": "Поворот Минимально Допустимый",
-                "value": "motorGradMin",
-                "type": "str"
-            },
-            {
-                "label": "Поворот Минимально Критический",
-                "value": "motorGradCritMin",
-                "type": "str"
-            },
-            {
-                "label": "Поворот Максимально Критический",
-                "value": "motorGradCritMax",
-                "type": "str"
-            },
-            {
-                "label": "Поворот Максимально Допустимый",
-                "value": "motorGradMax",
-                "type": "str"
-            },
             {
                 "label": "Нагрузка Минимально Допустимая",
                 "value": "loadProcMin",
@@ -1317,7 +1235,7 @@
                 "type": "str"
             },
             {
-                "label": "Нагрузка Максимально Критическая",
+                "label": "Нагрузка Минимально Критическая",
                 "value": "loadProcCritMax",
                 "type": "str"
             },
@@ -1337,7 +1255,7 @@
                 "type": "str"
             },
             {
-                "label": "Температура Максимально Критическая",
+                "label": "Температура Минимально Критическая",
                 "value": "tempCritMax",
                 "type": "str"
             },
@@ -1351,42 +1269,115 @@
         "topic": "topic",
         "topicType": "msg",
         "className": "",
-        "x": 150,
-        "y": 780,
+        "x": 130,
+        "y": 800,
         "wires": [
             [
-                "cfdf11e8bb869dd8"
+                "470f94ed6628e02b"
             ]
         ]
     },
     {
-        "id": "cfdf11e8bb869dd8",
+        "id": "470f94ed6628e02b",
         "type": "function",
-        "z": "b5fc59b555f8beb6",
-        "name": "Choose Limit",
-        "func": "var current_limit = msg.payload;\n\nif (global.get(\"selected_robot\") == 1) {\n    global.set(\"current_limit\", current_limit);\n} else if (global.get(\"selected_robot\") == 2) {\n    global.set(\"current_limit\", current_limit);\n}\n\nmsg.payload = global.get(\"current_limit\");\nreturn msg;",
+        "z": "2e7a746435651752",
+        "name": "Set Limit",
+        "func": "global.set(\"selected_limit\", msg.payload);\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 390,
-        "y": 780,
+        "x": 320,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cec0c7e3c320df20",
+        "type": "ui_led",
+        "z": "2e7a746435651752",
+        "order": 1,
+        "group": "267243152ab9c751",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "2",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffff00",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#008000",
+                "value": "0",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "CL1",
+        "x": 790,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "40873acebbde4c8f",
+        "type": "inject",
+        "z": "2e7a746435651752",
+        "name": "Update Limit",
+        "props": [],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 160,
+        "y": 860,
         "wires": [
             [
-                "abbc41c58ccffd16"
+                "f355b5e1b752e6bc"
             ]
         ]
     },
     {
-        "id": "8900bd7338ea0a07",
+        "id": "f355b5e1b752e6bc",
+        "type": "function",
+        "z": "2e7a746435651752",
+        "name": "Update Limit",
+        "func": "if (global.get(\"selected_robot\") == 1) {\n    var limit = global.get(\"selected_limit\") + \"_R1\";\n} else if (global.get(\"selected_robot\") == 2) {\n    var limit = global.get(\"selected_limit\") + \"_R2\";\n}\n\nmsg.payload = global.get(limit);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 860,
+        "wires": [
+            [
+                "8f64257347803d2b"
+            ]
+        ]
+    },
+    {
+        "id": "8f64257347803d2b",
         "type": "ui_form",
-        "z": "b5fc59b555f8beb6",
-        "name": "",
-        "label": "Motor Limits",
-        "group": "4983803d4416cdc6",
-        "order": 1,
+        "z": "2e7a746435651752",
+        "name": "Limits",
+        "label": "Ограничения",
+        "group": "f0333f1ae6948c46",
+        "order": 2,
         "width": 0,
         "height": 0,
         "options": [
@@ -1442,78 +1433,26 @@
             "m6": ""
         },
         "payload": "",
-        "submit": "Принять",
+        "submit": "Применить",
         "cancel": "",
         "topic": "topic",
         "topicType": "msg",
         "splitLayout": "",
         "className": "",
         "x": 130,
-        "y": 720,
+        "y": 920,
         "wires": [
             [
-                "96e8a3f1f68055a9"
+                "ae4306d835434ca7"
             ]
         ]
     },
     {
-        "id": "96e8a3f1f68055a9",
+        "id": "ae4306d835434ca7",
         "type": "function",
-        "z": "b5fc59b555f8beb6",
-        "name": "Set Limits",
-        "func": "if (global.get(\"selected_robot\") == 1) {\n    var current_limit = global.get(\"current_limit\") + \"_R1\";\n} else if (global.get(\"selected_robot\") == 2) {\n    var current_limit = global.get(\"current_limit\") + \"_R2\";\n}\n\nglobal.set(current_limit, msg.payload)\n\nmsg.payload = global.get(current_limit);\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 380,
-        "y": 720,
-        "wires": [
-            [
-                "3ebc63ee3ae69096"
-            ]
-        ]
-    },
-    {
-        "id": "3ebc63ee3ae69096",
-        "type": "debug",
-        "z": "b5fc59b555f8beb6",
-        "name": "debug 3",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 580,
-        "y": 720,
-        "wires": []
-    },
-    {
-        "id": "abbc41c58ccffd16",
-        "type": "debug",
-        "z": "b5fc59b555f8beb6",
-        "name": "debug 4",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 580,
-        "y": 780,
-        "wires": []
-    },
-    {
-        "id": "7e20cea0b87bdf0a",
-        "type": "function",
-        "z": "b5fc59b555f8beb6",
-        "name": "Update Limits",
-        "func": "if (global.get(\"selected_robot\") == 1) {\n    var current_limit = global.get(\"current_limit\") + \"_R1\";\n} else if (global.get(\"selected_robot\") == 2) {\n    var current_limit = global.get(\"current_limit\") + \"_R2\";\n}\n\nmsg.payload = global.get(current_limit);\nreturn msg;",
+        "z": "2e7a746435651752",
+        "name": "Set Limit",
+        "func": "if (global.get(\"selected_robot\") == 1) {\n    var limit = global.get(\"selected_limit\") + \"_R1\";\n} else if (global.get(\"selected_robot\") == 2) {\n    var limit = global.get(\"selected_limit\") + \"_R2\";\n}\n\nglobal.set(limit, msg.payload);\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -1521,36 +1460,86 @@
         "finalize": "",
         "libs": [],
         "x": 400,
-        "y": 660,
+        "y": 920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d4e8a7c3196d2d34",
+        "type": "function",
+        "z": "2e7a746435651752",
+        "name": "Status",
+        "func": "if (global.get(\"selected_robot\") == 1) {\n    var r = \"_R1\";\n} else if (global.get(\"selected_robot\") == 2) {\n    var r = \"_R2\";\n}\n\nvar temp = msg.payload;\nvar status = [];\n\nvar i = 0;\nfor (var [key, value] of Object.entries(temp)) {\n    if (value < global.get(\"tempMin\" + r)[key]) {\n        status[i] = {payload: 2};\n    } else if (value > global.get(\"tempMax\" + r)[key]) {\n        status[i] = {payload: 2};\n    } else if (value < global.get(\"tempCritMin\" + r)[key]) {\n        status[i] = {payload: 1};\n    } else if (value > global.get(\"tempCritMax\" + r)[key]) {\n        status[i] = {payload: 1};\n    } else {\n        status[i] = {payload: 0};\n    }\n    i++;\n}\n\nreturn status;",
+        "outputs": 6,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 520,
         "wires": [
             [
-                "8900bd7338ea0a07"
+                "43bfb8ebb5c4fe56"
+            ],
+            [
+                "32bc801d567b568f"
+            ],
+            [
+                "d2e0c57cc4eeba57"
+            ],
+            [
+                "7219cd1d6e846226"
+            ],
+            [
+                "60e5f95f008ad5b2"
+            ],
+            [
+                "f1b23e39a763a849"
             ]
         ]
     },
     {
-        "id": "7d66ca69ef125f3c",
-        "type": "inject",
-        "z": "b5fc59b555f8beb6",
-        "name": "Update",
-        "props": [],
-        "repeat": "0.1",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 140,
-        "y": 660,
-        "wires": [
-            [
-                "7e20cea0b87bdf0a"
-            ]
-        ]
+        "id": "43bfb8ebb5c4fe56",
+        "type": "ui_led",
+        "z": "2e7a746435651752",
+        "order": 1,
+        "group": "3b12922eaf46b03d",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "2",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffff00",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#008000",
+                "value": "0",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "T1",
+        "x": 790,
+        "y": 420,
+        "wires": []
     },
     {
-        "id": "8912818d502415fc",
+        "id": "3b176c36d65090a6",
         "type": "inject",
-        "z": "b5fc59b555f8beb6",
+        "z": "2e7a746435651752",
         "name": "Update Terminal",
         "props": [],
         "repeat": "1",
@@ -1558,41 +1547,21 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 1030,
-        "y": 260,
+        "x": 170,
+        "y": 620,
         "wires": [
             [
-                "2301f18375cc54bc"
+                "2173699dc978c474"
             ]
         ]
     },
     {
-        "id": "2301f18375cc54bc",
-        "type": "function",
-        "z": "b5fc59b555f8beb6",
-        "name": "Terminal",
-        "func": "var terminal = global.get(\"terminal\");\n\nmsg.payload = terminal;\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1240,
-        "y": 260,
-        "wires": [
-            [
-                "05fbb58623532a9a"
-            ]
-        ]
-    },
-    {
-        "id": "05fbb58623532a9a",
+        "id": "2173699dc978c474",
         "type": "ui_form",
-        "z": "b5fc59b555f8beb6",
-        "name": "",
-        "label": "Терминал",
-        "group": "be207fdb611e54bc",
+        "z": "2e7a746435651752",
+        "name": "Temp",
+        "label": "",
+        "group": "c69a9e20b4fcf45a",
         "order": 1,
         "width": 0,
         "height": 0,
@@ -1613,14 +1582,14 @@
             },
             {
                 "label": "Button 1",
-                "value": "b2",
+                "value": "b1",
                 "type": "number",
                 "required": true,
                 "rows": null
             },
             {
                 "label": "Button 1",
-                "value": "b3",
+                "value": "b1",
                 "type": "number",
                 "required": true,
                 "rows": null
@@ -1628,9 +1597,7 @@
         ],
         "formValue": {
             "p": "",
-            "b1": "",
-            "b2": "",
-            "b3": ""
+            "b1": ""
         },
         "payload": "",
         "submit": "",
@@ -1639,27 +1606,135 @@
         "topicType": "msg",
         "splitLayout": "",
         "className": "",
-        "x": 1430,
-        "y": 260,
+        "x": 350,
+        "y": 620,
         "wires": [
             []
         ]
     },
     {
-        "id": "2d6b19ebc56c4842",
+        "id": "ccd65dd59988a169",
         "type": "ui_led",
-        "z": "b5fc59b555f8beb6",
+        "z": "2e7a746435651752",
+        "order": 2,
+        "group": "267243152ab9c751",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "2",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffff00",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#008000",
+                "value": "0",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "CL2",
+        "x": 790,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "a1c2e31f9fc82f26",
+        "type": "ui_led",
+        "z": "2e7a746435651752",
+        "order": 3,
+        "group": "267243152ab9c751",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "2",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffff00",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#008000",
+                "value": "0",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "CL3",
+        "x": 790,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "d106aea6f6aa8835",
+        "type": "ui_led",
+        "z": "2e7a746435651752",
+        "order": 4,
+        "group": "267243152ab9c751",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "2",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffff00",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#008000",
+                "value": "0",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "CL4",
+        "x": 790,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "cd2179c26b4e6550",
+        "type": "ui_led",
+        "z": "2e7a746435651752",
         "order": 5,
-        "group": "42646fbec66b7a63",
-        "width": 1,
-        "height": 1,
+        "group": "267243152ab9c751",
+        "width": 0,
+        "height": 0,
         "label": "",
         "labelPlacement": "left",
         "labelAlignment": "left",
         "colorForValue": [
             {
-                "color": "#008000",
-                "value": "0",
+                "color": "#ff0000",
+                "value": "2",
                 "valueType": "num"
             },
             {
@@ -1668,34 +1743,34 @@
                 "valueType": "num"
             },
             {
-                "color": "#ff0000",
-                "value": "2",
+                "color": "#008000",
+                "value": "0",
                 "valueType": "num"
             }
         ],
         "allowColorForValueInMessage": false,
         "shape": "square",
         "showGlow": true,
-        "name": "",
-        "x": 830,
-        "y": 100,
+        "name": "CL5",
+        "x": 790,
+        "y": 320,
         "wires": []
     },
     {
-        "id": "cdf133b673a8faa7",
+        "id": "a2ccbefe1a6221d1",
         "type": "ui_led",
-        "z": "b5fc59b555f8beb6",
-        "order": 14,
-        "group": "42646fbec66b7a63",
-        "width": 1,
-        "height": 1,
+        "z": "2e7a746435651752",
+        "order": 6,
+        "group": "267243152ab9c751",
+        "width": 0,
+        "height": 0,
         "label": "",
         "labelPlacement": "left",
         "labelAlignment": "left",
         "colorForValue": [
             {
-                "color": "#008000",
-                "value": "0",
+                "color": "#ff0000",
+                "value": "2",
                 "valueType": "num"
             },
             {
@@ -1704,34 +1779,34 @@
                 "valueType": "num"
             },
             {
-                "color": "#ff0000",
-                "value": "2",
+                "color": "#008000",
+                "value": "0",
                 "valueType": "num"
             }
         ],
         "allowColorForValueInMessage": false,
         "shape": "square",
         "showGlow": true,
-        "name": "",
-        "x": 830,
-        "y": 140,
+        "name": "CL6",
+        "x": 790,
+        "y": 360,
         "wires": []
     },
     {
-        "id": "51857c09cd0060f6",
+        "id": "32bc801d567b568f",
         "type": "ui_led",
-        "z": "b5fc59b555f8beb6",
-        "order": 8,
-        "group": "42646fbec66b7a63",
-        "width": 1,
-        "height": 1,
+        "z": "2e7a746435651752",
+        "order": 2,
+        "group": "3b12922eaf46b03d",
+        "width": 0,
+        "height": 0,
         "label": "",
         "labelPlacement": "left",
         "labelAlignment": "left",
         "colorForValue": [
             {
-                "color": "#008000",
-                "value": "0",
+                "color": "#ff0000",
+                "value": "2",
                 "valueType": "num"
             },
             {
@@ -1740,34 +1815,34 @@
                 "valueType": "num"
             },
             {
-                "color": "#ff0000",
-                "value": "2",
+                "color": "#008000",
+                "value": "0",
                 "valueType": "num"
             }
         ],
         "allowColorForValueInMessage": false,
         "shape": "square",
         "showGlow": true,
-        "name": "",
-        "x": 830,
-        "y": 180,
+        "name": "T2",
+        "x": 790,
+        "y": 460,
         "wires": []
     },
     {
-        "id": "11316064125384df",
+        "id": "d2e0c57cc4eeba57",
         "type": "ui_led",
-        "z": "b5fc59b555f8beb6",
-        "order": 11,
-        "group": "42646fbec66b7a63",
-        "width": 1,
-        "height": 1,
+        "z": "2e7a746435651752",
+        "order": 3,
+        "group": "3b12922eaf46b03d",
+        "width": 0,
+        "height": 0,
         "label": "",
         "labelPlacement": "left",
         "labelAlignment": "left",
         "colorForValue": [
             {
-                "color": "#008000",
-                "value": "0",
+                "color": "#ff0000",
+                "value": "2",
                 "valueType": "num"
             },
             {
@@ -1776,34 +1851,34 @@
                 "valueType": "num"
             },
             {
-                "color": "#ff0000",
-                "value": "2",
+                "color": "#008000",
+                "value": "0",
                 "valueType": "num"
             }
         ],
         "allowColorForValueInMessage": false,
         "shape": "square",
         "showGlow": true,
-        "name": "",
-        "x": 830,
-        "y": 220,
+        "name": "T3",
+        "x": 790,
+        "y": 500,
         "wires": []
     },
     {
-        "id": "e868ebd6732aa297",
+        "id": "7219cd1d6e846226",
         "type": "ui_led",
-        "z": "b5fc59b555f8beb6",
-        "order": 17,
-        "group": "42646fbec66b7a63",
-        "width": 1,
-        "height": 1,
+        "z": "2e7a746435651752",
+        "order": 4,
+        "group": "3b12922eaf46b03d",
+        "width": 0,
+        "height": 0,
         "label": "",
         "labelPlacement": "left",
         "labelAlignment": "left",
         "colorForValue": [
             {
-                "color": "#008000",
-                "value": "0",
+                "color": "#ff0000",
+                "value": "2",
                 "valueType": "num"
             },
             {
@@ -1812,17 +1887,105 @@
                 "valueType": "num"
             },
             {
-                "color": "#ff0000",
-                "value": "2",
+                "color": "#008000",
+                "value": "0",
                 "valueType": "num"
             }
         ],
         "allowColorForValueInMessage": false,
         "shape": "square",
         "showGlow": true,
-        "name": "",
-        "x": 830,
-        "y": 260,
+        "name": "T4",
+        "x": 790,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "60e5f95f008ad5b2",
+        "type": "ui_led",
+        "z": "2e7a746435651752",
+        "order": 5,
+        "group": "3b12922eaf46b03d",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "2",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffff00",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#008000",
+                "value": "0",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "T5",
+        "x": 790,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "f1b23e39a763a849",
+        "type": "ui_led",
+        "z": "2e7a746435651752",
+        "order": 6,
+        "group": "3b12922eaf46b03d",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#ff0000",
+                "value": "2",
+                "valueType": "num"
+            },
+            {
+                "color": "#ffff00",
+                "value": "1",
+                "valueType": "num"
+            },
+            {
+                "color": "#008000",
+                "value": "0",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "square",
+        "showGlow": true,
+        "name": "T6",
+        "x": 790,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "02f97d397d9fa31e",
+        "type": "debug",
+        "z": "2e7a746435651752",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1060,
+        "y": 160,
         "wires": []
     }
 ]
