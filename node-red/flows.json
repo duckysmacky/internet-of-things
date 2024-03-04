@@ -16,6 +16,14 @@
         "env": []
     },
     {
+        "id": "08972a8227e69f46",
+        "type": "tab",
+        "label": "Control",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "0db56204ee20180e",
         "type": "ui_base",
         "theme": {
@@ -99,7 +107,7 @@
             "name": "Дэшборд",
             "hideToolbar": "false",
             "allowSwipe": "false",
-            "lockMenu": "false",
+            "lockMenu": "true",
             "allowTempTheme": "true",
             "dateFormat": "DD/MM/YYYY",
             "sizes": {
@@ -523,6 +531,69 @@
         "className": ""
     },
     {
+        "id": "cbcfc83f9d627922",
+        "type": "ui_tab",
+        "name": "Дэшборд оператора",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ee74c07fb986bb59",
+        "type": "ui_group",
+        "name": "Управление",
+        "tab": "cbcfc83f9d627922",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c32d0cee4dd9f50e",
+        "type": "ui_group",
+        "name": "Настройки",
+        "tab": "cbcfc83f9d627922",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e823cd2759eae34c",
+        "type": "ui_group",
+        "name": "Терминал",
+        "tab": "cbcfc83f9d627922",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ff5253f2ac0c9362",
+        "type": "ui_group",
+        "name": "Лампы",
+        "tab": "cbcfc83f9d627922",
+        "order": 3,
+        "disp": true,
+        "width": 7,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2515905176796127",
+        "type": "ui_spacer",
+        "z": "08972a8227e69f46",
+        "name": "spacer",
+        "group": "ff5253f2ac0c9362",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
         "id": "b69a8423905d7321",
         "type": "IOT Get",
         "z": "c2899e0a7794b420",
@@ -570,6 +641,106 @@
         "x": 600,
         "y": 200,
         "wires": []
+    },
+    {
+        "id": "ad00647f060b5e98",
+        "type": "ui_button",
+        "z": "c2899e0a7794b420",
+        "name": "Reset",
+        "group": "039404edb6747c97",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Инициализация Значений",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 170,
+        "y": 280,
+        "wires": [
+            [
+                "39023b62b1ea3518"
+            ]
+        ]
+    },
+    {
+        "id": "39023b62b1ea3518",
+        "type": "function",
+        "z": "c2899e0a7794b420",
+        "name": "Set Default",
+        "func": "global.set(\"output_R1\", {\n    \"Robot_name\": \"Robot1_1\",\n    \"N\": \"0\",\n    \"X\": \"150\",\n    \"Y\": \"150\",\n    \"T\": \"0\",\n    \"G\": \"200\",\n    \"V\": \"0\",\n    \"L0\": \"0\",\n    \"L1\": \"0\",\n    \"L2\": \"0\",\n    \"L3\": \"0\",\n    \"L4\": \"0\",\n    \"P\": \"0\"\n});\n\nglobal.set(\"output_R2\", {\n    \"Robot_name\": \"Robot1_2\",\n    \"N\": \"0\",\n    \"X\": \"150\",\n    \"Y\": \"150\",\n    \"T\": \"0\",\n    \"G\": \"200\",\n    \"V\": \"0\",\n    \"L0\": \"0\",\n    \"L1\": \"0\",\n    \"L2\": \"0\",\n    \"L3\": \"0\",\n    \"L4\": \"0\",\n    \"P\": \"0\"\n});\n\nglobal.set(\"output_L1\", {\n    \"Robot_name\": \"TrafficLights1_1\",\n    \"N\": \"0\",\n    \"X\": \"150\",\n    \"Y\": \"150\",\n    \"T\": \"0\",\n    \"G\": \"200\",\n    \"V\": \"0\",\n    \"L0\": \"0\",\n    \"L1\": \"0\",\n    \"L2\": \"0\",\n    \"L3\": \"0\",\n    \"L4\": \"0\",\n    \"P\": \"0\"\n});\n\nglobal.set(\"output_L2\", {\n    \"Robot_name\": \"TrafficLights1_2\",\n    \"N\": \"0\",\n    \"X\": \"150\",\n    \"Y\": \"150\",\n    \"T\": \"0\",\n    \"G\": \"200\",\n    \"V\": \"0\",\n    \"L0\": \"0\",\n    \"L1\": \"0\",\n    \"L2\": \"0\",\n    \"L3\": \"0\",\n    \"L4\": \"0\",\n    \"P\": \"0\"\n});\n\nglobal.set(\"selected_robot\", 1);\nglobal.set(\"configured_robot\", 1);\nglobal.set(\"selected_limit\", \"loadProcMin\");\n\nglobal.set(\"lamp_mode\", \"auto\");\nglobal.set(\"robot_status_R1\", \"waiting\");\nglobal.set(\"robot_status_R2\", \"waiting\");\nglobal.set(\"lamp_color_L1\", \"green\");\nglobal.set(\"lamp_color_L2\", \"green\");\n\nglobal.set(\"loadProcMin_R1\", {\n    \"m1\": 5,\n    \"m2\": 5,\n    \"m3\": 5,\n    \"m4\": 5,\n    \"m5\": 5,\n    \"m6\": 5\n});\nglobal.set(\"loadProcCritMin_R1\", {\n    \"m1\": 20,\n    \"m2\": 20,\n    \"m3\": 20,\n    \"m4\": 20,\n    \"m5\": 20,\n    \"m6\": 20\n});\nglobal.set(\"loadProcCritMax_R1\", {\n    \"m1\": 80,\n    \"m2\": 80,\n    \"m3\": 80,\n    \"m4\": 80,\n    \"m5\": 80,\n    \"m6\": 80\n});\nglobal.set(\"loadProcMax_R1\", {\n    \"m1\": 95,\n    \"m2\": 95,\n    \"m3\": 95,\n    \"m4\": 95,\n    \"m5\": 95,\n    \"m6\": 95\n});\nglobal.set(\"tempMin_R1\", {\n    \"m1\": 5,\n    \"m2\": 5,\n    \"m3\": 5,\n    \"m4\": 5,\n    \"m5\": 5,\n    \"m6\": 5\n});\nglobal.set(\"tempCritMin_R1\", {\n    \"m1\": 15,\n    \"m2\": 15,\n    \"m3\": 15,\n    \"m4\": 15,\n    \"m5\": 15,\n    \"m6\": 15\n});\nglobal.set(\"tempCritMax_R1\", {\n    \"m1\": 85,\n    \"m2\": 85,\n    \"m3\": 85,\n    \"m4\": 85,\n    \"m5\": 85,\n    \"m6\": 85\n});\nglobal.set(\"tempMax_R1\", {\n    \"m1\": 95,\n    \"m2\": 95,\n    \"m3\": 95,\n    \"m4\": 95,\n    \"m5\": 95,\n    \"m6\": 95\n});\nglobal.set(\"loadProcMin_R2\", {\n    \"m1\": 5,\n    \"m2\": 5,\n    \"m3\": 5,\n    \"m4\": 5,\n    \"m5\": 5,\n    \"m6\": 5\n});\nglobal.set(\"loadProcCritMin_R2\", {\n    \"m1\": 20,\n    \"m2\": 20,\n    \"m3\": 20,\n    \"m4\": 20,\n    \"m5\": 20,\n    \"m6\": 20\n});\nglobal.set(\"loadProcCritMax_R2\", {\n    \"m1\": 80,\n    \"m2\": 80,\n    \"m3\": 80,\n    \"m4\": 80,\n    \"m5\": 80,\n    \"m6\": 80\n});\nglobal.set(\"loadProcMax_R2\", {\n    \"m1\": 95,\n    \"m2\": 95,\n    \"m3\": 95,\n    \"m4\": 95,\n    \"m5\": 95,\n    \"m6\": 95\n});\nglobal.set(\"tempMin_R2\", {\n    \"m1\": 5,\n    \"m2\": 5,\n    \"m3\": 5,\n    \"m4\": 5,\n    \"m5\": 5,\n    \"m6\": 5\n});\nglobal.set(\"tempCritMin_R2\", {\n    \"m1\": 15,\n    \"m2\": 15,\n    \"m3\": 15,\n    \"m4\": 15,\n    \"m5\": 15,\n    \"m6\": 15\n});\nglobal.set(\"tempCritMax_R2\", {\n    \"m1\": 85,\n    \"m2\": 85,\n    \"m3\": 85,\n    \"m4\": 85,\n    \"m5\": 85,\n    \"m6\": 85\n});\nglobal.set(\"tempMax_R2\", {\n    \"m1\": 95,\n    \"m2\": 95,\n    \"m3\": 95,\n    \"m4\": 95,\n    \"m5\": 95,\n    \"m6\": 95\n});\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7bbdce8887f5c38c",
+        "type": "IOT Function",
+        "z": "c2899e0a7794b420",
+        "name": "",
+        "robot_name": "",
+        "N": "0",
+        "X": "0",
+        "Y": "0",
+        "T": "0",
+        "G": "0",
+        "V": "0",
+        "D0": "0",
+        "L1": "0",
+        "L2": "0",
+        "L3": "0",
+        "L4": "0",
+        "P": "0",
+        "Text": "",
+        "x": 930,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4fe170ed26108b95",
+        "type": "inject",
+        "z": "c2899e0a7794b420",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 180,
+        "y": 340,
+        "wires": [
+            [
+                "39023b62b1ea3518"
+            ]
+        ]
     },
     {
         "id": "35a718e0b6f976d2",
@@ -1102,52 +1273,6 @@
         "className": "",
         "x": 590,
         "y": 260,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "ad00647f060b5e98",
-        "type": "ui_button",
-        "z": "2e7a746435651752",
-        "name": "Reset",
-        "group": "039404edb6747c97",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "passthru": false,
-        "label": "Инициализация Значений",
-        "tooltip": "",
-        "color": "",
-        "bgcolor": "",
-        "className": "",
-        "icon": "",
-        "payload": "",
-        "payloadType": "str",
-        "topic": "topic",
-        "topicType": "msg",
-        "x": 110,
-        "y": 680,
-        "wires": [
-            [
-                "39023b62b1ea3518"
-            ]
-        ]
-    },
-    {
-        "id": "39023b62b1ea3518",
-        "type": "function",
-        "z": "2e7a746435651752",
-        "name": "Set Default",
-        "func": "global.set(\"selected_robot\", 1);\nglobal.set(\"selected_limit\", \"loadProcMin\");\n\nglobal.set(\"loadProcMin_R1\", {\n    \"m1\": 5,\n    \"m2\": 5,\n    \"m3\": 5,\n    \"m4\": 5,\n    \"m5\": 5,\n    \"m6\": 5\n});\nglobal.set(\"loadProcCritMin_R1\", {\n    \"m1\": 20,\n    \"m2\": 20,\n    \"m3\": 20,\n    \"m4\": 20,\n    \"m5\": 20,\n    \"m6\": 20\n});\nglobal.set(\"loadProcCritMax_R1\", {\n    \"m1\": 80,\n    \"m2\": 80,\n    \"m3\": 80,\n    \"m4\": 80,\n    \"m5\": 80,\n    \"m6\": 80\n});\nglobal.set(\"loadProcMax_R1\", {\n    \"m1\": 95,\n    \"m2\": 95,\n    \"m3\": 95,\n    \"m4\": 95,\n    \"m5\": 95,\n    \"m6\": 95\n});\nglobal.set(\"tempMin_R1\", {\n    \"m1\": 5,\n    \"m2\": 5,\n    \"m3\": 5,\n    \"m4\": 5,\n    \"m5\": 5,\n    \"m6\": 5\n});\nglobal.set(\"tempCritMin_R1\", {\n    \"m1\": 15,\n    \"m2\": 15,\n    \"m3\": 15,\n    \"m4\": 15,\n    \"m5\": 15,\n    \"m6\": 15\n});\nglobal.set(\"tempCritMax_R1\", {\n    \"m1\": 85,\n    \"m2\": 85,\n    \"m3\": 85,\n    \"m4\": 85,\n    \"m5\": 85,\n    \"m6\": 85\n});\nglobal.set(\"tempMax_R1\", {\n    \"m1\": 95,\n    \"m2\": 95,\n    \"m3\": 95,\n    \"m4\": 95,\n    \"m5\": 95,\n    \"m6\": 95\n});\nglobal.set(\"loadProcMin_R2\", {\n    \"m1\": 5,\n    \"m2\": 5,\n    \"m3\": 5,\n    \"m4\": 5,\n    \"m5\": 5,\n    \"m6\": 5\n});\nglobal.set(\"loadProcCritMin_R2\", {\n    \"m1\": 20,\n    \"m2\": 20,\n    \"m3\": 20,\n    \"m4\": 20,\n    \"m5\": 20,\n    \"m6\": 20\n});\nglobal.set(\"loadProcCritMax_R2\", {\n    \"m1\": 80,\n    \"m2\": 80,\n    \"m3\": 80,\n    \"m4\": 80,\n    \"m5\": 80,\n    \"m6\": 80\n});\nglobal.set(\"loadProcMax_R2\", {\n    \"m1\": 95,\n    \"m2\": 95,\n    \"m3\": 95,\n    \"m4\": 95,\n    \"m5\": 95,\n    \"m6\": 95\n});\nglobal.set(\"tempMin_R2\", {\n    \"m1\": 5,\n    \"m2\": 5,\n    \"m3\": 5,\n    \"m4\": 5,\n    \"m5\": 5,\n    \"m6\": 5\n});\nglobal.set(\"tempCritMin_R2\", {\n    \"m1\": 15,\n    \"m2\": 15,\n    \"m3\": 15,\n    \"m4\": 15,\n    \"m5\": 15,\n    \"m6\": 15\n});\nglobal.set(\"tempCritMax_R2\", {\n    \"m1\": 85,\n    \"m2\": 85,\n    \"m3\": 85,\n    \"m4\": 85,\n    \"m5\": 85,\n    \"m6\": 85\n});\nglobal.set(\"tempMax_R2\", {\n    \"m1\": 95,\n    \"m2\": 95,\n    \"m3\": 95,\n    \"m4\": 95,\n    \"m5\": 95,\n    \"m6\": 95\n});\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 330,
-        "y": 680,
         "wires": [
             []
         ]
@@ -1969,6 +2094,414 @@
         "name": "T6",
         "x": 790,
         "y": 620,
+        "wires": []
+    },
+    {
+        "id": "3f174d2b7edd840b",
+        "type": "ui_dropdown",
+        "z": "08972a8227e69f46",
+        "name": "Select Robot",
+        "label": "Робот",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "c32d0cee4dd9f50e",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Робот 1",
+                "value": 1,
+                "type": "num"
+            },
+            {
+                "label": "Робот 2",
+                "value": 2,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 130,
+        "y": 80,
+        "wires": [
+            [
+                "1149663ed91dc579"
+            ]
+        ]
+    },
+    {
+        "id": "1149663ed91dc579",
+        "type": "function",
+        "z": "08972a8227e69f46",
+        "name": "Set Robot",
+        "func": "global.set(\"configured_robot\", msg.payload);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a138e0916f4627a6",
+        "type": "ui_switch",
+        "z": "08972a8227e69f46",
+        "name": "Lamp Mode Switch",
+        "label": "Ручной режим ламп",
+        "tooltip": "",
+        "group": "ff5253f2ac0c9362",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "manual",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "auto",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 150,
+        "y": 180,
+        "wires": [
+            [
+                "57323c0b0a0d2810"
+            ]
+        ]
+    },
+    {
+        "id": "57323c0b0a0d2810",
+        "type": "function",
+        "z": "08972a8227e69f46",
+        "name": "Set Lamp Mode",
+        "func": "global.set(\"lamp_mode\", msg.payload);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "eb90ef4e5a57e600",
+        "type": "inject",
+        "z": "08972a8227e69f46",
+        "name": "Update Lamp",
+        "props": [],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 160,
+        "y": 340,
+        "wires": [
+            [
+                "62f4f05f3db9bed4"
+            ]
+        ]
+    },
+    {
+        "id": "62f4f05f3db9bed4",
+        "type": "function",
+        "z": "08972a8227e69f46",
+        "name": "Auto Set Lamp Color",
+        "func": "if (global.get(\"lamp_mode\") == \"manual\"){\n    return msg;\n}\n\nfor (var L in [\"_L1\", \"_L2\"]) {\n    if (L == \"_L1\") {\n        var status = global.get(\"robot_status_R1\");\n    } else if ((L == \"_L2\")) {\n        var status = global.get(\"robot_status_R1\");\n    }\n\n    switch (status) {\n        case \"waiting\":\n            global.set(\"lamp_color\" + L, \"green\");\n            break;\n        case \"moving\":\n            global.set(\"lamp_color\" + L, \"blue\");\n            break;\n        case \"paused\":\n            global.set(\"lamp_color\" + L, \"yellow\");\n            break;\n        case \"locked\":\n            global.set(\"lamp_color\" + L, \"yellow\");\n            break;\n        case \"stopped\":\n            global.set(\"lamp_color\" + L, \"red\");\n            break;\n        default:\n            global.set(\"lamp_color\" + L, \"none\");\n            break;\n    }\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 340,
+        "wires": [
+            [
+                "1bca6d0e13d5ae14"
+            ]
+        ]
+    },
+    {
+        "id": "1bca6d0e13d5ae14",
+        "type": "function",
+        "z": "08972a8227e69f46",
+        "name": "Update Lamp Color",
+        "func": "for (var L in [\"_L1\", \"_L2\"]) {\n    var color = global.get(\"lamp_color\" + L);\n    var output = global.get(\"output\" + L);\n\n    switch (color) {\n        case \"blue\":\n            output[\"L1\"] = \"1\";\n            output[\"L2\"] = \"0\";\n            output[\"L3\"] = \"0\";\n            output[\"L4\"] = \"0\";\n            break;\n        case \"red\":\n            output[\"L1\"] = \"0\";\n            output[\"L2\"] = \"1\";\n            output[\"L3\"] = \"0\";\n            output[\"L4\"] = \"0\";\n            break;\n        case \"yellow\":\n            output[\"L1\"] = \"0\";\n            output[\"L2\"] = \"0\";\n            output[\"L3\"] = \"1\";\n            output[\"L4\"] = \"0\";\n            break;\n        case \"green\":\n            output[\"L1\"] = \"0\";\n            output[\"L2\"] = \"0\";\n            output[\"L3\"] = \"0\";\n            output[\"L4\"] = \"1\";\n            break;\n        case \"none\":\n            output[\"L1\"] = \"0\";\n            output[\"L2\"] = \"0\";\n            output[\"L3\"] = \"0\";\n            output[\"L4\"] = \"0\";\n            break;\n    }\n\n    global.set(\"output\" + L, output);\n}\n\nreturn [\n    {payload: global.get(\"output_L1\")},\n    {payload: global.get(\"output_L2\")}\n];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 340,
+        "wires": [
+            [
+                "ecbf911108a0627d"
+            ],
+            [
+                "f67ec66673e3632c"
+            ]
+        ]
+    },
+    {
+        "id": "ecbf911108a0627d",
+        "type": "IOT Send",
+        "z": "08972a8227e69f46",
+        "name": "",
+        "x": 940,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "f67ec66673e3632c",
+        "type": "IOT Send",
+        "z": "08972a8227e69f46",
+        "name": "",
+        "x": 940,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "06974439764543f7",
+        "type": "ui_dropdown",
+        "z": "08972a8227e69f46",
+        "name": "Lamp 1 Config",
+        "label": "Цвет Лампы 1",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "ff5253f2ac0c9362",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Синий",
+                "value": "blue",
+                "type": "str"
+            },
+            {
+                "label": "Красный",
+                "value": "red",
+                "type": "str"
+            },
+            {
+                "label": "Желтый",
+                "value": "yellow",
+                "type": "str"
+            },
+            {
+                "label": "Зеленый",
+                "value": "green",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 140,
+        "y": 420,
+        "wires": [
+            [
+                "f65890bd3807803d"
+            ]
+        ]
+    },
+    {
+        "id": "f65890bd3807803d",
+        "type": "function",
+        "z": "08972a8227e69f46",
+        "name": "Set Lamp Color",
+        "func": "if (global.get(\"lamp_mode\") == \"auto\"){\n    msg.payload = 0;\n    return msg;\n}\n\nglobal.set(\"lamp_color_L1\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 420,
+        "wires": [
+            [
+                "06974439764543f7",
+                "a52119224fe1b31e"
+            ]
+        ]
+    },
+    {
+        "id": "a56f0ade768b75f7",
+        "type": "ui_dropdown",
+        "z": "08972a8227e69f46",
+        "name": "Lamp 2 Config",
+        "label": "Цвет Лампы 2",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "ff5253f2ac0c9362",
+        "order": 5,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Синий",
+                "value": "blue",
+                "type": "str"
+            },
+            {
+                "label": "Красный",
+                "value": "red",
+                "type": "str"
+            },
+            {
+                "label": "Желтый",
+                "value": "yellow",
+                "type": "str"
+            },
+            {
+                "label": "Зеленый",
+                "value": "green",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 140,
+        "y": 500,
+        "wires": [
+            [
+                "372ef8a042c92ece"
+            ]
+        ]
+    },
+    {
+        "id": "372ef8a042c92ece",
+        "type": "function",
+        "z": "08972a8227e69f46",
+        "name": "Set Lamp Color",
+        "func": "if (global.get(\"lamp_mode\") == \"auto\"){\n    msg.payload = 0;\n    return msg;\n}\n\nglobal.set(\"lamp_color_L2\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 500,
+        "wires": [
+            [
+                "a56f0ade768b75f7",
+                "5847ae8d05c452ac"
+            ]
+        ]
+    },
+    {
+        "id": "a52119224fe1b31e",
+        "type": "ui_led",
+        "z": "08972a8227e69f46",
+        "order": 4,
+        "group": "ff5253f2ac0c9362",
+        "width": 1,
+        "height": 1,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#0000ff",
+                "value": "blue",
+                "valueType": "str"
+            },
+            {
+                "color": "#ff0000",
+                "value": "red",
+                "valueType": "str"
+            },
+            {
+                "color": "#ffff00",
+                "value": "yellow",
+                "valueType": "str"
+            },
+            {
+                "color": "#008000",
+                "value": "green",
+                "valueType": "str"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "LL1",
+        "x": 690,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "5847ae8d05c452ac",
+        "type": "ui_led",
+        "z": "08972a8227e69f46",
+        "order": 6,
+        "group": "ff5253f2ac0c9362",
+        "width": 1,
+        "height": 1,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#0000ff",
+                "value": "blue",
+                "valueType": "str"
+            },
+            {
+                "color": "#ff0000",
+                "value": "red",
+                "valueType": "str"
+            },
+            {
+                "color": "#ffff00",
+                "value": "yellow",
+                "valueType": "str"
+            },
+            {
+                "color": "#008000",
+                "value": "green",
+                "valueType": "str"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "LL2",
+        "x": 690,
+        "y": 500,
         "wires": []
     }
 ]
