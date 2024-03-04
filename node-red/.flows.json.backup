@@ -712,8 +712,7 @@
         "y": 340,
         "wires": [
             [
-                "cec0c7e3c320df20",
-                "02f97d397d9fa31e"
+                "cec0c7e3c320df20"
             ],
             [
                 "ccd65dd59988a169"
@@ -1470,7 +1469,7 @@
         "type": "function",
         "z": "2e7a746435651752",
         "name": "Status",
-        "func": "if (global.get(\"selected_robot\") == 1) {\n    var r = \"_R1\";\n} else if (global.get(\"selected_robot\") == 2) {\n    var r = \"_R2\";\n}\n\nvar temp = msg.payload;\nvar status = [];\n\nvar i = 0;\nfor (var [key, value] of Object.entries(temp)) {\n    if (value < global.get(\"tempMin\" + r)[key]) {\n        status[i] = {payload: 2};\n    } else if (value > global.get(\"tempMax\" + r)[key]) {\n        status[i] = {payload: 2};\n    } else if (value < global.get(\"tempCritMin\" + r)[key]) {\n        status[i] = {payload: 1};\n    } else if (value > global.get(\"tempCritMax\" + r)[key]) {\n        status[i] = {payload: 1};\n    } else {\n        status[i] = {payload: 0};\n    }\n    i++;\n}\n\nreturn status;",
+        "func": "if (global.get(\"selected_robot\") == 1) {\n    var r = \"_R1\";\n} else if (global.get(\"selected_robot\") == 2) {\n    var r = \"_R2\";\n}\n\nvar temp = msg.payload;\nvar status = [];\n\nvar i = 0;\nfor (var [key, value] of Object.entries(temp)) {\n    var key_ = Object.keys(global.get(\"tempMin\" + r))[i];\n    if (value < global.get(\"tempMin\" + r)[key_]) {\n        status[i] = {payload: 2};\n    } else if (value > global.get(\"tempMax\" + r)[key_]) {\n        status[i] = {payload: 2};\n    } else if (value < global.get(\"tempCritMin\" + r)[key_]) {\n        status[i] = {payload: 1};\n    } else if (value > global.get(\"tempCritMax\" + r)[key_]) {\n        status[i] = {payload: 1};\n    } else {\n        status[i] = {payload: 0};\n    }\n    i++;\n}\n\nreturn status;",
         "outputs": 6,
         "timeout": 0,
         "noerr": 0,
@@ -1970,22 +1969,6 @@
         "name": "T6",
         "x": 790,
         "y": 620,
-        "wires": []
-    },
-    {
-        "id": "02f97d397d9fa31e",
-        "type": "debug",
-        "z": "2e7a746435651752",
-        "name": "debug 2",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1060,
-        "y": 160,
         "wires": []
     }
 ]
