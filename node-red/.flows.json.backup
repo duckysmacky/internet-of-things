@@ -568,7 +568,7 @@
         "tab": "cbcfc83f9d627922",
         "order": 4,
         "disp": true,
-        "width": "6",
+        "width": 7,
         "collapse": false,
         "className": ""
     },
@@ -579,9 +579,19 @@
         "tab": "cbcfc83f9d627922",
         "order": 3,
         "disp": true,
-        "width": "6",
+        "width": 7,
         "collapse": false,
         "className": ""
+    },
+    {
+        "id": "d8197dee26bc1448",
+        "type": "ui_spacer",
+        "z": "08972a8227e69f46",
+        "name": "spacer",
+        "group": "ff5253f2ac0c9362",
+        "order": 2,
+        "width": 1,
+        "height": 1
     },
     {
         "id": "b69a8423905d7321",
@@ -642,7 +652,7 @@
         "width": 0,
         "height": 0,
         "passthru": false,
-        "label": "Инициализация Значений",
+        "label": "Сброс Значений",
         "tooltip": "",
         "color": "",
         "bgcolor": "",
@@ -665,7 +675,7 @@
         "type": "function",
         "z": "c2899e0a7794b420",
         "name": "Set Default",
-        "func": "global.set(\"output_R1\", {\n    \"Robot_name\": \"Robot1_1\",\n    \"N\": \"0\",\n    \"X\": \"150\",\n    \"Y\": \"150\",\n    \"T\": \"0\",\n    \"G\": \"200\",\n    \"V\": \"0\",\n    \"L0\": \"0\",\n    \"L1\": \"0\",\n    \"L2\": \"0\",\n    \"L3\": \"0\",\n    \"L4\": \"0\",\n    \"P\": \"0\"\n});\n\nglobal.set(\"output_R2\", {\n    \"Robot_name\": \"Robot1_2\",\n    \"N\": \"0\",\n    \"X\": \"150\",\n    \"Y\": \"150\",\n    \"T\": \"0\",\n    \"G\": \"200\",\n    \"V\": \"0\",\n    \"L0\": \"0\",\n    \"L1\": \"0\",\n    \"L2\": \"0\",\n    \"L3\": \"0\",\n    \"L4\": \"0\",\n    \"P\": \"0\"\n});\n\nglobal.set(\"output_L1\", {\n    \"Robot_name\": \"TrafficLights1_1\",\n    \"N\": \"0\",\n    \"X\": \"150\",\n    \"Y\": \"150\",\n    \"T\": \"0\",\n    \"G\": \"200\",\n    \"V\": \"0\",\n    \"L0\": \"0\",\n    \"L1\": \"0\",\n    \"L2\": \"0\",\n    \"L3\": \"0\",\n    \"L4\": \"0\",\n    \"P\": \"0\"\n});\n\nglobal.set(\"output_L2\", {\n    \"Robot_name\": \"TrafficLights1_2\",\n    \"N\": \"0\",\n    \"X\": \"150\",\n    \"Y\": \"150\",\n    \"T\": \"0\",\n    \"G\": \"200\",\n    \"V\": \"0\",\n    \"L0\": \"0\",\n    \"L1\": \"0\",\n    \"L2\": \"0\",\n    \"L3\": \"0\",\n    \"L4\": \"0\",\n    \"P\": \"0\"\n});\n\nglobal.set(\"selected_robot\", 1);\nglobal.set(\"configured_robot\", 1);\nglobal.set(\"selected_limit\", \"loadProcMin\");\n\nglobal.set(\"lamp_mode\", \"auto\");\nglobal.set(\"robot_status_R1\", \"waiting\");\nglobal.set(\"robot_status_R2\", \"waiting\");\nglobal.set(\"lamp_color_L1\", \"green\");\nglobal.set(\"lamp_color_L2\", \"green\");\n\nglobal.set(\"loadProcMin_R1\", {\n    \"m1\": 5,\n    \"m2\": 5,\n    \"m3\": 5,\n    \"m4\": 5,\n    \"m5\": 5,\n    \"m6\": 5\n});\nglobal.set(\"loadProcCritMin_R1\", {\n    \"m1\": 20,\n    \"m2\": 20,\n    \"m3\": 20,\n    \"m4\": 20,\n    \"m5\": 20,\n    \"m6\": 20\n});\nglobal.set(\"loadProcCritMax_R1\", {\n    \"m1\": 80,\n    \"m2\": 80,\n    \"m3\": 80,\n    \"m4\": 80,\n    \"m5\": 80,\n    \"m6\": 80\n});\nglobal.set(\"loadProcMax_R1\", {\n    \"m1\": 95,\n    \"m2\": 95,\n    \"m3\": 95,\n    \"m4\": 95,\n    \"m5\": 95,\n    \"m6\": 95\n});\nglobal.set(\"tempMin_R1\", {\n    \"m1\": 5,\n    \"m2\": 5,\n    \"m3\": 5,\n    \"m4\": 5,\n    \"m5\": 5,\n    \"m6\": 5\n});\nglobal.set(\"tempCritMin_R1\", {\n    \"m1\": 15,\n    \"m2\": 15,\n    \"m3\": 15,\n    \"m4\": 15,\n    \"m5\": 15,\n    \"m6\": 15\n});\nglobal.set(\"tempCritMax_R1\", {\n    \"m1\": 85,\n    \"m2\": 85,\n    \"m3\": 85,\n    \"m4\": 85,\n    \"m5\": 85,\n    \"m6\": 85\n});\nglobal.set(\"tempMax_R1\", {\n    \"m1\": 95,\n    \"m2\": 95,\n    \"m3\": 95,\n    \"m4\": 95,\n    \"m5\": 95,\n    \"m6\": 95\n});\nglobal.set(\"loadProcMin_R2\", {\n    \"m1\": 5,\n    \"m2\": 5,\n    \"m3\": 5,\n    \"m4\": 5,\n    \"m5\": 5,\n    \"m6\": 5\n});\nglobal.set(\"loadProcCritMin_R2\", {\n    \"m1\": 20,\n    \"m2\": 20,\n    \"m3\": 20,\n    \"m4\": 20,\n    \"m5\": 20,\n    \"m6\": 20\n});\nglobal.set(\"loadProcCritMax_R2\", {\n    \"m1\": 80,\n    \"m2\": 80,\n    \"m3\": 80,\n    \"m4\": 80,\n    \"m5\": 80,\n    \"m6\": 80\n});\nglobal.set(\"loadProcMax_R2\", {\n    \"m1\": 95,\n    \"m2\": 95,\n    \"m3\": 95,\n    \"m4\": 95,\n    \"m5\": 95,\n    \"m6\": 95\n});\nglobal.set(\"tempMin_R2\", {\n    \"m1\": 5,\n    \"m2\": 5,\n    \"m3\": 5,\n    \"m4\": 5,\n    \"m5\": 5,\n    \"m6\": 5\n});\nglobal.set(\"tempCritMin_R2\", {\n    \"m1\": 15,\n    \"m2\": 15,\n    \"m3\": 15,\n    \"m4\": 15,\n    \"m5\": 15,\n    \"m6\": 15\n});\nglobal.set(\"tempCritMax_R2\", {\n    \"m1\": 85,\n    \"m2\": 85,\n    \"m3\": 85,\n    \"m4\": 85,\n    \"m5\": 85,\n    \"m6\": 85\n});\nglobal.set(\"tempMax_R2\", {\n    \"m1\": 95,\n    \"m2\": 95,\n    \"m3\": 95,\n    \"m4\": 95,\n    \"m5\": 95,\n    \"m6\": 95\n});\nreturn msg;",
+        "func": "global.set(\"output_R1\", {\n    \"Robot_name\": \"Robot1_1\",\n    \"N\": \"0\",\n    \"X\": \"150\",\n    \"Y\": \"150\",\n    \"T\": \"0\",\n    \"G\": \"200\",\n    \"V\": \"0\",\n    \"L0\": \"0\",\n    \"L1\": \"0\",\n    \"L2\": \"0\",\n    \"L3\": \"0\",\n    \"L4\": \"0\",\n    \"P\": \"0\"\n});\n\nglobal.set(\"output_R2\", {\n    \"Robot_name\": \"Robot1_2\",\n    \"N\": \"0\",\n    \"X\": \"150\",\n    \"Y\": \"150\",\n    \"T\": \"0\",\n    \"G\": \"200\",\n    \"V\": \"0\",\n    \"L0\": \"0\",\n    \"L1\": \"0\",\n    \"L2\": \"0\",\n    \"L3\": \"0\",\n    \"L4\": \"0\",\n    \"P\": \"0\"\n});\n\nglobal.set(\"output_L1\", {\n    \"Robot_name\": \"TrafficLights1_1\",\n    \"N\": \"0\",\n    \"X\": \"150\",\n    \"Y\": \"150\",\n    \"T\": \"0\",\n    \"G\": \"200\",\n    \"V\": \"0\",\n    \"L0\": \"0\",\n    \"L1\": \"0\",\n    \"L2\": \"0\",\n    \"L3\": \"0\",\n    \"L4\": \"0\",\n    \"P\": \"0\"\n});\n\nglobal.set(\"output_L2\", {\n    \"Robot_name\": \"TrafficLights1_2\",\n    \"N\": \"0\",\n    \"X\": \"150\",\n    \"Y\": \"150\",\n    \"T\": \"0\",\n    \"G\": \"200\",\n    \"V\": \"0\",\n    \"L0\": \"0\",\n    \"L1\": \"0\",\n    \"L2\": \"0\",\n    \"L3\": \"0\",\n    \"L4\": \"0\",\n    \"P\": \"0\"\n});\n\nglobal.set(\"output_T\", {\n    \"Robot_name\": \"WorkshiftTerminal1\",\n    \"N\": \"0\",\n    \"X\": \"150\",\n    \"Y\": \"150\",\n    \"T\": \"0\",\n    \"G\": \"200\",\n    \"V\": \"0\",\n    \"L0\": \"0\",\n    \"L1\": \"0\",\n    \"L2\": \"0\",\n    \"L3\": \"0\",\n    \"L4\": \"0\",\n    \"P\": \"0\"\n});\n\nglobal.set(\"selected_robot\", 1);\nglobal.set(\"configured_robot\", 1);\nglobal.set(\"selected_limit\", \"loadProcMin\");\n\nglobal.set(\"lamp_mode\", \"auto\");\nglobal.set(\"robot_status_R1\", \"waiting\");\nglobal.set(\"robot_status_R2\", \"waiting\");\nglobal.set(\"lamp_color_L1\", \"none\");\nglobal.set(\"lamp_color_L2\", \"none\");\nglobal.set(\"terminal_color_1\", \"none\");\nglobal.set(\"terminal_color_2\", \"none\");\nglobal.set(\"terminal_color_3\", \"none\");\nglobal.set(\"dms\", 0);\n\nglobal.set(\"loadProcMin_R1\", {\n    \"m1\": 5,\n    \"m2\": 5,\n    \"m3\": 5,\n    \"m4\": 5,\n    \"m5\": 5,\n    \"m6\": 5\n});\nglobal.set(\"loadProcCritMin_R1\", {\n    \"m1\": 20,\n    \"m2\": 20,\n    \"m3\": 20,\n    \"m4\": 20,\n    \"m5\": 20,\n    \"m6\": 20\n});\nglobal.set(\"loadProcCritMax_R1\", {\n    \"m1\": 80,\n    \"m2\": 80,\n    \"m3\": 80,\n    \"m4\": 80,\n    \"m5\": 80,\n    \"m6\": 80\n});\nglobal.set(\"loadProcMax_R1\", {\n    \"m1\": 95,\n    \"m2\": 95,\n    \"m3\": 95,\n    \"m4\": 95,\n    \"m5\": 95,\n    \"m6\": 95\n});\nglobal.set(\"tempMin_R1\", {\n    \"m1\": 5,\n    \"m2\": 5,\n    \"m3\": 5,\n    \"m4\": 5,\n    \"m5\": 5,\n    \"m6\": 5\n});\nglobal.set(\"tempCritMin_R1\", {\n    \"m1\": 15,\n    \"m2\": 15,\n    \"m3\": 15,\n    \"m4\": 15,\n    \"m5\": 15,\n    \"m6\": 15\n});\nglobal.set(\"tempCritMax_R1\", {\n    \"m1\": 85,\n    \"m2\": 85,\n    \"m3\": 85,\n    \"m4\": 85,\n    \"m5\": 85,\n    \"m6\": 85\n});\nglobal.set(\"tempMax_R1\", {\n    \"m1\": 95,\n    \"m2\": 95,\n    \"m3\": 95,\n    \"m4\": 95,\n    \"m5\": 95,\n    \"m6\": 95\n});\nglobal.set(\"loadProcMin_R2\", {\n    \"m1\": 5,\n    \"m2\": 5,\n    \"m3\": 5,\n    \"m4\": 5,\n    \"m5\": 5,\n    \"m6\": 5\n});\nglobal.set(\"loadProcCritMin_R2\", {\n    \"m1\": 20,\n    \"m2\": 20,\n    \"m3\": 20,\n    \"m4\": 20,\n    \"m5\": 20,\n    \"m6\": 20\n});\nglobal.set(\"loadProcCritMax_R2\", {\n    \"m1\": 80,\n    \"m2\": 80,\n    \"m3\": 80,\n    \"m4\": 80,\n    \"m5\": 80,\n    \"m6\": 80\n});\nglobal.set(\"loadProcMax_R2\", {\n    \"m1\": 95,\n    \"m2\": 95,\n    \"m3\": 95,\n    \"m4\": 95,\n    \"m5\": 95,\n    \"m6\": 95\n});\nglobal.set(\"tempMin_R2\", {\n    \"m1\": 5,\n    \"m2\": 5,\n    \"m3\": 5,\n    \"m4\": 5,\n    \"m5\": 5,\n    \"m6\": 5\n});\nglobal.set(\"tempCritMin_R2\", {\n    \"m1\": 15,\n    \"m2\": 15,\n    \"m3\": 15,\n    \"m4\": 15,\n    \"m5\": 15,\n    \"m6\": 15\n});\nglobal.set(\"tempCritMax_R2\", {\n    \"m1\": 85,\n    \"m2\": 85,\n    \"m3\": 85,\n    \"m4\": 85,\n    \"m5\": 85,\n    \"m6\": 85\n});\nglobal.set(\"tempMax_R2\", {\n    \"m1\": 95,\n    \"m2\": 95,\n    \"m3\": 95,\n    \"m4\": 95,\n    \"m5\": 95,\n    \"m6\": 95\n});\n\nglobal.set(\"pos_parking_R1\", {\n    \"X\": 100,\n    \"Y\": 100\n});\nglobal.set(\"pos_parking_R2\", {\n    \"X\": 200,\n    \"Y\": 200\n});\nglobal.set(\"pos_1_R1\", {\n    \"X\": 50,\n    \"Y\": 50\n});\nglobal.set(\"pos_1_R2\", {\n    \"X\": 90,\n    \"Y\": 90\n});\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -2094,8 +2104,8 @@
         "label": "Робот",
         "tooltip": "",
         "place": "Select option",
-        "group": "c32d0cee4dd9f50e",
-        "order": 2,
+        "group": "ee74c07fb986bb59",
+        "order": 1,
         "width": 0,
         "height": 0,
         "passthru": true,
@@ -2136,8 +2146,845 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 400,
+        "x": 360,
         "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "57323c0b0a0d2810",
+        "type": "function",
+        "z": "08972a8227e69f46",
+        "name": "Set Lamp Mode",
+        "func": "global.set(\"lamp_mode\", msg.payload);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "eb90ef4e5a57e600",
+        "type": "inject",
+        "z": "08972a8227e69f46",
+        "name": "Update Auto Lamps",
+        "props": [],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 180,
+        "y": 560,
+        "wires": [
+            [
+                "62f4f05f3db9bed4"
+            ]
+        ]
+    },
+    {
+        "id": "62f4f05f3db9bed4",
+        "type": "function",
+        "z": "08972a8227e69f46",
+        "name": "Auto Set Lamp Color",
+        "func": "if (global.get(\"lamp_mode\") == \"manual\"){\n    return msg;\n}\n\nfor (var L of [\"_L1\", \"_L2\"]) {\n    if (L == \"_L1\") {\n        var status = global.get(\"robot_status_R1\");\n    } else if ((L == \"_L2\")) {\n        var status = global.get(\"robot_status_R1\");\n    }\n\n    switch (status) {\n        case \"waiting\":\n            global.set(\"lamp_color\" + L, \"green\");\n            break;\n        case \"moving\":\n            global.set(\"lamp_color\" + L, \"blue\");\n            break;\n        case \"paused\":\n            global.set(\"lamp_color\" + L, \"yellow\");\n            break;\n        case \"locked\":\n            global.set(\"lamp_color\" + L, \"red\");\n            break;\n        case \"stopped\":\n            global.set(\"lamp_color\" + L, \"red\");\n            break;\n        default:\n            global.set(\"lamp_color\" + L, \"none\");\n            break;\n    }\n}\n\nmsg.payload = global.get(\"robot_status_R1\");\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 560,
+        "wires": [
+            [
+                "1bca6d0e13d5ae14"
+            ]
+        ]
+    },
+    {
+        "id": "1bca6d0e13d5ae14",
+        "type": "function",
+        "z": "08972a8227e69f46",
+        "name": "Update Lamp Color",
+        "func": "for (var L of [\"_L1\", \"_L2\"]) {\n    var color = global.get(\"lamp_color\" + L);\n    var output = global.get(\"output\" + L);\n\n    switch (color) {\n        case \"blue\":\n            output[\"L1\"] = \"1\";\n            output[\"L2\"] = \"0\";\n            output[\"L3\"] = \"0\";\n            output[\"L4\"] = \"0\";\n            break;\n        case \"red\":\n            output[\"L1\"] = \"0\";\n            output[\"L2\"] = \"1\";\n            output[\"L3\"] = \"0\";\n            output[\"L4\"] = \"0\";\n            break;\n        case \"yellow\":\n            output[\"L1\"] = \"0\";\n            output[\"L2\"] = \"0\";\n            output[\"L3\"] = \"1\";\n            output[\"L4\"] = \"0\";\n            break;\n        case \"green\":\n            output[\"L1\"] = \"0\";\n            output[\"L2\"] = \"0\";\n            output[\"L3\"] = \"0\";\n            output[\"L4\"] = \"1\";\n            break;\n        case \"none\":\n            output[\"L1\"] = \"0\";\n            output[\"L2\"] = \"0\";\n            output[\"L3\"] = \"0\";\n            output[\"L4\"] = \"0\";\n            break;\n    }\n\n    global.set(\"output\" + L, output);\n}\n\nreturn [\n    {payload: global.get(\"output_L1\")},\n    {payload: global.get(\"output_L2\")}\n];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 560,
+        "wires": [
+            [
+                "ecbf911108a0627d"
+            ],
+            [
+                "f67ec66673e3632c"
+            ]
+        ]
+    },
+    {
+        "id": "ecbf911108a0627d",
+        "type": "IOT Send",
+        "z": "08972a8227e69f46",
+        "name": "",
+        "x": 940,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "f67ec66673e3632c",
+        "type": "IOT Send",
+        "z": "08972a8227e69f46",
+        "name": "",
+        "x": 940,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "06974439764543f7",
+        "type": "ui_dropdown",
+        "z": "08972a8227e69f46",
+        "name": "Lamp 1 Config",
+        "label": "Цвет Светофора 1",
+        "tooltip": "",
+        "place": "",
+        "group": "ff5253f2ac0c9362",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Синий",
+                "value": "blue",
+                "type": "str"
+            },
+            {
+                "label": "Красный",
+                "value": "red",
+                "type": "str"
+            },
+            {
+                "label": "Желтый",
+                "value": "yellow",
+                "type": "str"
+            },
+            {
+                "label": "Зеленый",
+                "value": "green",
+                "type": "str"
+            },
+            {
+                "label": "Выкл",
+                "value": "none",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 620,
+        "y": 640,
+        "wires": [
+            [
+                "f65890bd3807803d"
+            ]
+        ]
+    },
+    {
+        "id": "f65890bd3807803d",
+        "type": "function",
+        "z": "08972a8227e69f46",
+        "name": "Set Lamp Color",
+        "func": "if (global.get(\"lamp_mode\") == \"auto\" || global.get(\"dms\") == 1){\n    msg.payload = 0;\n    return msg;\n}\n\nglobal.set(\"lamp_color_L1\", msg.payload);\nmsg.payload = global.get(\"lamp_color_L1\");\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 640,
+        "wires": [
+            [
+                "a52119224fe1b31e"
+            ]
+        ]
+    },
+    {
+        "id": "a56f0ade768b75f7",
+        "type": "ui_dropdown",
+        "z": "08972a8227e69f46",
+        "name": "Lamp 2 Config",
+        "label": "Цвет Светофора 2",
+        "tooltip": "",
+        "place": "",
+        "group": "ff5253f2ac0c9362",
+        "order": 5,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Синий",
+                "value": "blue",
+                "type": "str"
+            },
+            {
+                "label": "Красный",
+                "value": "red",
+                "type": "str"
+            },
+            {
+                "label": "Желтый",
+                "value": "yellow",
+                "type": "str"
+            },
+            {
+                "label": "Зеленый",
+                "value": "green",
+                "type": "str"
+            },
+            {
+                "label": "Выкл",
+                "value": "none",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 620,
+        "y": 720,
+        "wires": [
+            [
+                "372ef8a042c92ece"
+            ]
+        ]
+    },
+    {
+        "id": "372ef8a042c92ece",
+        "type": "function",
+        "z": "08972a8227e69f46",
+        "name": "Set Lamp Color",
+        "func": "if (global.get(\"lamp_mode\") == \"auto\" || global.get(\"dms\") == 1){\n    msg.payload = 0;\n    return msg;\n}\n\nglobal.set(\"lamp_color_L2\", msg.payload);\nmsg.payload = global.get(\"lamp_color_L2\");\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 720,
+        "wires": [
+            [
+                "5847ae8d05c452ac"
+            ]
+        ]
+    },
+    {
+        "id": "a52119224fe1b31e",
+        "type": "ui_led",
+        "z": "08972a8227e69f46",
+        "order": 4,
+        "group": "ff5253f2ac0c9362",
+        "width": 1,
+        "height": 1,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#0000ff",
+                "value": "blue",
+                "valueType": "str"
+            },
+            {
+                "color": "#ff0000",
+                "value": "red",
+                "valueType": "str"
+            },
+            {
+                "color": "#ffff00",
+                "value": "yellow",
+                "valueType": "str"
+            },
+            {
+                "color": "#008000",
+                "value": "green",
+                "valueType": "str"
+            },
+            {
+                "color": "#000000",
+                "value": "none",
+                "valueType": "str"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "LL1",
+        "x": 1170,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "5847ae8d05c452ac",
+        "type": "ui_led",
+        "z": "08972a8227e69f46",
+        "order": 6,
+        "group": "ff5253f2ac0c9362",
+        "width": 1,
+        "height": 1,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#0000ff",
+                "value": "blue",
+                "valueType": "str"
+            },
+            {
+                "color": "#ff0000",
+                "value": "red",
+                "valueType": "str"
+            },
+            {
+                "color": "#ffff00",
+                "value": "yellow",
+                "valueType": "str"
+            },
+            {
+                "color": "#008000",
+                "value": "green",
+                "valueType": "str"
+            },
+            {
+                "color": "#000000",
+                "value": "none",
+                "valueType": "str"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "LL2",
+        "x": 1170,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "54e646c2211a91b4",
+        "type": "ui_dropdown",
+        "z": "08972a8227e69f46",
+        "name": "Terminal Lamp 1 Config",
+        "label": "Цвет Лампы 2",
+        "tooltip": "",
+        "place": "Выбор",
+        "group": "e823cd2759eae34c",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Синий",
+                "value": "blue",
+                "type": "str"
+            },
+            {
+                "label": "Красный",
+                "value": "red",
+                "type": "str"
+            },
+            {
+                "label": "Желтый",
+                "value": "yellow",
+                "type": "str"
+            },
+            {
+                "label": "Зеленый",
+                "value": "green",
+                "type": "str"
+            },
+            {
+                "label": "Выкл",
+                "value": "none",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 650,
+        "y": 800,
+        "wires": [
+            [
+                "0145257eaa81704e"
+            ]
+        ]
+    },
+    {
+        "id": "0145257eaa81704e",
+        "type": "function",
+        "z": "08972a8227e69f46",
+        "name": "Set Lamp Color",
+        "func": "if (global.get(\"dms\") == 1){\n    msg.payload = 0;\n    return msg;\n}\n\nglobal.set(\"terminal_color_1\", msg.payload);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 800,
+        "wires": [
+            [
+                "76656f6056fd5660"
+            ]
+        ]
+    },
+    {
+        "id": "76656f6056fd5660",
+        "type": "ui_led",
+        "z": "08972a8227e69f46",
+        "order": 2,
+        "group": "e823cd2759eae34c",
+        "width": 1,
+        "height": 1,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#0000ff",
+                "value": "blue",
+                "valueType": "str"
+            },
+            {
+                "color": "#ff0000",
+                "value": "red",
+                "valueType": "str"
+            },
+            {
+                "color": "#ffff00",
+                "value": "yellow",
+                "valueType": "str"
+            },
+            {
+                "color": "#008000",
+                "value": "green",
+                "valueType": "str"
+            },
+            {
+                "color": "#000000",
+                "value": "none",
+                "valueType": "str"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "TL1",
+        "x": 1170,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "5d26e7f495754934",
+        "type": "ui_dropdown",
+        "z": "08972a8227e69f46",
+        "name": "Terminal Lamp 2 Config",
+        "label": "Цвет Лампы 2",
+        "tooltip": "",
+        "place": "Выбор",
+        "group": "e823cd2759eae34c",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Синий",
+                "value": "blue",
+                "type": "str"
+            },
+            {
+                "label": "Красный",
+                "value": "red",
+                "type": "str"
+            },
+            {
+                "label": "Желтый",
+                "value": "yellow",
+                "type": "str"
+            },
+            {
+                "label": "Зеленый",
+                "value": "green",
+                "type": "str"
+            },
+            {
+                "label": "Выкл",
+                "value": "none",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 650,
+        "y": 860,
+        "wires": [
+            [
+                "3e4104c55b4a920d"
+            ]
+        ]
+    },
+    {
+        "id": "3e4104c55b4a920d",
+        "type": "function",
+        "z": "08972a8227e69f46",
+        "name": "Set Lamp Color",
+        "func": "if (global.get(\"dms\") == 1){\n    msg.payload = 0;\n    return msg;\n}\n\nglobal.set(\"terminal_color_2\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 860,
+        "wires": [
+            [
+                "2129262b39010448"
+            ]
+        ]
+    },
+    {
+        "id": "2129262b39010448",
+        "type": "ui_led",
+        "z": "08972a8227e69f46",
+        "order": 4,
+        "group": "e823cd2759eae34c",
+        "width": 1,
+        "height": 1,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#0000ff",
+                "value": "blue",
+                "valueType": "str"
+            },
+            {
+                "color": "#ff0000",
+                "value": "red",
+                "valueType": "str"
+            },
+            {
+                "color": "#ffff00",
+                "value": "yellow",
+                "valueType": "str"
+            },
+            {
+                "color": "#008000",
+                "value": "green",
+                "valueType": "str"
+            },
+            {
+                "color": "#000000",
+                "value": "none",
+                "valueType": "str"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "TL2",
+        "x": 1170,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "3a24a354218496ab",
+        "type": "ui_dropdown",
+        "z": "08972a8227e69f46",
+        "name": "Terminal Lamp 3 Config",
+        "label": "Цвет Лампы 3",
+        "tooltip": "",
+        "place": "Выбор",
+        "group": "e823cd2759eae34c",
+        "order": 5,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Синий",
+                "value": "blue",
+                "type": "str"
+            },
+            {
+                "label": "Красный",
+                "value": "red",
+                "type": "str"
+            },
+            {
+                "label": "Желтый",
+                "value": "yellow",
+                "type": "str"
+            },
+            {
+                "label": "Зеленый",
+                "value": "green",
+                "type": "str"
+            },
+            {
+                "label": "Выкл",
+                "value": "none",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 650,
+        "y": 920,
+        "wires": [
+            [
+                "bb8398851069bcf5"
+            ]
+        ]
+    },
+    {
+        "id": "bb8398851069bcf5",
+        "type": "function",
+        "z": "08972a8227e69f46",
+        "name": "Set Lamp Color",
+        "func": "if (global.get(\"dms\") == 1){\n    msg.payload = 0;\n    return msg;\n}\n\nglobal.set(\"terminal_color_3\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 920,
+        "wires": [
+            [
+                "583019ae0113e9ea"
+            ]
+        ]
+    },
+    {
+        "id": "583019ae0113e9ea",
+        "type": "ui_led",
+        "z": "08972a8227e69f46",
+        "order": 6,
+        "group": "e823cd2759eae34c",
+        "width": 1,
+        "height": 1,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#0000ff",
+                "value": "blue",
+                "valueType": "str"
+            },
+            {
+                "color": "#ff0000",
+                "value": "red",
+                "valueType": "str"
+            },
+            {
+                "color": "#ffff00",
+                "value": "yellow",
+                "valueType": "str"
+            },
+            {
+                "color": "#008000",
+                "value": "green",
+                "valueType": "str"
+            },
+            {
+                "color": "#000000",
+                "value": "none",
+                "valueType": "str"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "TL3",
+        "x": 1170,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "2a0e4268c0819ee1",
+        "type": "inject",
+        "z": "08972a8227e69f46",
+        "name": "Update Lamps",
+        "props": [],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 160,
+        "y": 680,
+        "wires": [
+            [
+                "4a11971e57e33693"
+            ]
+        ]
+    },
+    {
+        "id": "4a11971e57e33693",
+        "type": "function",
+        "z": "08972a8227e69f46",
+        "name": "Set Preview",
+        "func": "if (global.get(\"lamp_mode\") == \"auto\" || global.get(\"dms\") == 1){\n    var empty = [\n        {payload: \"\"},\n        {payload: \"\"}\n    ]\n    return empty;\n} else {\n    var values = [\n        {payload: global.get(\"lamp_color_L1\")},\n        {payload: global.get(\"lamp_color_L2\")}\n    ]\n    return values;\n}",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 680,
+        "wires": [
+            [
+                "06974439764543f7"
+            ],
+            [
+                "a56f0ade768b75f7"
+            ]
+        ]
+    },
+    {
+        "id": "e942fc4e69fc23aa",
+        "type": "inject",
+        "z": "08972a8227e69f46",
+        "name": "Update Terminal",
+        "props": [],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 170,
+        "y": 860,
+        "wires": [
+            [
+                "bccca1cdb36bb281"
+            ]
+        ]
+    },
+    {
+        "id": "bccca1cdb36bb281",
+        "type": "function",
+        "z": "08972a8227e69f46",
+        "name": "Set Preview",
+        "func": "if (global.get(\"dms\") === 1){\n    var empty = [\n        {payload: \"\"},\n        {payload: \"\"},\n        {payload: \"\"}\n    ]\n    return empty;\n} else {\n    var values = [\n        {payload: global.get(\"terminal_color_1\")},\n        {payload: global.get(\"terminal_color_2\")},\n        {payload: global.get(\"terminal_color_3\")}\n    ]\n    return values;\n}",
+        "outputs": 3,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 860,
+        "wires": [
+            [
+                "54e646c2211a91b4"
+            ],
+            [
+                "5d26e7f495754934"
+            ],
+            [
+                "3a24a354218496ab"
+            ]
+        ]
+    },
+    {
+        "id": "cdf70dec1879579b",
+        "type": "function",
+        "z": "08972a8227e69f46",
+        "name": "Toggle DMS",
+        "func": "var dms = global.get(\"dms\");\n\nif (dms == 1) {\n    global.set(\"dms\", 0);\n\n    global.set(\"robot_status_R1\", \"locked\");\n    global.set(\"robot_status_R2\", \"locked\");\n\n    global.set(\"lamp_color_L1\", \"red\");\n    global.set(\"lamp_color_L1\", \"red\");\n\n    global.set(\"terminal_color_1\", \"red\");\n    global.set(\"terminal_color_2\", \"red\");\n    global.set(\"terminal_color_3\", \"red\");\n} else {\n    global.set(\"dms\", 1);\n}\n\nmsg.payload = global.get(\"dms\");\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 420,
+        "wires": [
+            [
+                "7342e8428898526f"
+            ]
+        ]
+    },
+    {
+        "id": "789adfa299290d2a",
+        "type": "inject",
+        "z": "08972a8227e69f46",
+        "name": "Update DMS",
+        "props": [],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 160,
+        "y": 480,
+        "wires": [
+            [
+                "f88aa6e94269553d"
+            ]
+        ]
+    },
+    {
+        "id": "f88aa6e94269553d",
+        "type": "function",
+        "z": "08972a8227e69f46",
+        "name": "Check DMS",
+        "func": "if (global.get(\"dms\") == 1) {\n    global.set(\"robot_status_R1\", \"locked\");\n    global.set(\"robot_status_R2\", \"locked\");\n\n    global.set(\"lamp_color_L1\", \"red\");\n    global.set(\"lamp_color_L1\", \"red\");\n\n    global.set(\"terminal_color_1\", \"red\");\n    global.set(\"terminal_color_2\", \"red\");\n    global.set(\"terminal_color_3\", \"red\");\n}\n\nmsg.payload = global.get(\"dms\");\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 480,
         "wires": [
             []
         ]
@@ -2150,9 +2997,9 @@
         "label": "Ручной режим ламп",
         "tooltip": "",
         "group": "ff5253f2ac0c9362",
-        "order": 0,
-        "width": 0,
-        "height": 0,
+        "order": 1,
+        "width": 6,
+        "height": 1,
         "passthru": true,
         "decouple": "false",
         "topic": "topic",
@@ -2169,7 +3016,7 @@
         "animate": false,
         "className": "",
         "x": 150,
-        "y": 180,
+        "y": 340,
         "wires": [
             [
                 "57323c0b0a0d2810"
@@ -2177,48 +3024,165 @@
         ]
     },
     {
-        "id": "57323c0b0a0d2810",
+        "id": "dde49d8bef634718",
+        "type": "ui_button",
+        "z": "08972a8227e69f46",
+        "name": "DMS",
+        "group": "e823cd2759eae34c",
+        "order": 7,
+        "width": 6,
+        "height": 1,
+        "passthru": false,
+        "label": "мертвый человек кнопка",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 110,
+        "y": 420,
+        "wires": [
+            [
+                "cdf70dec1879579b"
+            ]
+        ]
+    },
+    {
+        "id": "7342e8428898526f",
+        "type": "ui_led",
+        "z": "08972a8227e69f46",
+        "order": 8,
+        "group": "e823cd2759eae34c",
+        "width": 1,
+        "height": 1,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "left",
+        "colorForValue": [
+            {
+                "color": "#008000",
+                "value": "0",
+                "valueType": "num"
+            },
+            {
+                "color": "#ff0000",
+                "value": "1",
+                "valueType": "num"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "DMSL",
+        "x": 590,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "09105ca6d24a4f6e",
+        "type": "ui_dropdown",
+        "z": "08972a8227e69f46",
+        "name": "Position List",
+        "label": "Список позиций",
+        "tooltip": "",
+        "place": "Выбор позиции",
+        "group": "ee74c07fb986bb59",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Парковка",
+                "value": "pos_parking",
+                "type": "str"
+            },
+            {
+                "label": "Временная позиция",
+                "value": "pos_temp",
+                "type": "str"
+            },
+            {
+                "label": "Позиция 1",
+                "value": "pos_1",
+                "type": "str"
+            },
+            {
+                "label": "Позиция 2",
+                "value": "pos_2",
+                "type": "str"
+            },
+            {
+                "label": "Позиция 3",
+                "value": "pos_3",
+                "type": "str"
+            },
+            {
+                "label": "Целевая позиция",
+                "value": "pos_goal",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 130,
+        "y": 140,
+        "wires": [
+            [
+                "2bed3cd90f6d87f5"
+            ]
+        ]
+    },
+    {
+        "id": "2bed3cd90f6d87f5",
         "type": "function",
         "z": "08972a8227e69f46",
-        "name": "Set Lamp Mode",
-        "func": "global.set(\"lamp_mode\", msg.payload);\n\nreturn msg;",
+        "name": "Set Position",
+        "func": "global.set(\"selected_position\", msg.payload);\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 420,
-        "y": 180,
+        "x": 370,
+        "y": 140,
         "wires": [
             []
         ]
     },
     {
-        "id": "eb90ef4e5a57e600",
+        "id": "959979b8918a0504",
         "type": "inject",
         "z": "08972a8227e69f46",
-        "name": "Update Lamp",
+        "name": "Update Position",
         "props": [],
-        "repeat": "1",
+        "repeat": "0.1",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 160,
-        "y": 340,
+        "x": 170,
+        "y": 200,
         "wires": [
             [
-                "62f4f05f3db9bed4"
+                "7f51ac19904476db"
             ]
         ]
     },
     {
-        "id": "62f4f05f3db9bed4",
+        "id": "7f51ac19904476db",
         "type": "function",
         "z": "08972a8227e69f46",
-        "name": "Auto Set Lamp Color",
-        "func": "if (global.get(\"lamp_mode\") == \"manual\"){\n    return msg;\n}\n\nfor (var L in [\"_L1\", \"_L2\"]) {\n    if (L == \"_L1\") {\n        var status = global.get(\"robot_status_R1\");\n    } else if ((L == \"_L2\")) {\n        var status = global.get(\"robot_status_R1\");\n    }\n\n    switch (status) {\n        case \"waiting\":\n            global.set(\"lamp_color\" + L, \"green\");\n            break;\n        case \"moving\":\n            global.set(\"lamp_color\" + L, \"blue\");\n            break;\n        case \"paused\":\n            global.set(\"lamp_color\" + L, \"yellow\");\n            break;\n        case \"locked\":\n            global.set(\"lamp_color\" + L, \"yellow\");\n            break;\n        case \"stopped\":\n            global.set(\"lamp_color\" + L, \"red\");\n            break;\n        default:\n            global.set(\"lamp_color\" + L, \"none\");\n            break;\n    }\n}\n\nreturn msg;",
+        "name": "Update Position Data",
+        "func": "if (global.get(\"configured_robot\") == 1) {\n    var selected_position = global.get(\"selected_position\") + \"_R1\";\n} else if (global.get(\"configured_robot\") == 2) {\n    var selected_position = global.get(\"selected_position\") + \"_R2\";\n}\n\nmsg.payload = global.get(selected_position);\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -2226,188 +3190,148 @@
         "finalize": "",
         "libs": [],
         "x": 440,
-        "y": 340,
+        "y": 200,
         "wires": [
             [
-                "1bca6d0e13d5ae14"
+                "a75be24b81651681"
             ]
         ]
     },
     {
-        "id": "1bca6d0e13d5ae14",
-        "type": "function",
+        "id": "a75be24b81651681",
+        "type": "ui_form",
         "z": "08972a8227e69f46",
-        "name": "Update Lamp Color",
-        "func": "for (var L in [\"_L1\", \"_L2\"]) {\n    var color = global.get(\"lamp_color\" + L);\n    var output = global.get(\"output\" + L);\n\n    switch (color) {\n        case \"blue\":\n            output[\"L1\"] = \"1\";\n            output[\"L2\"] = \"0\";\n            output[\"L3\"] = \"0\";\n            output[\"L4\"] = \"0\";\n            break;\n        case \"red\":\n            output[\"L1\"] = \"0\";\n            output[\"L2\"] = \"1\";\n            output[\"L3\"] = \"0\";\n            output[\"L4\"] = \"0\";\n            break;\n        case \"yellow\":\n            output[\"L1\"] = \"0\";\n            output[\"L2\"] = \"0\";\n            output[\"L3\"] = \"1\";\n            output[\"L4\"] = \"0\";\n            break;\n        case \"green\":\n            output[\"L1\"] = \"0\";\n            output[\"L2\"] = \"0\";\n            output[\"L3\"] = \"0\";\n            output[\"L4\"] = \"1\";\n            break;\n        case \"none\":\n            output[\"L1\"] = \"0\";\n            output[\"L2\"] = \"0\";\n            output[\"L3\"] = \"0\";\n            output[\"L4\"] = \"0\";\n            break;\n    }\n\n    global.set(\"output\" + L, output);\n}\n\nreturn [\n    {payload: global.get(\"output_L1\")},\n    {payload: global.get(\"output_L2\")}\n];",
-        "outputs": 2,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 710,
-        "y": 340,
-        "wires": [
-            [
-                "ecbf911108a0627d"
-            ],
-            [
-                "f67ec66673e3632c"
-            ]
-        ]
-    },
-    {
-        "id": "ecbf911108a0627d",
-        "type": "IOT Send",
-        "z": "08972a8227e69f46",
-        "name": "",
-        "x": 940,
-        "y": 320,
-        "wires": []
-    },
-    {
-        "id": "f67ec66673e3632c",
-        "type": "IOT Send",
-        "z": "08972a8227e69f46",
-        "name": "",
-        "x": 940,
-        "y": 360,
-        "wires": []
-    },
-    {
-        "id": "06974439764543f7",
-        "type": "ui_dropdown",
-        "z": "08972a8227e69f46",
-        "name": "Lamp 1 Config",
-        "label": "Цвет Лампы 1",
-        "tooltip": "",
-        "place": "Select option",
-        "group": "ff5253f2ac0c9362",
-        "order": 1,
+        "name": "Current Pos",
+        "label": "Текущая позиция",
+        "group": "ee74c07fb986bb59",
+        "order": 3,
         "width": 0,
         "height": 0,
-        "passthru": true,
-        "multiple": false,
         "options": [
             {
-                "label": "Синий",
-                "value": "blue",
-                "type": "str"
+                "label": "X",
+                "value": "X",
+                "type": "number",
+                "required": true,
+                "rows": null
             },
             {
-                "label": "Красный",
-                "value": "red",
-                "type": "str"
-            },
-            {
-                "label": "Желтый",
-                "value": "yellow",
-                "type": "str"
-            },
-            {
-                "label": "Зеленый",
-                "value": "green",
-                "type": "str"
+                "label": "Y",
+                "value": "Y",
+                "type": "number",
+                "required": true,
+                "rows": null
             }
         ],
+        "formValue": {
+            "X": "",
+            "Y": ""
+        },
         "payload": "",
+        "submit": "Сохранить",
+        "cancel": "",
         "topic": "topic",
         "topicType": "msg",
+        "splitLayout": "",
         "className": "",
-        "x": 140,
-        "y": 420,
+        "x": 150,
+        "y": 260,
         "wires": [
             [
-                "f65890bd3807803d"
+                "5bd7608b2e917d09"
             ]
         ]
     },
     {
-        "id": "f65890bd3807803d",
+        "id": "5bd7608b2e917d09",
         "type": "function",
         "z": "08972a8227e69f46",
-        "name": "Set Lamp Color",
-        "func": "if (global.get(\"lamp_mode\") == \"auto\"){\n    msg.payload = 0;\n    return msg;\n}\n\nglobal.set(\"lamp_color_L1\", msg.payload);\nreturn msg;",
+        "name": "Save Posotion Data",
+        "func": "if (global.get(\"configured_robot\") == 1) {\n    var selected_position = global.get(\"selected_position\") + \"_R1\";\n} else if (global.get(\"configured_robot\") == 2) {\n    var selected_position = global.get(\"selected_position\") + \"_R2\";\n}\nvar position_data = global.get(selected_position);\n\nposition_data[\"X\"] = msg.payload[\"X\"];\nposition_data[\"Y\"] = msg.payload[\"Y\"];\n\nglobal.set(selected_position, position_data);\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 420,
-        "y": 420,
+        "x": 440,
+        "y": 260,
         "wires": [
-            [
-                "06974439764543f7"
-            ]
+            []
         ]
     },
     {
-        "id": "a56f0ade768b75f7",
-        "type": "ui_dropdown",
+        "id": "d005adacba987519",
+        "type": "ui_button",
         "z": "08972a8227e69f46",
-        "name": "Lamp 2 Config",
-        "label": "Цвет Лампы 2",
-        "tooltip": "",
-        "place": "Select option",
-        "group": "ff5253f2ac0c9362",
-        "order": 1,
+        "name": "Send Pos",
+        "group": "ee74c07fb986bb59",
+        "order": 4,
         "width": 0,
         "height": 0,
-        "passthru": true,
-        "multiple": false,
-        "options": [
-            {
-                "label": "Синий",
-                "value": "blue",
-                "type": "str"
-            },
-            {
-                "label": "Красный",
-                "value": "red",
-                "type": "str"
-            },
-            {
-                "label": "Желтый",
-                "value": "yellow",
-                "type": "str"
-            },
-            {
-                "label": "Зеленый",
-                "value": "green",
-                "type": "str"
-            }
-        ],
+        "passthru": false,
+        "label": "Принять",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
         "payload": "",
+        "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "className": "",
-        "x": 140,
-        "y": 500,
+        "x": 740,
+        "y": 200,
         "wires": [
             [
-                "372ef8a042c92ece"
+                "c3b7f2666003da7e"
             ]
         ]
     },
     {
-        "id": "372ef8a042c92ece",
+        "id": "c3b7f2666003da7e",
         "type": "function",
         "z": "08972a8227e69f46",
-        "name": "Set Lamp Color",
-        "func": "if (global.get(\"lamp_mode\") == \"auto\"){\n    msg.payload = 0;\n    return msg;\n}\n\nglobal.set(\"lamp_color_L2\", msg.payload);\nreturn msg;",
+        "name": "Send Pos Data",
+        "func": "if (global.get(\"configured_robot\") == 1) {\n    var R = \"_R1\";\n} else if (global.get(\"configured_robot\") == 2) {\n    var R = \"_R2\";\n}\nvar selected_position = global.get(\"selected_position\") + R;\nvar output = global.get(\"output\" + R);\nvar position_data = global.get(selected_position);\n\noutput[\"X\"] = position_data[\"X\"];\noutput[\"Y\"] = position_data[\"Y\"];\n\nglobal.set(\"output\" + R, output);\n\nmsg.payload = global.get(\"output\" + R);\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 420,
-        "y": 500,
+        "x": 960,
+        "y": 200,
         "wires": [
             [
-                "a56f0ade768b75f7"
+                "d010101f6c91bb69",
+                "494d9837e7f8e0aa"
             ]
         ]
+    },
+    {
+        "id": "d010101f6c91bb69",
+        "type": "IOT Send",
+        "z": "08972a8227e69f46",
+        "name": "",
+        "x": 1200,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "494d9837e7f8e0aa",
+        "type": "debug",
+        "z": "08972a8227e69f46",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1200,
+        "y": 260,
+        "wires": []
     }
 ]
