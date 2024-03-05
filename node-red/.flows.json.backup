@@ -2263,7 +2263,7 @@
         "width": 6,
         "height": 1,
         "passthru": true,
-        "multiple": false,
+        "multiple": true,
         "options": [
             {
                 "label": "Синий",
@@ -2851,7 +2851,7 @@
         "z": "08972a8227e69f46",
         "name": "Update Lamps",
         "props": [],
-        "repeat": "0.1",
+        "repeat": "1",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
@@ -3293,7 +3293,7 @@
         "type": "function",
         "z": "08972a8227e69f46",
         "name": "Send Pos Data",
-        "func": "if (global.get(\"configured_robot\") == 1) {\n    var R = \"_R1\";\n} else if (global.get(\"configured_robot\") == 2) {\n    var R = \"_R2\";\n}\nvar selected_position = global.get(\"selected_position\") + R;\nvar output = global.get(\"output\" + R);\nvar position_data = global.get(selected_position);\n\noutput[\"X\"] = position_data[\"X\"];\noutput[\"Y\"] = position_data[\"Y\"];\n\nglobal.set(\"output\" + R, output);\n\nmsg.payload = global.get(\"output\" + R);\nreturn msg;",
+        "func": "if (global.get(\"configured_robot\") == 1) {\n    var R = \"_R1\";\n} else if (global.get(\"configured_robot\") == 2) {\n    var R = \"_R2\";\n}\nvar selected_position = global.get(\"selected_position\") + R;\nvar output = global.get(\"output\" + R);\nvar position_data = global.get(selected_position);\n\noutput[\"X\"] = String(position_data[\"X\"]);\noutput[\"Y\"] = String(position_data[\"Y\"]);\n\nglobal.set(\"output\" + R, output);\n\nmsg.payload = global.get(\"output\" + R);\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -3333,5 +3333,103 @@
         "x": 1200,
         "y": 260,
         "wires": []
+    },
+    {
+        "id": "16281529c08b319d",
+        "type": "ui_dropdown",
+        "z": "08972a8227e69f46",
+        "name": "Lamp 1 Config",
+        "label": "Тест",
+        "tooltip": "",
+        "place": "",
+        "group": "ff5253f2ac0c9362",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "passthru": true,
+        "multiple": true,
+        "options": [
+            {
+                "label": "Синий",
+                "value": "blue",
+                "type": "str"
+            },
+            {
+                "label": "Красный",
+                "value": "red",
+                "type": "str"
+            },
+            {
+                "label": "Желтый",
+                "value": "yellow",
+                "type": "str"
+            },
+            {
+                "label": "Зеленый",
+                "value": "green",
+                "type": "str"
+            },
+            {
+                "label": "Выкл",
+                "value": "none",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 600,
+        "y": 1060,
+        "wires": [
+            [
+                "41d1f48970763702"
+            ]
+        ]
+    },
+    {
+        "id": "41d1f48970763702",
+        "type": "debug",
+        "z": "08972a8227e69f46",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "a3d6cc218994f87f",
+        "type": "inject",
+        "z": "08972a8227e69f46",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[\"red\",\"blue\"]",
+        "payloadType": "json",
+        "x": 290,
+        "y": 1060,
+        "wires": [
+            [
+                "16281529c08b319d"
+            ]
+        ]
     }
 ]
