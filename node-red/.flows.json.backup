@@ -3140,5 +3140,23 @@
                 "cd021521eb760a92"
             ]
         ]
+    },
+    {
+        "id": "bd718d8fc6814028",
+        "type": "function",
+        "z": "08972a8227e69f46",
+        "name": "function 1",
+        "func": "var mysql = global.get('mysql');\n\nif (msg.payload && mysql) {\n    var data = msg.payload;\n    var query = \"INSERT INTO PosLog (value1, value2) VALUES (?, ?)\";\n    var values = [data.value1, data.value2];\n    \n    mysql.query(query, values);\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1180,
+        "y": 100,
+        "wires": [
+            []
+        ]
     }
 ]
