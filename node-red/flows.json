@@ -414,7 +414,7 @@
     {
         "id": "f93e5670e3f24149",
         "type": "ui_tab",
-        "name": "Дэшборд инженера-технолога",
+        "name": "Инженер-технолог",
         "icon": "dashboard",
         "order": 1,
         "disabled": false,
@@ -585,6 +585,79 @@
         "height": 1
     },
     {
+        "id": "c523b354eeceb6f3",
+        "type": "ui_tab",
+        "name": "Оператор",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "140718969903079e",
+        "type": "ui_group",
+        "name": "Управление",
+        "tab": "c523b354eeceb6f3",
+        "order": 1,
+        "disp": true,
+        "width": 7,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ee877e51ecccd146",
+        "type": "ui_group",
+        "name": "Настройки",
+        "tab": "c523b354eeceb6f3",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "51699ea1ad04f6ac",
+        "type": "ui_group",
+        "name": "Лампы",
+        "tab": "c523b354eeceb6f3",
+        "order": 3,
+        "disp": true,
+        "width": 10,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "13d38d99845c274a",
+        "type": "ui_group",
+        "name": "Треминал",
+        "tab": "c523b354eeceb6f3",
+        "order": 4,
+        "disp": true,
+        "width": 10,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4d4360a1ae8d3e85",
+        "type": "ui_spacer",
+        "z": "08972a8227e69f46",
+        "name": "spacer",
+        "group": "140718969903079e",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "13833d0f7a07d5f8",
+        "type": "ui_spacer",
+        "z": "08972a8227e69f46",
+        "name": "spacer",
+        "group": "140718969903079e",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
         "id": "b69a8423905d7321",
         "type": "IOT Get",
         "z": "c2899e0a7794b420",
@@ -602,7 +675,7 @@
         "type": "function",
         "z": "c2899e0a7794b420",
         "name": "Get Data",
-        "func": "var thing = msg.payload;\n\nif (thing.name == \"Robot1_1\") {\n    global.set(\"motors_R1\", {\n        \"m1\": thing.m1,\n        \"m2\": thing.m2,\n        \"m3\": thing.m3,\n        \"m4\": thing.m4,\n        \"m5\": thing.m5,\n        \"m6\": thing.m6\n    });\n    global.set(\"load_R1\", {\n        \"l1\": thing.l1,\n        \"l2\": thing.l2,\n        \"l3\": thing.l3,\n        \"l4\": thing.l4,\n        \"l5\": thing.l5,\n        \"l6\": thing.l6\n    });\n    global.set(\"temp_R1\", {\n        \"t1\": thing.t1,\n        \"t2\": thing.t2,\n        \"t3\": thing.t3,\n        \"t4\": thing.t4,\n        \"t5\": thing.t5,\n        \"t6\": thing.t6\n    });\n    global.set(\"s_R1\", thing.s);\n    global.set(\"n_R1\", thing.n);\n\n}\nif (thing.name == \"Robot1_2\") {\n    global.set(\"motors_R2\", {\n        \"m1\": thing.m1,\n        \"m2\": thing.m2,\n        \"m3\": thing.m3,\n        \"m4\": thing.m4,\n        \"m5\": thing.m5,\n        \"m6\": thing.m6\n    });\n    global.set(\"load_R2\", {\n        \"l1\": thing.l1,\n        \"l2\": thing.l2,\n        \"l3\": thing.l3,\n        \"l4\": thing.l4,\n        \"l5\": thing.l5,\n        \"l6\": thing.l6\n    });\n    global.set(\"temp_R2\", {\n        \"t1\": thing.t1,\n        \"t2\": thing.t2,\n        \"t3\": thing.t3,\n        \"t4\": thing.t4,\n        \"t5\": thing.t5,\n        \"t6\": thing.t6\n    });\n    global.set(\"s_R2\", thing.s);\n    global.set(\"n_R2\", thing.n);\n}\nif (thing.name == \"WorkshiftTerminal1\") {\n    global.set(\"terminal\", {\n        \"p\": thing.p,\n        \"b1\": thing.b1,\n        \"b2\": thing.b2,\n        \"b3\": thing.b3\n    });\n}\n\nreturn msg;",
+        "func": "var thing = msg.payload;\n\nfor (var R of [\"1\", \"2\"]) {\n    if (thing.name == \"Robot1_\" + R) {\n        global.set(\"motors_R\" + R, {\n            \"m1\": thing.m1,\n            \"m2\": thing.m2,\n            \"m3\": thing.m3,\n            \"m4\": thing.m4,\n            \"m5\": thing.m5,\n            \"m6\": thing.m6\n        });\n        global.set(\"load_R\" + R, {\n            \"l1\": thing.l1,\n            \"l2\": thing.l2,\n            \"l3\": thing.l3,\n            \"l4\": thing.l4,\n            \"l5\": thing.l5,\n            \"l6\": thing.l6\n        });\n        global.set(\"temp_R\" + R, {\n            \"t1\": thing.t1,\n            \"t2\": thing.t2,\n            \"t3\": thing.t3,\n            \"t4\": thing.t4,\n            \"t5\": thing.t5,\n            \"t6\": thing.t6\n        });\n        global.set(\"data_R\" + R, {\n            \"s\": thing.s,\n            \"n\": thing.n\n        });\n    }\n}\n\nif (thing.name == \"WorkshiftTerminal1\") {\n    global.set(\"terminal\", {\n        \"p\": thing.p,\n        \"b1\": thing.b1,\n        \"b2\": thing.b2,\n        \"b3\": thing.b3\n    });\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -657,7 +730,7 @@
         "y": 280,
         "wires": [
             [
-                "39023b62b1ea3518"
+                "c099b47bf3729d9d"
             ]
         ]
     },
@@ -665,40 +738,15 @@
         "id": "39023b62b1ea3518",
         "type": "function",
         "z": "c2899e0a7794b420",
-        "name": "Set Default",
-        "func": "global.set(\"output_R1\", {\n    \"Robot_name\": \"Robot1_1\",\n    \"N\": \"0\",\n    \"X\": \"150\",\n    \"Y\": \"150\",\n    \"T\": \"0\",\n    \"G\": \"200\",\n    \"V\": \"0\",\n    \"L0\": \"0\",\n    \"L1\": \"0\",\n    \"L2\": \"0\",\n    \"L3\": \"0\",\n    \"L4\": \"0\",\n    \"P\": \"0\"\n});\n\nglobal.set(\"output_R2\", {\n    \"Robot_name\": \"Robot1_2\",\n    \"N\": \"0\",\n    \"X\": \"150\",\n    \"Y\": \"150\",\n    \"T\": \"0\",\n    \"G\": \"200\",\n    \"V\": \"0\",\n    \"L0\": \"0\",\n    \"L1\": \"0\",\n    \"L2\": \"0\",\n    \"L3\": \"0\",\n    \"L4\": \"0\",\n    \"P\": \"0\"\n});\n\nglobal.set(\"output_L1\", {\n    \"Robot_name\": \"TrafficLights1_1\",\n    \"N\": \"0\",\n    \"X\": \"150\",\n    \"Y\": \"150\",\n    \"T\": \"0\",\n    \"G\": \"200\",\n    \"V\": \"0\",\n    \"L0\": \"0\",\n    \"L1\": \"0\",\n    \"L2\": \"0\",\n    \"L3\": \"0\",\n    \"L4\": \"0\",\n    \"P\": \"0\"\n});\n\nglobal.set(\"output_L2\", {\n    \"Robot_name\": \"TrafficLights1_2\",\n    \"N\": \"0\",\n    \"X\": \"150\",\n    \"Y\": \"150\",\n    \"T\": \"0\",\n    \"G\": \"200\",\n    \"V\": \"0\",\n    \"L0\": \"0\",\n    \"L1\": \"0\",\n    \"L2\": \"0\",\n    \"L3\": \"0\",\n    \"L4\": \"0\",\n    \"P\": \"0\"\n});\n\nglobal.set(\"output_T\", {\n    \"Robot_name\": \"WorkshiftTerminal1\",\n    \"N\": \"0\",\n    \"X\": \"150\",\n    \"Y\": \"150\",\n    \"T\": \"0\",\n    \"G\": \"200\",\n    \"V\": \"0\",\n    \"L0\": \"0\",\n    \"L1\": \"0\",\n    \"L2\": \"0\",\n    \"L3\": \"0\",\n    \"L4\": \"0\",\n    \"P\": \"0\"\n});\n\nglobal.set(\"selected_robot\", 1);\nglobal.set(\"configured_robot\", 1);\nglobal.set(\"selected_limit\", \"loadProcMin\");\n\nglobal.set(\"lamp_mode\", \"auto\");\nglobal.set(\"robot_status_R1\", \"waiting\");\nglobal.set(\"robot_status_R2\", \"waiting\");\nglobal.set(\"lamp_color_L1\", \"none\");\nglobal.set(\"lamp_color_L2\", \"none\");\nglobal.set(\"terminal_color_1\", \"none\");\nglobal.set(\"terminal_color_2\", \"none\");\nglobal.set(\"terminal_color_3\", \"none\");\nglobal.set(\"dms\", 0);\n\nglobal.set(\"loadProcMin_R1\", {\n    \"m1\": 5,\n    \"m2\": 5,\n    \"m3\": 5,\n    \"m4\": 5,\n    \"m5\": 5,\n    \"m6\": 5\n});\nglobal.set(\"loadProcCritMin_R1\", {\n    \"m1\": 20,\n    \"m2\": 20,\n    \"m3\": 20,\n    \"m4\": 20,\n    \"m5\": 20,\n    \"m6\": 20\n});\nglobal.set(\"loadProcCritMax_R1\", {\n    \"m1\": 80,\n    \"m2\": 80,\n    \"m3\": 80,\n    \"m4\": 80,\n    \"m5\": 80,\n    \"m6\": 80\n});\nglobal.set(\"loadProcMax_R1\", {\n    \"m1\": 95,\n    \"m2\": 95,\n    \"m3\": 95,\n    \"m4\": 95,\n    \"m5\": 95,\n    \"m6\": 95\n});\nglobal.set(\"tempMin_R1\", {\n    \"m1\": 5,\n    \"m2\": 5,\n    \"m3\": 5,\n    \"m4\": 5,\n    \"m5\": 5,\n    \"m6\": 5\n});\nglobal.set(\"tempCritMin_R1\", {\n    \"m1\": 15,\n    \"m2\": 15,\n    \"m3\": 15,\n    \"m4\": 15,\n    \"m5\": 15,\n    \"m6\": 15\n});\nglobal.set(\"tempCritMax_R1\", {\n    \"m1\": 85,\n    \"m2\": 85,\n    \"m3\": 85,\n    \"m4\": 85,\n    \"m5\": 85,\n    \"m6\": 85\n});\nglobal.set(\"tempMax_R1\", {\n    \"m1\": 95,\n    \"m2\": 95,\n    \"m3\": 95,\n    \"m4\": 95,\n    \"m5\": 95,\n    \"m6\": 95\n});\nglobal.set(\"loadProcMin_R2\", {\n    \"m1\": 5,\n    \"m2\": 5,\n    \"m3\": 5,\n    \"m4\": 5,\n    \"m5\": 5,\n    \"m6\": 5\n});\nglobal.set(\"loadProcCritMin_R2\", {\n    \"m1\": 20,\n    \"m2\": 20,\n    \"m3\": 20,\n    \"m4\": 20,\n    \"m5\": 20,\n    \"m6\": 20\n});\nglobal.set(\"loadProcCritMax_R2\", {\n    \"m1\": 80,\n    \"m2\": 80,\n    \"m3\": 80,\n    \"m4\": 80,\n    \"m5\": 80,\n    \"m6\": 80\n});\nglobal.set(\"loadProcMax_R2\", {\n    \"m1\": 95,\n    \"m2\": 95,\n    \"m3\": 95,\n    \"m4\": 95,\n    \"m5\": 95,\n    \"m6\": 95\n});\nglobal.set(\"tempMin_R2\", {\n    \"m1\": 5,\n    \"m2\": 5,\n    \"m3\": 5,\n    \"m4\": 5,\n    \"m5\": 5,\n    \"m6\": 5\n});\nglobal.set(\"tempCritMin_R2\", {\n    \"m1\": 15,\n    \"m2\": 15,\n    \"m3\": 15,\n    \"m4\": 15,\n    \"m5\": 15,\n    \"m6\": 15\n});\nglobal.set(\"tempCritMax_R2\", {\n    \"m1\": 85,\n    \"m2\": 85,\n    \"m3\": 85,\n    \"m4\": 85,\n    \"m5\": 85,\n    \"m6\": 85\n});\nglobal.set(\"tempMax_R2\", {\n    \"m1\": 95,\n    \"m2\": 95,\n    \"m3\": 95,\n    \"m4\": 95,\n    \"m5\": 95,\n    \"m6\": 95\n});\n\nglobal.set(\"pos_parking_R1\", {\n    \"X\": 100,\n    \"Y\": 100\n});\nglobal.set(\"pos_parking_R2\", {\n    \"X\": 200,\n    \"Y\": 200\n});\nglobal.set(\"pos_1_R1\", {\n    \"X\": 50,\n    \"Y\": 50\n});\nglobal.set(\"pos_1_R2\", {\n    \"X\": 90,\n    \"Y\": 90\n});\n\nreturn msg;",
+        "name": "Set Default Limits",
+        "func": "// Motors\nfor (var R of [\"1\", \"2\"]) {\n    global.set(\"loadProcMin_R\" + R, {\n        \"m1\": 5,\n        \"m2\": 5,\n        \"m3\": 5,\n        \"m4\": 5,\n        \"m5\": 5,\n        \"m6\": 5\n    });\n    global.set(\"loadProcCritMin_R\" + R, {\n        \"m1\": 20,\n        \"m2\": 20,\n        \"m3\": 20,\n        \"m4\": 20,\n        \"m5\": 20,\n        \"m6\": 20\n    });\n    global.set(\"loadProcCritMax_R\" + R, {\n        \"m1\": 80,\n        \"m2\": 80,\n        \"m3\": 80,\n        \"m4\": 80,\n        \"m5\": 80,\n        \"m6\": 80\n    });\n    global.set(\"loadProcMax_R\" + R, {\n        \"m1\": 95,\n        \"m2\": 95,\n        \"m3\": 95,\n        \"m4\": 95,\n        \"m5\": 95,\n        \"m6\": 95\n    });\n    global.set(\"tempMin_R\" + R, {\n        \"m1\": 5,\n        \"m2\": 5,\n        \"m3\": 5,\n        \"m4\": 5,\n        \"m5\": 5,\n        \"m6\": 5\n    });\n    global.set(\"tempCritMin_R\" + R, {\n        \"m1\": 15,\n        \"m2\": 15,\n        \"m3\": 15,\n        \"m4\": 15,\n        \"m5\": 15,\n        \"m6\": 15\n    });\n    global.set(\"tempCritMax_R\" + R, {\n        \"m1\": 85,\n        \"m2\": 85,\n        \"m3\": 85,\n        \"m4\": 85,\n        \"m5\": 85,\n        \"m6\": 85\n    });\n    global.set(\"tempMax_R\" + R, {\n        \"m1\": 95,\n        \"m2\": 95,\n        \"m3\": 95,\n        \"m4\": 95,\n        \"m5\": 95,\n        \"m6\": 95\n    });\n}\n\n// Positions\nfor (var R of [\"1\", \"2\"]) {\n    global.set(\"coordinates_limit_R\" + R, {\n        \"X\": 400,\n        \"Y\": 400\n    });\n}\n\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 390,
-        "y": 280,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "7bbdce8887f5c38c",
-        "type": "IOT Function",
-        "z": "c2899e0a7794b420",
-        "name": "",
-        "robot_name": "",
-        "N": "0",
-        "X": "0",
-        "Y": "0",
-        "T": "0",
-        "G": "0",
-        "V": "0",
-        "D0": "0",
-        "L1": "0",
-        "L2": "0",
-        "L3": "0",
-        "L4": "0",
-        "P": "0",
-        "Text": "",
-        "x": 930,
+        "x": 690,
         "y": 280,
         "wires": [
             []
@@ -729,8 +777,85 @@
         "y": 340,
         "wires": [
             [
-                "39023b62b1ea3518"
+                "c099b47bf3729d9d"
             ]
+        ]
+    },
+    {
+        "id": "86ae5dbb9964f5b6",
+        "type": "function",
+        "z": "c2899e0a7794b420",
+        "name": "Set Default Other",
+        "func": "global.set(\"selected_robot\", 1);\nglobal.set(\"controlled_robot\", \"1\");\nglobal.set(\"controlled_lamp\", \"1\");\nglobal.set(\"selected_limit\", \"loadProcMin\");\n\nglobal.set(\"lamp_mode\", \"auto\");\n\nfor (var R in [\"1\", \"2\"]) {\n    global.set(\"robot_status_R\" + R, \"waiting\");\n    global.set(\"last_robot_status_R\" + R, \"waiting\");\n}\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0bd856163dde00e5",
+        "type": "function",
+        "z": "c2899e0a7794b420",
+        "name": "Set Default Positions",
+        "func": "// Robot 1\nglobal.set(\"pos_parking_R1\", {\n    \"X\": 110,\n    \"Y\": 110\n});\nglobal.set(\"pos_temp_R1\", {\n    \"X\": 120,\n    \"Y\": 120\n});\nglobal.set(\"pos_final_R1\", {\n    \"X\": 130,\n    \"Y\": 130\n});\n\n// Robot 1\nglobal.set(\"pos_parking_R2\", {\n    \"X\": 210,\n    \"Y\": 210\n});\nglobal.set(\"pos_temp_R2\", {\n    \"X\": 220,\n    \"Y\": 220\n});\nglobal.set(\"pos_final_R2\", {\n    \"X\": 230,\n    \"Y\": 230\n});\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c099b47bf3729d9d",
+        "type": "function",
+        "z": "c2899e0a7794b420",
+        "name": "Reset (Does nothing)",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 340,
+        "wires": [
+            [
+                "39023b62b1ea3518",
+                "86ae5dbb9964f5b6",
+                "0bd856163dde00e5",
+                "da88818d77e1e814"
+            ]
+        ]
+    },
+    {
+        "id": "da88818d77e1e814",
+        "type": "function",
+        "z": "c2899e0a7794b420",
+        "name": "Default Out",
+        "func": "for (var R in [\"1\", \"2\"]) {\n    global.set(\"out_robot_R\" + R, {\n        \"robot_name\": \"Robot1_\" + R,\n        \"N\": \"0\",\n        \"X\": \"150\",\n        \"Y\": \"150\",\n        \"T\": \"0\",\n        \"G\": \"210\",\n        \"V\": \"0\",\n        \"D0\": \"0\",\n        \"L1\": \"0\",\n        \"L2\": \"0\",\n        \"L3\": \"0\",\n        \"L4\": \"0\",\n        \"P\": \"0\",\n        \"Text\": \"\"\n    })\n}\n\nfor (var L in [\"1\", \"2\"]) {\n    global.set(\"out_lamp_L\" + L, {\n        \"robot_name\": \"TrafficLights1_\" + L,\n        \"N\": \"0\",\n        \"X\": \"0\",\n        \"Y\": \"0\",\n        \"T\": \"0\",\n        \"G\": \"0\",\n        \"V\": \"0\",\n        \"D0\": \"0\",\n        \"L1\": \"0\",\n        \"L2\": \"0\",\n        \"L3\": \"0\",\n        \"L4\": \"0\",\n        \"P\": \"0\",\n        \"Text\": \"\"\n    })\n}\n\nglobal.set(\"out_terminal\", {\n    \"robot_name\": \"WorkshiftTerminal1\",\n    \"N\": \"0\",\n    \"X\": \"0\",\n    \"Y\": \"0\",\n    \"T\": \"0\",\n    \"G\": \"0\",\n    \"V\": \"0\",\n    \"D0\": \"0\",\n    \"L1\": \"0\",\n    \"L2\": \"0\",\n    \"L3\": \"0\",\n    \"L4\": \"0\",\n    \"P\": \"0\",\n    \"Text\": \"\"\n})\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 460,
+        "wires": [
+            []
         ]
     },
     {
@@ -1333,7 +1458,7 @@
         "tooltip": "",
         "place": "Select option",
         "group": "f0333f1ae6948c46",
-        "order": 1,
+        "order": 2,
         "width": 0,
         "height": 0,
         "passthru": true,
@@ -1492,7 +1617,7 @@
         "name": "Limits",
         "label": "Ограничения",
         "group": "f0333f1ae6948c46",
-        "order": 2,
+        "order": 1,
         "width": 0,
         "height": 0,
         "options": [
@@ -1666,7 +1791,7 @@
         "y": 620,
         "wires": [
             [
-                "2173699dc978c474"
+                "b83f1a9d74c6d7d1"
             ]
         ]
     },
@@ -1674,7 +1799,7 @@
         "id": "2173699dc978c474",
         "type": "ui_form",
         "z": "2e7a746435651752",
-        "name": "Temp",
+        "name": "Terminal",
         "label": "",
         "group": "c69a9e20b4fcf45a",
         "order": 1,
@@ -1721,7 +1846,7 @@
         "topicType": "msg",
         "splitLayout": "",
         "className": "",
-        "x": 350,
+        "x": 600,
         "y": 620,
         "wires": [
             []
@@ -2086,5 +2211,934 @@
         "x": 790,
         "y": 620,
         "wires": []
+    },
+    {
+        "id": "b83f1a9d74c6d7d1",
+        "type": "function",
+        "z": "2e7a746435651752",
+        "name": "Terminal Data",
+        "func": "var terminal = global.get(\"terminal\");\n\nif (terminal[\"p\"] == 1) {\n    for (var R in [\"1\", \"2\"]) {\n        if (global.get(\"robot_status_R\" + R) != \"locked\") {\n            global.set(\"last_robot_status_R\" + R, global.get(\"robot_status_R\" + R));\n        }\n        global.set(\"robot_status_R\" + R, \"locked\");\n    }\n    global.set(\"terminal_colors\", [\"red\"]);\n} else {\n    for (var R in [\"1\", \"2\"]) {\n        global.set(\"robot_status_R\" + R, global.get(\"last_robot_status_R\" + R));\n    }\n}\n\nmsg.payload = terminal;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 620,
+        "wires": [
+            [
+                "2173699dc978c474"
+            ]
+        ]
+    },
+    {
+        "id": "401143e01a1d2f7d",
+        "type": "ui_switch",
+        "z": "08972a8227e69f46",
+        "name": "Lamp Mode Selector",
+        "label": "Режим ручного управления",
+        "tooltip": "",
+        "group": "51699ea1ad04f6ac",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "manual",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "auto",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 220,
+        "y": 520,
+        "wires": [
+            [
+                "483930dfe454b450"
+            ]
+        ]
+    },
+    {
+        "id": "c071aa6c579778d5",
+        "type": "ui_dropdown",
+        "z": "08972a8227e69f46",
+        "name": "Robot Selector",
+        "label": "Выбор робота",
+        "tooltip": "",
+        "place": "Выберите Робота",
+        "group": "140718969903079e",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Робот 1",
+                "value": "1",
+                "type": "str"
+            },
+            {
+                "label": "Робот 2",
+                "value": "2",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 200,
+        "y": 80,
+        "wires": [
+            [
+                "7cde49509225e54f"
+            ]
+        ]
+    },
+    {
+        "id": "e17c120a124fd1fa",
+        "type": "ui_dropdown",
+        "z": "08972a8227e69f46",
+        "name": "Lamp Selector",
+        "label": "Выбор лампы",
+        "tooltip": "",
+        "place": "Выберите лампу",
+        "group": "51699ea1ad04f6ac",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Лампа 1",
+                "value": "1",
+                "type": "str"
+            },
+            {
+                "label": "Лампа 2",
+                "value": "2",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 200,
+        "y": 580,
+        "wires": [
+            [
+                "6c88a81a9cafaf7e"
+            ]
+        ]
+    },
+    {
+        "id": "781984e956d6705c",
+        "type": "ui_dropdown",
+        "z": "08972a8227e69f46",
+        "name": "Lamp Color Selector",
+        "label": "Цвета лампы",
+        "tooltip": "",
+        "place": "Выберите цвета лампы",
+        "group": "51699ea1ad04f6ac",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "multiple": true,
+        "options": [
+            {
+                "label": "Синий",
+                "value": "blue",
+                "type": "str"
+            },
+            {
+                "label": "Красный",
+                "value": "red",
+                "type": "str"
+            },
+            {
+                "label": "Желтый",
+                "value": "yellow",
+                "type": "str"
+            },
+            {
+                "label": "Зеленый",
+                "value": "green",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 920,
+        "y": 620,
+        "wires": [
+            [
+                "5edcf4a43e5b2aae"
+            ]
+        ]
+    },
+    {
+        "id": "7cde49509225e54f",
+        "type": "function",
+        "z": "08972a8227e69f46",
+        "name": "Select Robot",
+        "func": "global.set(\"controlled_robot\", msg.payload);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6c88a81a9cafaf7e",
+        "type": "function",
+        "z": "08972a8227e69f46",
+        "name": "Select Lamp",
+        "func": "global.set(\"controlled_lamp\", msg.payload);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 580,
+        "wires": [
+            [
+                "74d9c1ff4da12e46"
+            ]
+        ]
+    },
+    {
+        "id": "483930dfe454b450",
+        "type": "function",
+        "z": "08972a8227e69f46",
+        "name": "Set Lamp Mode",
+        "func": "global.set(\"lamp_mode\", msg.payload);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5edcf4a43e5b2aae",
+        "type": "function",
+        "z": "08972a8227e69f46",
+        "name": "Set Lamp Color",
+        "func": "var L = global.get(\"controlled_lamp\");\nvar colors = msg.payload;\n\nif (global.get(\"lamp_mode\") == \"manual\") {\n    global.set(\"lamp_colors_L\" + L, colors);\n}\n\nmsg.payload = colors;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1160,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "74d9c1ff4da12e46",
+        "type": "function",
+        "z": "08972a8227e69f46",
+        "name": "Update Lamp Color",
+        "func": "var L = global.get(\"controlled_lamp\");\n\nmsg.payload = global.get(\"lamp_colors_L\" + L);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 620,
+        "wires": [
+            [
+                "781984e956d6705c"
+            ]
+        ]
+    },
+    {
+        "id": "59924be9a5c89226",
+        "type": "inject",
+        "z": "08972a8227e69f46",
+        "name": "Update Auto Lamp",
+        "props": [],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 220,
+        "y": 660,
+        "wires": [
+            [
+                "3785fd59625cb01c"
+            ]
+        ]
+    },
+    {
+        "id": "3785fd59625cb01c",
+        "type": "function",
+        "z": "08972a8227e69f46",
+        "name": "Check Auto",
+        "func": "if (global.get(\"lamp_mode\") == \"auto\") {\n    var R = global.get(\"controlled_robot\");\n    var colors = [];\n    \n    switch (global.get(\"robot_status_R\" + R)) {\n        case \"waiting\":\n            colors = [\"green\"];\n            break;\n        case \"moving\":\n            colors = [\"blue\"];\n            break;\n        case \"parking\":\n            colors = [\"yellow\"];\n            break;\n        case \"locked\":\n            colors = [\"red\"];\n            global.set(\"terminal_colors\", colors);\n            break;\n        case \"stopped\":\n            colors = [\"red\"];\n            break;\n    }\n\n    global.set(\"lamp_colors_L\" + R, colors);\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 660,
+        "wires": [
+            [
+                "74d9c1ff4da12e46"
+            ]
+        ]
+    },
+    {
+        "id": "713f5ff11f4741b5",
+        "type": "ui_dropdown",
+        "z": "08972a8227e69f46",
+        "name": "Terminal Color Selector",
+        "label": "Цвет ламп терминала",
+        "tooltip": "",
+        "place": "Выберите цвета ламп",
+        "group": "13d38d99845c274a",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "multiple": true,
+        "options": [
+            {
+                "label": "Синий",
+                "value": "blue",
+                "type": "str"
+            },
+            {
+                "label": "Красный",
+                "value": "red",
+                "type": "str"
+            },
+            {
+                "label": "Желтый",
+                "value": "yellow",
+                "type": "str"
+            },
+            {
+                "label": "Зеленый",
+                "value": "green",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 750,
+        "y": 740,
+        "wires": [
+            [
+                "1784336fe6108cee"
+            ]
+        ]
+    },
+    {
+        "id": "1784336fe6108cee",
+        "type": "function",
+        "z": "08972a8227e69f46",
+        "name": "Set Terminal Lamp Color",
+        "func": "var colors = msg.payload;\n\nglobal.set(\"terminal_colors\", colors);\n\nmsg.payload = colors;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1010,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f19b99746fd2c2b9",
+        "type": "inject",
+        "z": "08972a8227e69f46",
+        "name": "Update Coord Limit",
+        "props": [],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 220,
+        "y": 820,
+        "wires": [
+            [
+                "71c2416693e19ca1"
+            ]
+        ]
+    },
+    {
+        "id": "71c2416693e19ca1",
+        "type": "function",
+        "z": "08972a8227e69f46",
+        "name": "Update Coord Limit",
+        "func": "var R = global.get(\"controlled_robot\");\n\nmsg.payload = global.get(\"coordinates_limit_R\" + R);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 820,
+        "wires": [
+            [
+                "0149a3ac5adb688d"
+            ]
+        ]
+    },
+    {
+        "id": "0149a3ac5adb688d",
+        "type": "ui_form",
+        "z": "08972a8227e69f46",
+        "name": "Coord Limits",
+        "label": "Ограничения координат для робота",
+        "group": "ee877e51ecccd146",
+        "order": 1,
+        "width": 6,
+        "height": 4,
+        "options": [
+            {
+                "label": "X",
+                "value": "X",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Y",
+                "value": "Y",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "X": "",
+            "Y": ""
+        },
+        "payload": "",
+        "submit": "Применить",
+        "cancel": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 190,
+        "y": 880,
+        "wires": [
+            [
+                "7b1e7498f69ef63f"
+            ]
+        ]
+    },
+    {
+        "id": "7b1e7498f69ef63f",
+        "type": "function",
+        "z": "08972a8227e69f46",
+        "name": "Set Coord Limit",
+        "func": "var R = global.get(\"controlled_robot\");\n\nglobal.set(\"coordinates_limit_R\" + R, msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "715110abf2393a06",
+        "type": "ui_dropdown",
+        "z": "08972a8227e69f46",
+        "name": "Pos Selector",
+        "label": "Выбор позиции",
+        "tooltip": "",
+        "place": "Выберите позицию",
+        "group": "140718969903079e",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "Парковка",
+                "value": "pos_parking",
+                "type": "str"
+            },
+            {
+                "label": "Временная позиция",
+                "value": "pos_temp",
+                "type": "str"
+            },
+            {
+                "label": "Целевая позиция",
+                "value": "pos_final",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 190,
+        "y": 140,
+        "wires": [
+            [
+                "a148f6d0dc760c30"
+            ]
+        ]
+    },
+    {
+        "id": "a148f6d0dc760c30",
+        "type": "function",
+        "z": "08972a8227e69f46",
+        "name": "Select Position",
+        "func": "var R = global.get(\"controlled_robot\");\nvar position = msg.payload + \"_R\" + R;\n\nglobal.set(\"selected_position_R\" + R, position);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6e861eeb98916fd6",
+        "type": "ui_form",
+        "z": "08972a8227e69f46",
+        "name": "Position Coords",
+        "label": "Координаты текущей позиции",
+        "group": "140718969903079e",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "X",
+                "value": "X",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Y",
+                "value": "Y",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "X": "",
+            "Y": ""
+        },
+        "payload": "",
+        "submit": "Сохранить",
+        "cancel": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 200,
+        "y": 260,
+        "wires": [
+            [
+                "981db1dd643a4107"
+            ]
+        ]
+    },
+    {
+        "id": "981db1dd643a4107",
+        "type": "function",
+        "z": "08972a8227e69f46",
+        "name": "Set Position Coords",
+        "func": "var R = global.get(\"controlled_robot\");\nvar selected_position = global.get(\"selected_position_R\" + R);\nvar coords = msg.payload;\nvar coords_limit = global.get(\"coordinates_limit_R\" + R);\n\nfor (var [key, value] of Object.entries(coords_limit)) {\n    if (coords[key] > coords_limit[key]) {\n        coords[key] = selected_position[key];\n        msg.payload = String(key) + \" координата выходит за рамки допустимых значений!\";\n        return msg;\n    }\n}\n\nglobal.set(selected_position, coords);",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 260,
+        "wires": [
+            [
+                "b8a9ae035164f0e6"
+            ]
+        ]
+    },
+    {
+        "id": "12bf06c49fac9ef0",
+        "type": "inject",
+        "z": "08972a8227e69f46",
+        "name": "Update Position Coords",
+        "props": [],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 230,
+        "y": 200,
+        "wires": [
+            [
+                "b1f4dccdafc4e51d"
+            ]
+        ]
+    },
+    {
+        "id": "b1f4dccdafc4e51d",
+        "type": "function",
+        "z": "08972a8227e69f46",
+        "name": "Update Position Coords",
+        "func": "var R = global.get(\"controlled_robot\");\nvar selected_position = global.get(\"selected_position_R\" + R);\n\nmsg.payload = global.get(selected_position);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 200,
+        "wires": [
+            [
+                "6e861eeb98916fd6"
+            ]
+        ]
+    },
+    {
+        "id": "e5d9f9faa612795b",
+        "type": "ui_button",
+        "z": "08972a8227e69f46",
+        "name": "Launch Robot",
+        "group": "140718969903079e",
+        "order": 7,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": "Пуск",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 200,
+        "y": 320,
+        "wires": [
+            [
+                "5b91d78f7966a8b8"
+            ]
+        ]
+    },
+    {
+        "id": "5b91d78f7966a8b8",
+        "type": "function",
+        "z": "08972a8227e69f46",
+        "name": "Set Target Position",
+        "func": "var R = global.get(\"controlled_robot\");\nvar selected_position = global.get(\"selected_position_R\" + R);\n\nglobal.set(\"current_position_R\" + R, selected_position);\n\nmsg.payload = global.get(\"current_position_R\" + R);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 320,
+        "wires": [
+            [
+                "8a74f7fc343e6d2f"
+            ]
+        ]
+    },
+    {
+        "id": "b8a9ae035164f0e6",
+        "type": "ui_toast",
+        "z": "08972a8227e69f46",
+        "position": "top left",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 790,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "eec3934b1ae421b5",
+        "type": "function",
+        "z": "08972a8227e69f46",
+        "name": "Update Terminal Color",
+        "func": "if (global.get(\"terminal\")[\"p\"] == 1) {\n    msg.payload = global.get(\"terminal_colors\");\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 740,
+        "wires": [
+            [
+                "713f5ff11f4741b5"
+            ]
+        ]
+    },
+    {
+        "id": "7604d59410ceb94a",
+        "type": "inject",
+        "z": "08972a8227e69f46",
+        "name": "Update Terminal Lamps",
+        "props": [],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 230,
+        "y": 740,
+        "wires": [
+            [
+                "eec3934b1ae421b5"
+            ]
+        ]
+    },
+    {
+        "id": "8a74f7fc343e6d2f",
+        "type": "function",
+        "z": "08972a8227e69f46",
+        "name": "Send Position",
+        "func": "var R = global.get(\"controlled_robot\");\nvar out = global.get(\"out_robot_R\" + R);\nvar position = msg.payload;\n\nout[\"Robot_name\"] = \"Robot1_\" + R;\nout[\"X\"] = String(global.get(position)[\"X\"]);\nout[\"Y\"] = String(global.get(position)[\"Y\"]);\n\nglobal.set(\"out_robot_R\" + R, out);\nmsg.payload = global.get(\"out_robot_R\" + R);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 320,
+        "wires": [
+            [
+                "53fdbf369a9f9538"
+            ]
+        ]
+    },
+    {
+        "id": "53fdbf369a9f9538",
+        "type": "debug",
+        "z": "08972a8227e69f46",
+        "name": "Out Robot",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1010,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "76f073453c35766b",
+        "type": "ui_switch",
+        "z": "08972a8227e69f46",
+        "name": "Toggle Gripper",
+        "label": "Опустить присоску",
+        "tooltip": "",
+        "group": "140718969903079e",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "200",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "230",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 200,
+        "y": 440,
+        "wires": [
+            [
+                "52525525d125ad85"
+            ]
+        ]
+    },
+    {
+        "id": "52525525d125ad85",
+        "type": "function",
+        "z": "08972a8227e69f46",
+        "name": "Send Gripper",
+        "func": "var R = global.get(\"controlled_robot\");\nvar out = global.get(\"out_robot_R\" + R);\nvar gripper = msg.payload;\n\nout[\"Robot_name\"] = \"Robot1_\" + R;\nout[\"G\"] = gripper;\n\nglobal.set(\"out_robot_R\" + R, out);\nmsg.payload = global.get(\"out_robot_R\" + R);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 440,
+        "wires": [
+            [
+                "861d881baf26dd17"
+            ]
+        ]
+    },
+    {
+        "id": "861d881baf26dd17",
+        "type": "debug",
+        "z": "08972a8227e69f46",
+        "name": "Out Robot",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "cd021521eb760a92",
+        "type": "function",
+        "z": "08972a8227e69f46",
+        "name": "Send Vacuum",
+        "func": "var R = global.get(\"controlled_robot\");\nvar out = global.get(\"out_robot_R\" + R);\nvar vacuum = msg.payload;\n\nout[\"Robot_name\"] = \"Robot1_\" + R;\nout[\"V\"] = vacuum;\n\nglobal.set(\"out_robot_R\" + R, out);\nmsg.payload = global.get(\"out_robot_R\" + R);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 380,
+        "wires": [
+            [
+                "c8e0b5a0ec07c581"
+            ]
+        ]
+    },
+    {
+        "id": "c8e0b5a0ec07c581",
+        "type": "debug",
+        "z": "08972a8227e69f46",
+        "name": "Out Robot",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "f3cb3ededcf4451a",
+        "type": "ui_switch",
+        "z": "08972a8227e69f46",
+        "name": "Toggle Vacuum",
+        "label": "Присоска",
+        "tooltip": "",
+        "group": "140718969903079e",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 200,
+        "y": 380,
+        "wires": [
+            [
+                "cd021521eb760a92"
+            ]
+        ]
     }
 ]
