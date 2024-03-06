@@ -123,295 +123,6 @@
         }
     },
     {
-        "id": "179c78f9b0236523",
-        "type": "ui_group",
-        "name": "Motor",
-        "tab": "",
-        "order": 1,
-        "disp": true,
-        "width": "6",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "bbe64981d2d61740",
-        "type": "ui_group",
-        "name": "Table",
-        "tab": "",
-        "order": 2,
-        "disp": true,
-        "width": 30,
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "fe5649615357df6a",
-        "type": "ui_group",
-        "name": "Table",
-        "tab": "",
-        "order": 1,
-        "disp": true,
-        "width": "30",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "b852b2f0ea5468f5",
-        "type": "ui_group",
-        "name": "Robot 1 Load",
-        "tab": "",
-        "order": 2,
-        "disp": true,
-        "width": 13,
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "bb676c794922defe",
-        "type": "ui_group",
-        "name": "Robot 1 Motors",
-        "tab": "",
-        "order": 1,
-        "disp": true,
-        "width": "6",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "26242c89e093eda8",
-        "type": "ui_group",
-        "name": "Robot 1",
-        "tab": "",
-        "order": 1,
-        "disp": true,
-        "width": "6",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "4ad0ca5f63196c38",
-        "type": "ui_group",
-        "name": "Robot 2",
-        "tab": "",
-        "order": 2,
-        "disp": true,
-        "width": 6,
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "571a38b1.5e3638",
-        "type": "ui_group",
-        "name": "Richer Table",
-        "tab": "",
-        "order": 1,
-        "disp": true,
-        "width": "8",
-        "collapse": false
-    },
-    {
-        "id": "141c0df2ae71b1e9",
-        "type": "ui_group",
-        "name": "Default",
-        "tab": "",
-        "order": 2,
-        "disp": true,
-        "width": "30",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "af01fb4d6f9064fc",
-        "type": "MySQLdatabase",
-        "name": "",
-        "host": "172.16.0.89",
-        "port": "8888",
-        "db": "Device",
-        "tz": "",
-        "charset": "UTF8"
-    },
-    {
-        "id": "51ce6aa1.620754",
-        "type": "ui_group",
-        "name": "ui_control",
-        "tab": "",
-        "order": 1,
-        "disp": true,
-        "width": "22",
-        "collapse": false
-    },
-    {
-        "id": "625872f.40b1e8c",
-        "type": "ui_group",
-        "name": "Default",
-        "tab": "",
-        "order": 1,
-        "disp": true,
-        "width": "6",
-        "collapse": false
-    },
-    {
-        "id": "d4b80f060233293a",
-        "type": "ui_group",
-        "name": "Group 1",
-        "tab": "",
-        "order": 1,
-        "disp": true,
-        "width": 6
-    },
-    {
-        "id": "83b8a8508a9b66ba",
-        "type": "ui_group",
-        "name": "Robot 2 Motors",
-        "tab": "",
-        "order": 3,
-        "disp": true,
-        "width": "6",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "62ffe78fb8e5dc34",
-        "type": "ui_group",
-        "name": "Robot 2 Load",
-        "tab": "",
-        "order": 4,
-        "disp": true,
-        "width": 13,
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "5ba311ed9ef44c31",
-        "type": "ui_group",
-        "name": "Мониторинг",
-        "tab": "",
-        "order": 9,
-        "disp": true,
-        "width": 6,
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "11e11196de99f2e6",
-        "type": "ui_group",
-        "name": "Group 1",
-        "tab": "",
-        "order": 1,
-        "disp": true,
-        "width": 6
-    },
-    {
-        "id": "4983803d4416cdc6",
-        "type": "ui_group",
-        "name": "Настройки",
-        "tab": "",
-        "order": 10,
-        "disp": true,
-        "width": 12,
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "be207fdb611e54bc",
-        "type": "ui_group",
-        "name": "Терминал",
-        "tab": "",
-        "order": 11,
-        "disp": true,
-        "width": "6",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "84fc9e1e23b00902",
-        "type": "ui_group",
-        "name": "Raw Motors",
-        "tab": "",
-        "order": 1,
-        "disp": true,
-        "width": 3,
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "4863af8c9b0bc051",
-        "type": "ui_group",
-        "name": "Motors",
-        "tab": "",
-        "order": 2,
-        "disp": true,
-        "width": 3,
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "53612cabdd4d603c",
-        "type": "ui_group",
-        "name": "Load Status",
-        "tab": "",
-        "order": 6,
-        "disp": true,
-        "width": 1,
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "632fd0842d7cf8b1",
-        "type": "ui_group",
-        "name": "Raw Load",
-        "tab": "",
-        "order": 4,
-        "disp": true,
-        "width": 3,
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "7049b5ae23159efb",
-        "type": "ui_group",
-        "name": "Load",
-        "tab": "",
-        "order": 5,
-        "disp": true,
-        "width": 3,
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "27883670a192734f",
-        "type": "ui_group",
-        "name": "Temp",
-        "tab": "",
-        "order": 7,
-        "disp": true,
-        "width": 3,
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "4a09332c08c2f5b3",
-        "type": "ui_group",
-        "name": "Temp Status",
-        "tab": "",
-        "order": 8,
-        "disp": true,
-        "width": 1,
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "42646fbec66b7a63",
-        "type": "ui_group",
-        "name": "Motors Status",
-        "tab": "",
-        "order": 3,
-        "disp": true,
-        "width": 3,
-        "collapse": false,
-        "className": ""
-    },
-    {
         "id": "f93e5670e3f24149",
         "type": "ui_tab",
         "name": "Инженер-технолог",
@@ -527,39 +238,6 @@
         "order": 10,
         "disp": true,
         "width": "6",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "ee74c07fb986bb59",
-        "type": "ui_group",
-        "name": "Управление",
-        "tab": "",
-        "order": 1,
-        "disp": true,
-        "width": "6",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "c32d0cee4dd9f50e",
-        "type": "ui_group",
-        "name": "Настройки",
-        "tab": "",
-        "order": 2,
-        "disp": true,
-        "width": "6",
-        "collapse": false,
-        "className": ""
-    },
-    {
-        "id": "e823cd2759eae34c",
-        "type": "ui_group",
-        "name": "Терминал",
-        "tab": "",
-        "order": 4,
-        "disp": true,
-        "width": 7,
         "collapse": false,
         "className": ""
     },
@@ -804,7 +482,7 @@
         "type": "function",
         "z": "c2899e0a7794b420",
         "name": "Set Default Positions",
-        "func": "// Robot 1\nglobal.set(\"pos_parking_R1\", {\n    \"X\": 110,\n    \"Y\": 110\n});\nglobal.set(\"pos_temp_R1\", {\n    \"X\": 120,\n    \"Y\": 120\n});\nglobal.set(\"pos_final_R1\", {\n    \"X\": 130,\n    \"Y\": 130\n});\n\n// Robot 1\nglobal.set(\"pos_parking_R2\", {\n    \"X\": 210,\n    \"Y\": 210\n});\nglobal.set(\"pos_temp_R2\", {\n    \"X\": 220,\n    \"Y\": 220\n});\nglobal.set(\"pos_final_R2\", {\n    \"X\": 230,\n    \"Y\": 230\n});\n\nreturn msg;",
+        "func": "// Robot 1\nglobal.set(\"pos_parking_R1\", {\n    \"X\": 110,\n    \"Y\": 110\n});\nglobal.set(\"pos_temp_R1\", {\n    \"X\": 120,\n    \"Y\": 120\n});\nglobal.set(\"pos_1_R1\", {\n    \"X\": 130,\n    \"Y\": 130\n});\n\n// Robot 2\nglobal.set(\"pos_parking_R2\", {\n    \"X\": 210,\n    \"Y\": 210\n});\nglobal.set(\"pos_temp_R2\", {\n    \"X\": 220,\n    \"Y\": 220\n});\nglobal.set(\"pos_1_R2\", {\n    \"X\": 230,\n    \"Y\": 230\n});\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -830,13 +508,14 @@
         "finalize": "",
         "libs": [],
         "x": 420,
-        "y": 340,
+        "y": 280,
         "wires": [
             [
                 "39023b62b1ea3518",
                 "86ae5dbb9964f5b6",
                 "0bd856163dde00e5",
-                "da88818d77e1e814"
+                "da88818d77e1e814",
+                "49557dbac112f296"
             ]
         ]
     },
@@ -844,7 +523,7 @@
         "id": "da88818d77e1e814",
         "type": "function",
         "z": "c2899e0a7794b420",
-        "name": "Default Out",
+        "name": "Set Default Out",
         "func": "for (var R in [\"1\", \"2\"]) {\n    global.set(\"out_robot_R\" + R, {\n        \"robot_name\": \"Robot1_\" + R,\n        \"N\": \"0\",\n        \"X\": \"150\",\n        \"Y\": \"150\",\n        \"T\": \"0\",\n        \"G\": \"210\",\n        \"V\": \"0\",\n        \"D0\": \"0\",\n        \"L1\": \"0\",\n        \"L2\": \"0\",\n        \"L3\": \"0\",\n        \"L4\": \"0\",\n        \"P\": \"0\",\n        \"Text\": \"\"\n    })\n}\n\nfor (var L in [\"1\", \"2\"]) {\n    global.set(\"out_lamp_L\" + L, {\n        \"robot_name\": \"TrafficLights1_\" + L,\n        \"N\": \"0\",\n        \"X\": \"0\",\n        \"Y\": \"0\",\n        \"T\": \"0\",\n        \"G\": \"0\",\n        \"V\": \"0\",\n        \"D0\": \"0\",\n        \"L1\": \"0\",\n        \"L2\": \"0\",\n        \"L3\": \"0\",\n        \"L4\": \"0\",\n        \"P\": \"0\",\n        \"Text\": \"\"\n    })\n}\n\nglobal.set(\"out_terminal\", {\n    \"robot_name\": \"WorkshiftTerminal1\",\n    \"N\": \"0\",\n    \"X\": \"0\",\n    \"Y\": \"0\",\n    \"T\": \"0\",\n    \"G\": \"0\",\n    \"V\": \"0\",\n    \"D0\": \"0\",\n    \"L1\": \"0\",\n    \"L2\": \"0\",\n    \"L3\": \"0\",\n    \"L4\": \"0\",\n    \"P\": \"0\",\n    \"Text\": \"\"\n})\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
@@ -852,8 +531,26 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 670,
+        "x": 680,
         "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "49557dbac112f296",
+        "type": "function",
+        "z": "c2899e0a7794b420",
+        "name": "Set Default Code",
+        "func": "// Wait\nfunction wait(R, x) {\n    var wait = [];\n    for (var i = 0; i < x; i++) {\n        wait.push(global.get(\"current_position_R\" + R));\n    }\n    return wait;\n}\n\n// Functions\n\n\n// Codes\nglobal.set(\"codes\", {\n    \"123\": {\n        \"1\": [\n\n        ],\n        \"2\": [\n            wait(\"2\", x)\n        ]\n    }\n})\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 3,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 520,
         "wires": [
             []
         ]
@@ -2717,8 +2414,8 @@
                 "type": "str"
             },
             {
-                "label": "Целевая позиция",
-                "value": "pos_final",
+                "label": "Позиция 1",
+                "value": "pos_1",
                 "type": "str"
             }
         ],
@@ -2978,8 +2675,7 @@
         "y": 320,
         "wires": [
             [
-                "53fdbf369a9f9538",
-                "bd718d8fc6814028"
+                "53fdbf369a9f9538"
             ]
         ]
     },
@@ -3155,19 +2851,6 @@
         "finalize": "",
         "libs": [],
         "x": 1180,
-        "y": 100,
-        "wires": [
-            [
-                "6289596c3b40c6b3"
-            ]
-        ]
-    },
-    {
-        "id": "6289596c3b40c6b3",
-        "type": "mysql",
-        "z": "08972a8227e69f46",
-        "name": "",
-        "x": 1370,
         "y": 100,
         "wires": [
             []

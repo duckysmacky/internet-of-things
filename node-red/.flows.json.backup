@@ -804,7 +804,7 @@
         "type": "function",
         "z": "c2899e0a7794b420",
         "name": "Set Default Positions",
-        "func": "// Robot 1\nglobal.set(\"pos_parking_R1\", {\n    \"X\": 110,\n    \"Y\": 110\n});\nglobal.set(\"pos_temp_R1\", {\n    \"X\": 120,\n    \"Y\": 120\n});\nglobal.set(\"pos_final_R1\", {\n    \"X\": 130,\n    \"Y\": 130\n});\n\n// Robot 1\nglobal.set(\"pos_parking_R2\", {\n    \"X\": 210,\n    \"Y\": 210\n});\nglobal.set(\"pos_temp_R2\", {\n    \"X\": 220,\n    \"Y\": 220\n});\nglobal.set(\"pos_final_R2\", {\n    \"X\": 230,\n    \"Y\": 230\n});\n\nreturn msg;",
+        "func": "// Robot 1\nglobal.set(\"pos_parking_R1\", {\n    \"X\": 110,\n    \"Y\": 110\n});\nglobal.set(\"pos_temp_R1\", {\n    \"X\": 120,\n    \"Y\": 120\n});\nglobal.set(\"pos_1_R1\", {\n    \"X\": 130,\n    \"Y\": 130\n});\n\n// Robot 2\nglobal.set(\"pos_parking_R2\", {\n    \"X\": 210,\n    \"Y\": 210\n});\nglobal.set(\"pos_temp_R2\", {\n    \"X\": 220,\n    \"Y\": 220\n});\nglobal.set(\"pos_1_R2\", {\n    \"X\": 230,\n    \"Y\": 230\n});\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -830,13 +830,14 @@
         "finalize": "",
         "libs": [],
         "x": 420,
-        "y": 340,
+        "y": 280,
         "wires": [
             [
                 "39023b62b1ea3518",
                 "86ae5dbb9964f5b6",
                 "0bd856163dde00e5",
-                "da88818d77e1e814"
+                "da88818d77e1e814",
+                "49557dbac112f296"
             ]
         ]
     },
@@ -844,7 +845,7 @@
         "id": "da88818d77e1e814",
         "type": "function",
         "z": "c2899e0a7794b420",
-        "name": "Default Out",
+        "name": "Set Default Out",
         "func": "for (var R in [\"1\", \"2\"]) {\n    global.set(\"out_robot_R\" + R, {\n        \"robot_name\": \"Robot1_\" + R,\n        \"N\": \"0\",\n        \"X\": \"150\",\n        \"Y\": \"150\",\n        \"T\": \"0\",\n        \"G\": \"210\",\n        \"V\": \"0\",\n        \"D0\": \"0\",\n        \"L1\": \"0\",\n        \"L2\": \"0\",\n        \"L3\": \"0\",\n        \"L4\": \"0\",\n        \"P\": \"0\",\n        \"Text\": \"\"\n    })\n}\n\nfor (var L in [\"1\", \"2\"]) {\n    global.set(\"out_lamp_L\" + L, {\n        \"robot_name\": \"TrafficLights1_\" + L,\n        \"N\": \"0\",\n        \"X\": \"0\",\n        \"Y\": \"0\",\n        \"T\": \"0\",\n        \"G\": \"0\",\n        \"V\": \"0\",\n        \"D0\": \"0\",\n        \"L1\": \"0\",\n        \"L2\": \"0\",\n        \"L3\": \"0\",\n        \"L4\": \"0\",\n        \"P\": \"0\",\n        \"Text\": \"\"\n    })\n}\n\nglobal.set(\"out_terminal\", {\n    \"robot_name\": \"WorkshiftTerminal1\",\n    \"N\": \"0\",\n    \"X\": \"0\",\n    \"Y\": \"0\",\n    \"T\": \"0\",\n    \"G\": \"0\",\n    \"V\": \"0\",\n    \"D0\": \"0\",\n    \"L1\": \"0\",\n    \"L2\": \"0\",\n    \"L3\": \"0\",\n    \"L4\": \"0\",\n    \"P\": \"0\",\n    \"Text\": \"\"\n})\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
@@ -852,8 +853,26 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 670,
+        "x": 680,
         "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "49557dbac112f296",
+        "type": "function",
+        "z": "c2899e0a7794b420",
+        "name": "Set Default Code",
+        "func": "\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 520,
         "wires": [
             []
         ]
@@ -2717,8 +2736,8 @@
                 "type": "str"
             },
             {
-                "label": "Целевая позиция",
-                "value": "pos_final",
+                "label": "Позиция 1",
+                "value": "pos_1",
                 "type": "str"
             }
         ],
@@ -3146,7 +3165,7 @@
         "type": "function",
         "z": "08972a8227e69f46",
         "name": "function 1",
-        "func": "var mysql = global.get('mysql');\n\nif (msg.payload && mysql) {\n    var data = msg.payload;\n    var query = \"INSERT INTO PosLog (value1, value2) VALUES (?, ?)\";\n    var values = [data.value1, data.value2];\n    \n    mysql.query(query, values);\n}",
+        "func": "var mysql = global.get('mysql');\n\nif (msg.payload && mysql) {\n    var data = msg.payload;\n    var query = \"INSERT INTO PosLog (value1, value2) VALUES (?, ?)\";\n    var values = [data.X, data.Y];\n    \n    mysql.query(query, values);\n}",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
