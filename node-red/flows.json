@@ -24,6 +24,22 @@
         "env": []
     },
     {
+        "id": "582886a6f46648d8",
+        "type": "tab",
+        "label": "Manager",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f983b8ff415f53cb",
+        "type": "tab",
+        "label": "Quality Control",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "0db56204ee20180e",
         "type": "ui_base",
         "theme": {
@@ -287,7 +303,7 @@
         "type": "ui_group",
         "name": "Настройки",
         "tab": "c523b354eeceb6f3",
-        "order": 2,
+        "order": 3,
         "disp": true,
         "width": "6",
         "collapse": false,
@@ -298,7 +314,7 @@
         "type": "ui_group",
         "name": "Лампы",
         "tab": "c523b354eeceb6f3",
-        "order": 3,
+        "order": 4,
         "disp": true,
         "width": 10,
         "collapse": false,
@@ -309,14 +325,76 @@
         "type": "ui_group",
         "name": "Треминал",
         "tab": "c523b354eeceb6f3",
-        "order": 4,
+        "order": 5,
         "disp": true,
         "width": 10,
         "collapse": false,
         "className": ""
     },
     {
-        "id": "4d4360a1ae8d3e85",
+        "id": "a9242578351cf01b",
+        "type": "ui_tab",
+        "name": "Руководитель производства",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "f50855034f772076",
+        "type": "ui_tab",
+        "name": "Инспектор",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "378d65878260af78",
+        "type": "ui_group",
+        "name": "Общее",
+        "tab": "a9242578351cf01b",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6ffdb29a14f8e95a",
+        "type": "ui_group",
+        "name": "Контроль Качества",
+        "tab": "f50855034f772076",
+        "order": 1,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "95ce4865ddbb4491",
+        "type": "ui_group",
+        "name": "Коды",
+        "tab": "a9242578351cf01b",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "bbf770ee758743a2",
+        "type": "ui_group",
+        "name": "Сборка Изделия",
+        "tab": "c523b354eeceb6f3",
+        "order": 2,
+        "disp": true,
+        "width": 6,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b8b3e78883fb82be",
         "type": "ui_spacer",
         "z": "08972a8227e69f46",
         "name": "spacer",
@@ -326,11 +404,81 @@
         "height": 1
     },
     {
-        "id": "13833d0f7a07d5f8",
+        "id": "828bfa63ac0ca9ab",
         "type": "ui_spacer",
         "z": "08972a8227e69f46",
         "name": "spacer",
         "group": "140718969903079e",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "e26f4f282771359c",
+        "type": "ui_spacer",
+        "z": "08972a8227e69f46",
+        "name": "spacer",
+        "group": "378d65878260af78",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "2de96dccee5d1486",
+        "type": "ui_spacer",
+        "z": "08972a8227e69f46",
+        "name": "spacer",
+        "group": "378d65878260af78",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "99ec631d8467e218",
+        "type": "ui_spacer",
+        "z": "08972a8227e69f46",
+        "name": "spacer",
+        "group": "378d65878260af78",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "f5792fdd6b6d8b3e",
+        "type": "ui_spacer",
+        "z": "08972a8227e69f46",
+        "name": "spacer",
+        "group": "378d65878260af78",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "278bef677471086d",
+        "type": "ui_spacer",
+        "z": "08972a8227e69f46",
+        "name": "spacer",
+        "group": "6ffdb29a14f8e95a",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "85844ef72543f6ee",
+        "type": "ui_spacer",
+        "z": "08972a8227e69f46",
+        "name": "spacer",
+        "group": "6ffdb29a14f8e95a",
+        "order": 6,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "edc052262215d623",
+        "type": "ui_spacer",
+        "z": "08972a8227e69f46",
+        "name": "spacer",
+        "group": "6ffdb29a14f8e95a",
         "order": 8,
         "width": 1,
         "height": 1
@@ -464,7 +612,7 @@
         "type": "function",
         "z": "c2899e0a7794b420",
         "name": "Set Default Other",
-        "func": "global.set(\"selected_robot\", 1);\nglobal.set(\"controlled_robot\", \"1\");\nglobal.set(\"controlled_lamp\", \"1\");\nglobal.set(\"selected_limit\", \"loadProcMin\");\n\nglobal.set(\"lamp_mode\", \"auto\");\n\nfor (var R in [\"1\", \"2\"]) {\n    global.set(\"robot_status_R\" + R, \"waiting\");\n    global.set(\"last_robot_status_R\" + R, \"waiting\");\n}\n\n\nreturn msg;",
+        "func": "global.set(\"online\", false);\nglobal.set(\"start_timestamp\", 0);\nglobal.set(\"last_timestamp\", 0);\nglobal.set(\"afk_sec\", 0);\n\nglobal.set(\"selected_robot\", \"1\");\nglobal.set(\"controlled_robot\", \"1\");\nglobal.set(\"controlled_lamp\", \"1\");\nglobal.set(\"selected_limit\", \"loadProcMin\");\n\nglobal.set(\"lamp_mode\", \"auto\");\n\nfor (var R in [\"1\", \"2\"]) {\n    global.set(\"robot_status_R\" + R, \"waiting\");\n    global.set(\"last_robot_status_R\" + R, \"waiting\");\n}\n\nglobal.set(\"part_check_mode\", \"auto\");\nglobal.set(\"bad_parts\", 0);\nglobal.set(\"good_parts\", 0);\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -482,7 +630,7 @@
         "type": "function",
         "z": "c2899e0a7794b420",
         "name": "Set Default Positions",
-        "func": "// Robot 1\nglobal.set(\"pos_parking_R1\", {\n    \"X\": 110,\n    \"Y\": 110\n});\nglobal.set(\"pos_temp_R1\", {\n    \"X\": 120,\n    \"Y\": 120\n});\nglobal.set(\"pos_1_R1\", {\n    \"X\": 130,\n    \"Y\": 130\n});\n\n// Robot 2\nglobal.set(\"pos_parking_R2\", {\n    \"X\": 210,\n    \"Y\": 210\n});\nglobal.set(\"pos_temp_R2\", {\n    \"X\": 220,\n    \"Y\": 220\n});\nglobal.set(\"pos_1_R2\", {\n    \"X\": 230,\n    \"Y\": 230\n});\n\nreturn msg;",
+        "func": "// Vacuum\nglobal.set(\"vacuum_on\", { \"V\": 1 });\nglobal.set(\"vacuum_off\", { \"V\": 0 });\n\n// Gripper\nglobal.set(\"gripper_down_R1\", { \"G\": 200 });\nglobal.set(\"gripper_up_R1\", { \"G\": 230 });\nglobal.set(\"gripper_down_R2\", { \"G\": 175 });\nglobal.set(\"gripper_up_R2\", { \"G\": 200 });\n\n// Robot 1\nglobal.set(\"pos_parking_R1\", {\n    \"X\": 110,\n    \"Y\": 110\n});\nglobal.set(\"pos_mid_R1\", {\n    \"X\": 120,\n    \"Y\": 120\n});\nglobal.set(\"pos_1_R1\", {\n    \"X\": 130,\n    \"Y\": 130\n});\nglobal.set(\"pos_2_R1\", {\n    \"X\": 130,\n    \"Y\": 130\n});\nglobal.set(\"current_position_R1\", {\n    \"X\": 100,\n    \"Y\": 100\n});\n\n// Robot 2\nglobal.set(\"pos_parking_R2\", {\n    \"X\": 210,\n    \"Y\": 210\n});\nglobal.set(\"pos_mid_R2\", {\n    \"X\": 220,\n    \"Y\": 220\n});\nglobal.set(\"pos_1_R2\", {\n    \"X\": 230,\n    \"Y\": 230\n});\nglobal.set(\"pos_2_R2\", {\n    \"X\": 230,\n    \"Y\": 230\n});\nglobal.set(\"current_position_R2\", {\n    \"X\": 100,\n    \"Y\": 100\n});\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -524,7 +672,7 @@
         "type": "function",
         "z": "c2899e0a7794b420",
         "name": "Set Default Out",
-        "func": "for (var R in [\"1\", \"2\"]) {\n    global.set(\"out_robot_R\" + R, {\n        \"robot_name\": \"Robot1_\" + R,\n        \"N\": \"0\",\n        \"X\": \"150\",\n        \"Y\": \"150\",\n        \"T\": \"0\",\n        \"G\": \"210\",\n        \"V\": \"0\",\n        \"D0\": \"0\",\n        \"L1\": \"0\",\n        \"L2\": \"0\",\n        \"L3\": \"0\",\n        \"L4\": \"0\",\n        \"P\": \"0\",\n        \"Text\": \"\"\n    })\n}\n\nfor (var L in [\"1\", \"2\"]) {\n    global.set(\"out_lamp_L\" + L, {\n        \"robot_name\": \"TrafficLights1_\" + L,\n        \"N\": \"0\",\n        \"X\": \"0\",\n        \"Y\": \"0\",\n        \"T\": \"0\",\n        \"G\": \"0\",\n        \"V\": \"0\",\n        \"D0\": \"0\",\n        \"L1\": \"0\",\n        \"L2\": \"0\",\n        \"L3\": \"0\",\n        \"L4\": \"0\",\n        \"P\": \"0\",\n        \"Text\": \"\"\n    })\n}\n\nglobal.set(\"out_terminal\", {\n    \"robot_name\": \"WorkshiftTerminal1\",\n    \"N\": \"0\",\n    \"X\": \"0\",\n    \"Y\": \"0\",\n    \"T\": \"0\",\n    \"G\": \"0\",\n    \"V\": \"0\",\n    \"D0\": \"0\",\n    \"L1\": \"0\",\n    \"L2\": \"0\",\n    \"L3\": \"0\",\n    \"L4\": \"0\",\n    \"P\": \"0\",\n    \"Text\": \"\"\n})\n\nreturn msg;",
+        "func": "for (var R of [\"1\", \"2\"]) {\n    global.set(\"out_robot_R\" + R, {\n        \"robot_name\": \"Robot1_\" + R,\n        \"N\": \"0\",\n        \"X\": \"150\",\n        \"Y\": \"150\",\n        \"T\": \"0\",\n        \"G\": \"210\",\n        \"V\": \"0\",\n        \"D0\": \"0\",\n        \"L1\": \"0\",\n        \"L2\": \"0\",\n        \"L3\": \"0\",\n        \"L4\": \"0\",\n        \"P\": \"0\",\n        \"Text\": \"\"\n    });\n}\n\nfor (var L of [\"1\", \"2\"]) {\n    global.set(\"out_lamp_L\" + L, {\n        \"robot_name\": \"TrafficLights1_\" + L,\n        \"N\": \"0\",\n        \"X\": \"0\",\n        \"Y\": \"0\",\n        \"T\": \"0\",\n        \"G\": \"0\",\n        \"V\": \"0\",\n        \"D0\": \"0\",\n        \"L1\": \"0\",\n        \"L2\": \"0\",\n        \"L3\": \"0\",\n        \"L4\": \"0\",\n        \"P\": \"0\",\n        \"Text\": \"\"\n    });\n}\n\nglobal.set(\"out_terminal\", {\n    \"robot_name\": \"WorkshiftTerminal1\",\n    \"N\": \"0\",\n    \"X\": \"0\",\n    \"Y\": \"0\",\n    \"T\": \"0\",\n    \"G\": \"0\",\n    \"V\": \"0\",\n    \"D0\": \"0\",\n    \"L1\": \"0\",\n    \"L2\": \"0\",\n    \"L3\": \"0\",\n    \"L4\": \"0\",\n    \"P\": \"0\",\n    \"Text\": \"\"\n})\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -542,10 +690,10 @@
         "type": "function",
         "z": "c2899e0a7794b420",
         "name": "Set Default Code",
-        "func": "// Wait\nfunction wait(R, x) {\n    var wait = [];\n    for (var i = 0; i < x; i++) {\n        wait.push(global.get(\"current_position_R\" + R));\n    }\n    return wait;\n}\n\n// Functions\n\n\n// Codes\nglobal.set(\"codes\", {\n    \"123\": {\n        \"1\": [\n\n        ],\n        \"2\": [\n            wait(\"2\", x)\n        ]\n    }\n})\n\nreturn msg;",
+        "func": "// Wait\nfunction wait(R, x) {\n    var wait = [];\n    for (var i = 0; i < x; i++) {\n        wait[i] = global.get(\"current_position_R\" + String(R));\n    }\n    return wait;\n}\n\n// Functions\nfunction R1_move(N) {\n    var move = [\n        global.get(\"pos_\" + String(N) + \"_R1\"),\n        global.get(\"gripper_down_R1\"),\n        global.get(\"vacuum_on\"),\n        global.get(\"gripper_up_R1\"),\n        global.get(\"pos_mid_R1\"),\n        global.get(\"gripper_down_R1\"),\n        global.get(\"vacuum_off\"),\n        global.get(\"pos_parking_R1\")\n    ];\n    return move;\n}\n\nfunction R2_move(N) {\n    var move = [\n        global.get(\"pos_mid_R2\"),\n        global.get(\"gripper_down_R2\"),\n        global.get(\"vacuum_on\"),\n        global.get(\"gripper_up_R2\"),\n        global.get(\"pos_\" + String(N) + \"_R2\"),\n        global.get(\"gripper_down_R2\"),\n        global.get(\"vacuum_off\"),\n        global.get(\"pos_parking_R2\")\n    ];\n    return move;\n}\n\n// Codes\nvar code_123 = () => { return {\n    1: [\n        R1_move(1),\n        R1_move(2)\n    ],\n    2: [\n        wait(\"2\", 8),\n        R2_move(1),\n        R2_move(2)\n    ]\n}};\nglobal.set(\"code_123\", code_123);\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
-        "noerr": 3,
+        "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
@@ -1485,7 +1633,7 @@
         "onceDelay": 0.1,
         "topic": "",
         "x": 170,
-        "y": 620,
+        "y": 680,
         "wires": [
             [
                 "b83f1a9d74c6d7d1"
@@ -1544,7 +1692,7 @@
         "splitLayout": "",
         "className": "",
         "x": 600,
-        "y": 620,
+        "y": 660,
         "wires": [
             []
         ]
@@ -1914,19 +2062,64 @@
         "type": "function",
         "z": "2e7a746435651752",
         "name": "Terminal Data",
-        "func": "var terminal = global.get(\"terminal\");\n\nif (terminal[\"p\"] == 1) {\n    for (var R in [\"1\", \"2\"]) {\n        if (global.get(\"robot_status_R\" + R) != \"locked\") {\n            global.set(\"last_robot_status_R\" + R, global.get(\"robot_status_R\" + R));\n        }\n        global.set(\"robot_status_R\" + R, \"locked\");\n    }\n    global.set(\"terminal_colors\", [\"red\"]);\n} else {\n    for (var R in [\"1\", \"2\"]) {\n        global.set(\"robot_status_R\" + R, global.get(\"last_robot_status_R\" + R));\n    }\n}\n\nmsg.payload = terminal;\nreturn msg;",
-        "outputs": 1,
+        "func": "var terminal = global.get(\"terminal\");\n\nif (terminal[\"p\"] == 1) {\n    for (var R in [\"1\", \"2\"]) {\n        if (global.get(\"robot_status_R\" + R) != \"locked\") {\n            global.set(\"last_robot_status_R\" + R, global.get(\"robot_status_R\" + R));\n        }\n        global.set(\"robot_status_R\" + R, \"locked\");\n    }\n    global.set(\"terminal_colors\", [\"red\"]);\n} else {\n    for (var R in [\"1\", \"2\"]) {\n        global.set(\"robot_status_R\" + R, global.get(\"last_robot_status_R\" + R));\n    }\n}\n\nreturn [\n    { payload: terminal },\n    { payload: terminal[\"p\"] }\n];",
+        "outputs": 2,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
         "x": 400,
-        "y": 620,
+        "y": 680,
         "wires": [
             [
                 "2173699dc978c474"
+            ],
+            [
+                "a7a8f59949dbb1e2"
             ]
+        ]
+    },
+    {
+        "id": "9709c87019290cd2",
+        "type": "ui_text",
+        "z": "2e7a746435651752",
+        "group": "378d65878260af78",
+        "order": 1,
+        "width": 6,
+        "height": 1,
+        "name": "DMS Status",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 810,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "a7a8f59949dbb1e2",
+        "type": "function",
+        "z": "2e7a746435651752",
+        "name": "Check DMS",
+        "func": "var dms = msg.payload;\n\nif (dms == 1) {\n    var message = \"Аварийная ситуация, нажата DMS\";\n} else {\n    var message = \"\";\n}\n\nreturn [\n    {payload: message},\n    {payload: dms}\n];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 700,
+        "wires": [
+            [
+                "9709c87019290cd2"
+            ],
+            []
         ]
     },
     {
@@ -1937,7 +2130,7 @@
         "label": "Режим ручного управления",
         "tooltip": "",
         "group": "51699ea1ad04f6ac",
-        "order": 3,
+        "order": 1,
         "width": 0,
         "height": 0,
         "passthru": true,
@@ -1956,7 +2149,7 @@
         "animate": false,
         "className": "",
         "x": 220,
-        "y": 520,
+        "y": 940,
         "wires": [
             [
                 "483930dfe454b450"
@@ -1973,8 +2166,8 @@
         "place": "Выберите Робота",
         "group": "140718969903079e",
         "order": 1,
-        "width": 0,
-        "height": 0,
+        "width": 7,
+        "height": 1,
         "passthru": true,
         "multiple": false,
         "options": [
@@ -2010,7 +2203,7 @@
         "tooltip": "",
         "place": "Выберите лампу",
         "group": "51699ea1ad04f6ac",
-        "order": 1,
+        "order": 2,
         "width": 0,
         "height": 0,
         "passthru": true,
@@ -2032,7 +2225,7 @@
         "topicType": "msg",
         "className": "",
         "x": 200,
-        "y": 580,
+        "y": 1000,
         "wires": [
             [
                 "6c88a81a9cafaf7e"
@@ -2048,7 +2241,7 @@
         "tooltip": "",
         "place": "Выберите цвета лампы",
         "group": "51699ea1ad04f6ac",
-        "order": 2,
+        "order": 3,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -2080,7 +2273,7 @@
         "topicType": "msg",
         "className": "",
         "x": 920,
-        "y": 620,
+        "y": 1040,
         "wires": [
             [
                 "5edcf4a43e5b2aae"
@@ -2118,7 +2311,7 @@
         "finalize": "",
         "libs": [],
         "x": 450,
-        "y": 580,
+        "y": 1000,
         "wires": [
             [
                 "74d9c1ff4da12e46"
@@ -2138,7 +2331,7 @@
         "finalize": "",
         "libs": [],
         "x": 460,
-        "y": 520,
+        "y": 940,
         "wires": [
             []
         ]
@@ -2156,7 +2349,7 @@
         "finalize": "",
         "libs": [],
         "x": 1160,
-        "y": 620,
+        "y": 1040,
         "wires": [
             []
         ]
@@ -2174,7 +2367,7 @@
         "finalize": "",
         "libs": [],
         "x": 670,
-        "y": 620,
+        "y": 1040,
         "wires": [
             [
                 "781984e956d6705c"
@@ -2193,7 +2386,7 @@
         "onceDelay": 0.1,
         "topic": "",
         "x": 220,
-        "y": 660,
+        "y": 1080,
         "wires": [
             [
                 "3785fd59625cb01c"
@@ -2205,7 +2398,7 @@
         "type": "function",
         "z": "08972a8227e69f46",
         "name": "Check Auto",
-        "func": "if (global.get(\"lamp_mode\") == \"auto\") {\n    var R = global.get(\"controlled_robot\");\n    var colors = [];\n    \n    switch (global.get(\"robot_status_R\" + R)) {\n        case \"waiting\":\n            colors = [\"green\"];\n            break;\n        case \"moving\":\n            colors = [\"blue\"];\n            break;\n        case \"parking\":\n            colors = [\"yellow\"];\n            break;\n        case \"locked\":\n            colors = [\"red\"];\n            global.set(\"terminal_colors\", colors);\n            break;\n        case \"stopped\":\n            colors = [\"red\"];\n            break;\n    }\n\n    global.set(\"lamp_colors_L\" + R, colors);\n    return msg;\n}",
+        "func": "if (global.get(\"lamp_mode\") == \"auto\") {\n    for (var R of [\"1\", \"2\"]) {\n        var colors = [];\n    \n        switch (global.get(\"robot_state_R\" + R)) {\n            case \"waiting\":\n                colors = [\"green\"];\n                break;\n            case \"moving\":\n                colors = [\"blue\"];\n                break;\n            case \"parking\":\n                colors = [\"yellow\"];\n                break;\n            case \"locked\":\n                colors = [\"red\"];\n                global.set(\"terminal_colors\", colors);\n                break;\n            case \"stopped\":\n                colors = [\"red\"];\n                break;\n        }\n\n        global.set(\"lamp_colors_L\" + R, colors);\n    }\n\n    return msg;\n}",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -2213,7 +2406,7 @@
         "finalize": "",
         "libs": [],
         "x": 450,
-        "y": 660,
+        "y": 1080,
         "wires": [
             [
                 "74d9c1ff4da12e46"
@@ -2261,7 +2454,7 @@
         "topicType": "msg",
         "className": "",
         "x": 750,
-        "y": 740,
+        "y": 1160,
         "wires": [
             [
                 "1784336fe6108cee"
@@ -2281,7 +2474,7 @@
         "finalize": "",
         "libs": [],
         "x": 1010,
-        "y": 740,
+        "y": 1160,
         "wires": [
             []
         ]
@@ -2298,7 +2491,7 @@
         "onceDelay": 0.1,
         "topic": "",
         "x": 220,
-        "y": 820,
+        "y": 1240,
         "wires": [
             [
                 "71c2416693e19ca1"
@@ -2318,7 +2511,7 @@
         "finalize": "",
         "libs": [],
         "x": 470,
-        "y": 820,
+        "y": 1240,
         "wires": [
             [
                 "0149a3ac5adb688d"
@@ -2334,7 +2527,7 @@
         "group": "ee877e51ecccd146",
         "order": 1,
         "width": 6,
-        "height": 4,
+        "height": 1,
         "options": [
             {
                 "label": "X",
@@ -2363,7 +2556,7 @@
         "splitLayout": "",
         "className": "",
         "x": 190,
-        "y": 880,
+        "y": 1300,
         "wires": [
             [
                 "7b1e7498f69ef63f"
@@ -2383,7 +2576,7 @@
         "finalize": "",
         "libs": [],
         "x": 460,
-        "y": 880,
+        "y": 1300,
         "wires": [
             []
         ]
@@ -2398,8 +2591,8 @@
         "place": "Выберите позицию",
         "group": "140718969903079e",
         "order": 2,
-        "width": 0,
-        "height": 0,
+        "width": 7,
+        "height": 1,
         "passthru": true,
         "multiple": false,
         "options": [
@@ -2410,7 +2603,7 @@
             },
             {
                 "label": "Временная позиция",
-                "value": "pos_temp",
+                "value": "pos_mid",
                 "type": "str"
             },
             {
@@ -2457,8 +2650,8 @@
         "label": "Координаты текущей позиции",
         "group": "140718969903079e",
         "order": 3,
-        "width": 0,
-        "height": 0,
+        "width": 7,
+        "height": 1,
         "options": [
             {
                 "label": "X",
@@ -2585,15 +2778,15 @@
         "id": "5b91d78f7966a8b8",
         "type": "function",
         "z": "08972a8227e69f46",
-        "name": "Set Target Position",
-        "func": "var R = global.get(\"controlled_robot\");\nvar selected_position = global.get(\"selected_position_R\" + R);\n\nglobal.set(\"current_position_R\" + R, selected_position);\n\nmsg.payload = global.get(\"current_position_R\" + R);\nreturn msg;",
+        "name": "Set Position",
+        "func": "var R = global.get(\"controlled_robot\");\nvar selected_position = global.get(\"selected_position_R\" + R);\n\nglobal.set(\"current_position_R\" + R, selected_position);\nglobal.set(\"target_position_R\" + R, selected_position);\n\nmsg.payload = global.get(\"current_position_R\" + R);\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 490,
+        "x": 470,
         "y": 320,
         "wires": [
             [
@@ -2633,7 +2826,7 @@
         "finalize": "",
         "libs": [],
         "x": 480,
-        "y": 740,
+        "y": 1160,
         "wires": [
             [
                 "713f5ff11f4741b5"
@@ -2652,7 +2845,7 @@
         "onceDelay": 0.1,
         "topic": "",
         "x": 230,
-        "y": 740,
+        "y": 1160,
         "wires": [
             [
                 "eec3934b1ae421b5"
@@ -2664,7 +2857,7 @@
         "type": "function",
         "z": "08972a8227e69f46",
         "name": "Send Position",
-        "func": "var R = global.get(\"controlled_robot\");\nvar out = global.get(\"out_robot_R\" + R);\nvar position = msg.payload;\n\nout[\"Robot_name\"] = \"Robot1_\" + R;\nout[\"X\"] = String(global.get(position)[\"X\"]);\nout[\"Y\"] = String(global.get(position)[\"Y\"]);\n\nglobal.set(\"out_robot_R\" + R, out);\nmsg.payload = global.get(\"out_robot_R\" + R);\nreturn msg;",
+        "func": "var R = global.get(\"controlled_robot\");\nvar out = global.get(\"out_robot_R\" + R);\nvar position = msg.payload;\n\nout[\"Robot_name\"] = \"Robot1_\" + R;\nout[\"X\"] = String(global.get(position)[\"X\"]);\nout[\"Y\"] = String(global.get(position)[\"Y\"]);\n\nglobal.set(\"out_robot_R\" + R, out);\nmsg.payload = [\n    R,\n    global.get(\"out_robot_R\" + R)\n]\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -2675,7 +2868,7 @@
         "y": 320,
         "wires": [
             [
-                "53fdbf369a9f9538"
+                "46e0e6be3b54babd"
             ]
         ]
     },
@@ -2692,8 +2885,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1010,
-        "y": 320,
+        "x": 1250,
+        "y": 340,
         "wires": []
     },
     {
@@ -2705,8 +2898,8 @@
         "tooltip": "",
         "group": "140718969903079e",
         "order": 4,
-        "width": 0,
-        "height": 0,
+        "width": 7,
+        "height": 1,
         "passthru": true,
         "decouple": "false",
         "topic": "topic",
@@ -2735,74 +2928,40 @@
         "type": "function",
         "z": "08972a8227e69f46",
         "name": "Send Gripper",
-        "func": "var R = global.get(\"controlled_robot\");\nvar out = global.get(\"out_robot_R\" + R);\nvar gripper = msg.payload;\n\nout[\"Robot_name\"] = \"Robot1_\" + R;\nout[\"G\"] = gripper;\n\nglobal.set(\"out_robot_R\" + R, out);\nmsg.payload = global.get(\"out_robot_R\" + R);\nreturn msg;",
+        "func": "var R = global.get(\"controlled_robot\");\nvar out = global.get(\"out_robot_R\" + R);\nvar gripper = msg.payload;\n\nout[\"Robot_name\"] = \"Robot1_\" + R;\nout[\"G\"] = gripper;\n\nglobal.set(\"out_robot_R\" + R, out);\nmsg.payload = [\n    R,\n    global.get(\"out_robot_R\" + R)\n]\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 470,
+        "x": 770,
         "y": 440,
         "wires": [
             [
-                "861d881baf26dd17"
+                "46e0e6be3b54babd"
             ]
         ]
-    },
-    {
-        "id": "861d881baf26dd17",
-        "type": "debug",
-        "z": "08972a8227e69f46",
-        "name": "Out Robot",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 710,
-        "y": 440,
-        "wires": []
     },
     {
         "id": "cd021521eb760a92",
         "type": "function",
         "z": "08972a8227e69f46",
         "name": "Send Vacuum",
-        "func": "var R = global.get(\"controlled_robot\");\nvar out = global.get(\"out_robot_R\" + R);\nvar vacuum = msg.payload;\n\nout[\"Robot_name\"] = \"Robot1_\" + R;\nout[\"V\"] = vacuum;\n\nglobal.set(\"out_robot_R\" + R, out);\nmsg.payload = global.get(\"out_robot_R\" + R);\nreturn msg;",
+        "func": "var R = global.get(\"controlled_robot\");\nvar out = global.get(\"out_robot_R\" + R);\nvar vacuum = msg.payload;\n\nout[\"Robot_name\"] = \"Robot1_\" + R;\nout[\"V\"] = vacuum;\n\nglobal.set(\"out_robot_R\" + R, out);\nmsg.payload = [\n    R,\n    global.get(\"out_robot_R\" + R)\n]\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 480,
+        "x": 780,
         "y": 380,
         "wires": [
             [
-                "c8e0b5a0ec07c581"
+                "46e0e6be3b54babd"
             ]
         ]
-    },
-    {
-        "id": "c8e0b5a0ec07c581",
-        "type": "debug",
-        "z": "08972a8227e69f46",
-        "name": "Out Robot",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 710,
-        "y": 380,
-        "wires": []
     },
     {
         "id": "f3cb3ededcf4451a",
@@ -2813,8 +2972,8 @@
         "tooltip": "",
         "group": "140718969903079e",
         "order": 5,
-        "width": 0,
-        "height": 0,
+        "width": 7,
+        "height": 1,
         "passthru": true,
         "decouple": "false",
         "topic": "topic",
@@ -2854,6 +3013,873 @@
         "y": 100,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "46e0e6be3b54babd",
+        "type": "function",
+        "z": "08972a8227e69f46",
+        "name": "Out Gate",
+        "func": "var R = msg.payload[0];\nglobal.set(\"robot_state_R\" + R, \"moving\");\n\nreturn [\n    { payload: R },\n    { payload: msg.payload[1] }\n];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 320,
+        "wires": [
+            [
+                "4019ad1674de11a4"
+            ],
+            [
+                "53fdbf369a9f9538"
+            ]
+        ]
+    },
+    {
+        "id": "4019ad1674de11a4",
+        "type": "delay",
+        "z": "08972a8227e69f46",
+        "name": "Finish Moving",
+        "pauseType": "delay",
+        "timeout": "2.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1260,
+        "y": 300,
+        "wires": [
+            [
+                "c208b0f000cbc980"
+            ]
+        ]
+    },
+    {
+        "id": "c208b0f000cbc980",
+        "type": "function",
+        "z": "08972a8227e69f46",
+        "name": "Set State",
+        "func": "var R = msg.payload;\n\nif (global.get(\"target_position_R\" + R) == \"parking\") {\n    global.set(\"robot_state_R\" + R, \"parked\");\n} else {\n    global.set(\"robot_state_R\" + R, \"waiting\");\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1240,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5b79a616f373927c",
+        "type": "ui_form",
+        "z": "08972a8227e69f46",
+        "name": "Code Input",
+        "label": "Код изделия",
+        "group": "bbf770ee758743a2",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Ввод кода",
+                "value": "code",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "code": ""
+        },
+        "payload": "",
+        "submit": "Подтвердить",
+        "cancel": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 210,
+        "y": 680,
+        "wires": [
+            [
+                "9a478ac6193b8720"
+            ]
+        ]
+    },
+    {
+        "id": "9a478ac6193b8720",
+        "type": "function",
+        "z": "08972a8227e69f46",
+        "name": "Fetch Commands",
+        "func": "var input_code = msg.payload[\"code\"];\nvar data = global.get(\"code_\" + input_code);\nvar todo = {\n    1: [],\n    2: []\n};\n\nif (data != undefined) {\n    var error_msg = \"\";\n\n    for (var [R, commands] of Object.entries(data())) {\n        for (var i = 0; i < commands.length; i++) {\n            for (var j = 0; j < commands[i].length; j++) {\n                todo[R].push(commands[i][j]);\n            }\n        }\n    }\n} else {\n    var error_msg = \"Неверный код!\";\n}\n\nreturn [\n    {payload: todo[1].reverse()},\n    {payload: todo[2].reverse()},\n    {payload: error_msg}\n];",
+        "outputs": 3,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 680,
+        "wires": [
+            [
+                "7b7e7711b485e3a4",
+                "52ea6f16001885d1"
+            ],
+            [
+                "e7f767d0e47355ab",
+                "01f11177cd1ccce1"
+            ],
+            [
+                "928abe13b88b6a47"
+            ]
+        ]
+    },
+    {
+        "id": "3758b8d4afd1508e",
+        "type": "ui_toast",
+        "z": "08972a8227e69f46",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "Code Error",
+        "x": 1050,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "928abe13b88b6a47",
+        "type": "function",
+        "z": "08972a8227e69f46",
+        "name": "Check error",
+        "func": "if (msg.payload != \"\") {\n    return msg;\n}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 960,
+        "wires": [
+            [
+                "3758b8d4afd1508e"
+            ]
+        ]
+    },
+    {
+        "id": "0bf008a87c476c89",
+        "type": "inject",
+        "z": "08972a8227e69f46",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"code\": \"123\"}",
+        "payloadType": "json",
+        "x": 200,
+        "y": 720,
+        "wires": [
+            [
+                "9a478ac6193b8720"
+            ]
+        ]
+    },
+    {
+        "id": "7b7e7711b485e3a4",
+        "type": "function",
+        "z": "08972a8227e69f46",
+        "name": "Robot 1 Parse",
+        "func": "var R = \"1\";\nvar todo = msg.payload;\nvar out = global.get(\"out_robot_R\" + R);\nvar data = {};\n\nif (todo.length > 0) {\n    var i = todo.length - 1;\n    data = todo[i];\n    for (var [key, value] of Object.entries(data)) {\n        out[key] = String(data[key]);\n    }\n    todo.pop();\n\n    global.set(\"out_robot_R\" + R, out);\n\n    return [\n        {payload: todo},\n        {payload: [\n            R,\n            global.get(\"out_robot_R\" + R)\n        ]}\n    ];\n} else {\n    if (global.get(\"part_check_mode\") == \"auto\") {\n        var count = global.get(\"good_parts\");\n        count++;\n        global.set(\"good_parts\", count);\n    }\n}\n",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 660,
+        "wires": [
+            [
+                "fa7ec5bc1fb7c14a"
+            ],
+            [
+                "46e0e6be3b54babd"
+            ]
+        ]
+    },
+    {
+        "id": "fa7ec5bc1fb7c14a",
+        "type": "delay",
+        "z": "08972a8227e69f46",
+        "name": "Call Delay",
+        "pauseType": "delay",
+        "timeout": "2.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 790,
+        "y": 600,
+        "wires": [
+            [
+                "7b7e7711b485e3a4"
+            ]
+        ]
+    },
+    {
+        "id": "e7f767d0e47355ab",
+        "type": "function",
+        "z": "08972a8227e69f46",
+        "name": "Robot 2 Parse",
+        "func": "var R = \"2\";\nvar todo = msg.payload;\nvar out = global.get(\"out_robot_R\" + R);\nvar data = {};\n\nif (todo.length > 0) {\n    var i = todo.length - 1;\n    data = todo[i];\n    for (var [key, value] of Object.entries(data)) {\n        out[key] = String(data[key]);\n    }\n    todo.pop();\n\n    global.set(\"out_robot_R\" + R, out);\n\n    return [\n        { payload: todo },\n        {\n            payload: [\n                R,\n                global.get(\"out_robot_R\" + R)\n            ]\n        }\n    ];\n}",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 800,
+        "y": 720,
+        "wires": [
+            [
+                "58bf12e61563a098"
+            ],
+            [
+                "46e0e6be3b54babd"
+            ]
+        ]
+    },
+    {
+        "id": "58bf12e61563a098",
+        "type": "delay",
+        "z": "08972a8227e69f46",
+        "name": "Call Delay",
+        "pauseType": "delay",
+        "timeout": "2.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 790,
+        "y": 780,
+        "wires": [
+            [
+                "e7f767d0e47355ab"
+            ]
+        ]
+    },
+    {
+        "id": "52ea6f16001885d1",
+        "type": "function",
+        "z": "08972a8227e69f46",
+        "name": "Table Parse",
+        "func": "var todo = msg.payload;\n\nvar data = [];\n\nfor (var command of todo) {\n    var row = {}\n    var text = \"\";\n    for (var [key, value] of Object.entries(command)) {\n        text += `${key}:${value}\\n`;\n    }\n    row[\"1\"] = text;\n    data.push(row);\n}\n\nmsg.payload = data;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 540,
+        "wires": [
+            [
+                "a32ce1caf044af99"
+            ]
+        ]
+    },
+    {
+        "id": "a32ce1caf044af99",
+        "type": "ui_table",
+        "z": "08972a8227e69f46",
+        "group": "bbf770ee758743a2",
+        "name": "Robot 1 Commands",
+        "order": 2,
+        "width": 3,
+        "height": 10,
+        "columns": [
+            {
+                "field": "1",
+                "title": "Robot 1",
+                "width": "",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 1080,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "389de0c628f1907b",
+        "type": "inject",
+        "z": "08972a8227e69f46",
+        "name": "Clear Table",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[]",
+        "payloadType": "json",
+        "x": 790,
+        "y": 500,
+        "wires": [
+            [
+                "a32ce1caf044af99"
+            ]
+        ]
+    },
+    {
+        "id": "01f11177cd1ccce1",
+        "type": "function",
+        "z": "08972a8227e69f46",
+        "name": "Table Parse",
+        "func": "var todo = msg.payload;\n\nvar data = [];\n\nfor (var command of todo) {\n    var row = {}\n    var text = \"\";\n    for (var [key, value] of Object.entries(command)) {\n        text += `${key}:${value}\\n`;\n    }\n    row[\"2\"] = text;\n    data.push(row);\n}\n\nmsg.payload = data;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 840,
+        "wires": [
+            [
+                "aa4d4d1daf0f507e"
+            ]
+        ]
+    },
+    {
+        "id": "aa4d4d1daf0f507e",
+        "type": "ui_table",
+        "z": "08972a8227e69f46",
+        "group": "bbf770ee758743a2",
+        "name": "Robot 2 Commands",
+        "order": 3,
+        "width": 3,
+        "height": 10,
+        "columns": [
+            {
+                "field": "2",
+                "title": "Robot 2",
+                "width": "",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 1080,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "3845850eb21d747d",
+        "type": "inject",
+        "z": "08972a8227e69f46",
+        "name": "Clear Table",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[]",
+        "payloadType": "json",
+        "x": 790,
+        "y": 900,
+        "wires": [
+            [
+                "aa4d4d1daf0f507e"
+            ]
+        ]
+    },
+    {
+        "id": "15999cd9bcc8247c",
+        "type": "ui_button",
+        "z": "582886a6f46648d8",
+        "name": "Start Shift",
+        "group": "378d65878260af78",
+        "order": 4,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "Начало смены",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "date",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 160,
+        "y": 180,
+        "wires": [
+            [
+                "7324b1616b1c09b3"
+            ]
+        ]
+    },
+    {
+        "id": "b32e08acc51f4297",
+        "type": "ui_button",
+        "z": "582886a6f46648d8",
+        "name": "End Shift",
+        "group": "378d65878260af78",
+        "order": 7,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "Конец смены",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 160,
+        "y": 240,
+        "wires": [
+            [
+                "178aa91150fccf8e"
+            ]
+        ]
+    },
+    {
+        "id": "d15b354eefd3b514",
+        "type": "inject",
+        "z": "582886a6f46648d8",
+        "name": "Update Time",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 180,
+        "y": 300,
+        "wires": [
+            [
+                "af3903901784af02"
+            ]
+        ]
+    },
+    {
+        "id": "af3903901784af02",
+        "type": "function",
+        "z": "582886a6f46648d8",
+        "name": "Calc Time",
+        "func": "var timestamp = msg.payload;\n\nvar current_time = (new Date(timestamp)).toISOString();\nvar start_time = (new Date(global.get(\"start_timestamp\"))).toISOString();\nvar total_time = global.get(\"online\")\n    ? (new Date(timestamp - global.get(\"start_timestamp\"))).toISOString()\n    : \"0000-00-00T00:00:0.000Z\";\n\nif (global.get(\"online\")) {\n    var last_timestamp = global.get(\"last_timestamp\");\n    var now_sec = (new Date(timestamp)).getSeconds();\n    var last_sec = (new Date(last_timestamp)).getSeconds()\n\n    global.set(\"afk_timestamp\", 0);\n\n    if (now_sec - last_sec > 3) {\n        global.set(\"online\", false);\n    }\n\n    global.set(\"last_timestamp\", timestamp);\n} else {\n    var afk_sec = global.get(\"afk_sec\");\n    afk_sec += (new Date(timestamp)).getSeconds;\n    global.set(\"afk_sec\", afk_sec);\n}\n\nvar time = {\n    \"current_time\": current_time,\n    \"start_time\": start_time,\n    \"total_time\": total_time,\n    \"afk_sec\": global.get(\"afk_sec\")\n};\n\nmsg.payload = time;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 300,
+        "wires": [
+            [
+                "bf1f2b75623f8059"
+            ]
+        ]
+    },
+    {
+        "id": "7324b1616b1c09b3",
+        "type": "function",
+        "z": "582886a6f46648d8",
+        "name": "Start Shift",
+        "func": "var timestamp = msg.payload;\n\nglobal.set(\"online\", true);\nglobal.set(\"start_timestamp\", timestamp);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "178aa91150fccf8e",
+        "type": "function",
+        "z": "582886a6f46648d8",
+        "name": "End Shift",
+        "func": "var timestamp = msg.payload;\n\nglobal.set(\"online\", false);\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bf1f2b75623f8059",
+        "type": "ui_form",
+        "z": "582886a6f46648d8",
+        "name": "Time",
+        "label": "Время",
+        "group": "378d65878260af78",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "options": [
+            {
+                "label": "Текущее время",
+                "value": "current_time",
+                "type": "time",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Начало смены",
+                "value": "start_time",
+                "type": "time",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Длительность смены",
+                "value": "total_time",
+                "type": "time",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Время простоя (сек)",
+                "value": "afk_sec",
+                "type": "number",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "current_time": "",
+            "start_time": "",
+            "total_time": "",
+            "afk_sec": ""
+        },
+        "payload": "",
+        "submit": "",
+        "cancel": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 630,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "13d2e03acf149570",
+        "type": "ui_button",
+        "z": "f983b8ff415f53cb",
+        "name": "Bad Part",
+        "group": "6ffdb29a14f8e95a",
+        "order": 5,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "Брак",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "click",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 240,
+        "y": 160,
+        "wires": [
+            [
+                "857b3f47cc73a28c"
+            ]
+        ]
+    },
+    {
+        "id": "cef1d1196c627a7a",
+        "type": "ui_button",
+        "z": "f983b8ff415f53cb",
+        "name": "Good Part",
+        "group": "6ffdb29a14f8e95a",
+        "order": 7,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "Верное изделие",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "click",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 250,
+        "y": 240,
+        "wires": [
+            [
+                "58384cdef03d73bc"
+            ]
+        ]
+    },
+    {
+        "id": "857b3f47cc73a28c",
+        "type": "function",
+        "z": "f983b8ff415f53cb",
+        "name": "Increase Bad Part",
+        "func": "var mode = global.get(\"part_check_mode\");\nvar count = global.get(\"bad_parts\");\n\nif (mode == \"manual\" && msg.payload == \"click\") {\n    count++;\n    global.set(\"bad_parts\", count);\n}\n\nmsg.payload = count;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 160,
+        "wires": [
+            [
+                "ad4e5ccc3b2a5648"
+            ]
+        ]
+    },
+    {
+        "id": "58384cdef03d73bc",
+        "type": "function",
+        "z": "f983b8ff415f53cb",
+        "name": "Increase Good Part",
+        "func": "var mode = global.get(\"part_check_mode\");\nvar count = global.get(\"good_parts\");\n\nif (mode == \"manual\" && msg.payload == \"click\") {\n    count++;\n    global.set(\"good_parts\", count);\n}\n\nmsg.payload = count;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 240,
+        "wires": [
+            [
+                "cfadd9f25df99a36"
+            ]
+        ]
+    },
+    {
+        "id": "ad4e5ccc3b2a5648",
+        "type": "ui_text",
+        "z": "f983b8ff415f53cb",
+        "group": "6ffdb29a14f8e95a",
+        "order": 2,
+        "width": 6,
+        "height": 1,
+        "name": "Bad Parts",
+        "label": "Бракованные изделия",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "32",
+        "color": "#000000",
+        "x": 800,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "cfadd9f25df99a36",
+        "type": "ui_text",
+        "z": "f983b8ff415f53cb",
+        "group": "6ffdb29a14f8e95a",
+        "order": 3,
+        "width": 6,
+        "height": 1,
+        "name": "Good Parts",
+        "label": "Правильные изделия",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "32",
+        "color": "#000000",
+        "x": 810,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "b6325b52360903e3",
+        "type": "ui_switch",
+        "z": "f983b8ff415f53cb",
+        "name": "Part Check Mode",
+        "label": "Ручная проверка изделий",
+        "tooltip": "",
+        "group": "6ffdb29a14f8e95a",
+        "order": 1,
+        "width": 12,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "manual",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "auto",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 270,
+        "y": 100,
+        "wires": [
+            [
+                "314a0eba69eb2def"
+            ]
+        ]
+    },
+    {
+        "id": "314a0eba69eb2def",
+        "type": "function",
+        "z": "f983b8ff415f53cb",
+        "name": "Set Part Check Mode",
+        "func": "global.set(\"part_check_mode\", msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "88e4a453fba163c1",
+        "type": "inject",
+        "z": "f983b8ff415f53cb",
+        "name": "Update Parts",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 260,
+        "y": 200,
+        "wires": [
+            [
+                "857b3f47cc73a28c",
+                "58384cdef03d73bc"
+            ]
         ]
     }
 ]
